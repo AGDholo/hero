@@ -35,6 +35,12 @@ module.exports = {
           label: 'Vuetify2 教程',
           position: 'left',
         },
+        {
+          to: 'docs/development-guide/introduction',
+          activeBasePath: 'docs',
+          label: '开发环境搭建指南',
+          position: 'left',
+        },
         //{to: 'blog', label: 'Blog', position: 'left'},
         // Please keep GitHub link to the right for consistency.
         {

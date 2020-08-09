@@ -91,4 +91,38 @@ module.exports = {
       ],
     },
   ],
+
+  docs2: [
+    'development-guide/introduction',
+    'development-guide/issues',
+    'development-guide/donate',
+    {
+      type: 'category',
+      label: '必备软件',
+      collapsed: false,
+      items: [
+        'development-guide/base-software/chocolatey',
+        'development-guide/base-software/vscode',
+        'development-guide/base-software/git',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Shell',
+      collapsed: false,
+      items: [
+        'development-guide/shell/pwsh',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'PHP',
+      collapsed: false,
+      items: [
+        'development-guide/php/php',
+        'development-guide/php/laravel',
+        'development-guide/php/thinkphp',
+      ],
+    },
+  ],
 };
