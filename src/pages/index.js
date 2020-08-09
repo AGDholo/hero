@@ -14,6 +14,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import { Button, Grid, Box, Container } from '@material-ui/core';
 
 const features = [
   {
@@ -45,7 +46,7 @@ const features = [
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--4', styles.feature)}>
@@ -62,33 +63,52 @@ function Feature({imageUrl, title, description}) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   return (
     <Layout
       title={`免费模板，Vuetify 模板，前端技巧和教程`}
-      description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/vuetify2/introduction')}>
-              浏览教程
-            </Link>
-          </div>
-        </div>
-      </header>
+      description="免费模板，Vuetify 模板，前端技巧和教程">
+      <Container>
+        <Box my={12}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={5}>
+              <Box fontSize="h3.fontSize" fontWeight="fontWeightBold">
+                免费获取可商用的 Vuetify 主题，以及前端技巧和教程
+            </Box>
+              <Box fontSize="h6.subtitle1" my={2}>
+                使用 Vuetify 构建的可轻松定制的现代 Vue UI 模板和组件。
+                所有组件都是模块化的，在所有设备和分辨率上都为响应式。
+                品牌的颜色也完全可定制。免费供个人和商业使用。
+            </Box>
+
+              <Link to="docs/vuetify2/introduction">
+                <Button
+                  variant="contained"
+                  color="primary"
+                  size="large"
+                  style={{ display: 'block', width: '100%', height: '52px', 'font-size': '1rem' }}
+
+                >
+                  浏览教程
+            </Button>
+              </Link>
+
+            </Grid>
+
+            <Grid item xs={12} md={1}></Grid>
+            <Grid item xs={12} md={6}>
+              <img src="https://wx1.sbimg.cn/2020/08/10/oerIR.png">
+              </img>
+            </Grid>
+          </Grid>
+        </Box>
+      </Container>
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
               <div className="row">
-                {features.map(({title, imageUrl, description}) => (
+                {features.map(({ title, imageUrl, description }) => (
                   <Feature
                     key={title}
                     title={title}
