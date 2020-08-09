@@ -17,6 +17,11 @@ module.exports = {
   organizationName: 'HeroUI', // Usually your GitHub org/user name.
   projectName: 'HeroUI', // Usually your repo name.
   themeConfig: {
+    googleAnalytics: {
+      trackingID: 'UA-166899095-1',
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
+    },
     navbar: {
       title: 'HeroUI',
       logo: {
