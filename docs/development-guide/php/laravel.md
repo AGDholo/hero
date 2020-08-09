@@ -11,7 +11,7 @@ Laravel 是一个由 Taylor Otwell 所建立，免费的开源 PHP Web 框架，
 
 ## 安装（Laravel）
 
-> 请先阅读 [PHP](php)
+> 请先阅读 [PHP](introduction)
 
 打开 PowerShell，键入命令  
 ~~~PowerShell

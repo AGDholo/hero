@@ -11,7 +11,7 @@ ThinkPHP 是一个免费开源的，快速、简单的面向对象的轻量级PH
 
 ## 安装（ThinkPHP 5.1）
 
-> 请先阅读 [PHP](php)
+> 请先阅读 [PHP](introduction)
 
 打开 PowerShell，键入命令  
 ~~~PowerShell

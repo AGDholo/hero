@@ -18,7 +18,7 @@ PowerShell 是构建于 . NET 上基于任务的命令行 shell 和脚本语言�
 
 ### 方式一：Chocolatey（推荐）
 
-> 请先阅读 [Chocolatey](chocolatey)
+> 请先阅读 [Chocolatey](../base-software/chocolatey)
 
 键入命令  
 ~~~PowerShell

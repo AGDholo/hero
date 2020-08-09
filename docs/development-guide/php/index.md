@@ -1,5 +1,5 @@
 ---
-id: php
+id: introduction
 title: PHP
 sidebar_label: PHP
 date: 2020-08-10 04:15:00
@@ -11,7 +11,7 @@ PHP（全称：PHP：Hypertext Preprocessor，即“PHP：超文本预处理器�
 
 ### 方式一：Chocolatey（推荐）
 
-> 请先阅读 [Chocolatey](chocolatey)
+> 请先阅读 [Chocolatey](../base-software/chocolatey)
 
 键入命令  
 ~~~PowerShell

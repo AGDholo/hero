@@ -119,7 +119,7 @@ module.exports = {
       label: 'PHP',
       collapsed: false,
       items: [
-        'development-guide/php/php',
+        'development-guide/php/introduction',
         'development-guide/php/laravel',
         'development-guide/php/thinkphp',
       ],
