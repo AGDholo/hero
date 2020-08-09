@@ -5,10 +5,6 @@ sidebar_label: PowerShell Core
 date: 2020-08-13 04:12:00
 ---
 
-# PowerShell Core
-
-## 介绍
-
 > PowerShell Core 是跨平台的
 
 PowerShell 是构建于 . NET 上基于任务的命令行 shell 和脚本语言。 PowerShell 可帮助系统管理员和高级用户快速自动执行用于管理操作系统（Linux、macOS 和 Windows）和流程的任务。  
