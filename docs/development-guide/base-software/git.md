@@ -13,7 +13,7 @@ Git 最初的开发动力来自于 BitKeeper 和 Monoton。Git 最初只是作�
 
 ### 方式一：Chocolatey（推荐）
 
-> 请先阅读 [2.2 Chocolatey](2.2Chocolatey.md)
+> 请先阅读 [Chocolatey](chocolatey)
 
 键入命令 `choco install git`
 

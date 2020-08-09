@@ -11,7 +11,7 @@ PHP（全称：PHP：Hypertext Preprocessor，即“PHP：超文本预处理器�
 
 ### 方式一：Chocolatey（推荐）
 
-> 请先阅读 [2.2 Chocolatey](2.2Chocolatey.md)
+> 请先阅读 [Chocolatey](chocolatey)
 
 键入命令  
 ~~~PowerShell
