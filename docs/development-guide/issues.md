@@ -5,7 +5,7 @@ sidebar_label: 反馈纠错
 date: 2020-08-10 04:04:00
 ---
 
-前往书籍源码地址 https://github.com/EpicLearn/Development-Environment-Construction-Guide 提交 Issue 或者 PR
+前往书籍源码地址 https://github.com/AGDholo/hero 提交 Issue 或者 PR
 
 ## QQ 群反馈
 
