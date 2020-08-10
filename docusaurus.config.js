@@ -44,7 +44,7 @@ module.exports = {
         //{to: 'blog', label: 'Blog', position: 'left'},
         // Please keep GitHub link to the right for consistency.
         {
-          href: 'https://github.com/AGDholo',
+          href: 'https://github.com/AGDholo/hero',
           label: 'GitHub',
           position: 'right',
         },
@@ -76,7 +76,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/AGDholo',
+              href: 'https://github.com/AGDholo/hero',
             },
           ],
         },
@@ -100,13 +100,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/AGDholo',
+            'https://github.com/AGDholo/hero/tree/master',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/AGDholo',
+            'https://github.com/AGDholo/hero/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
