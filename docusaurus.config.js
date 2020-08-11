@@ -39,7 +39,7 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'docs/thinkphp5.1/chapter-1/1-1-introduction',
+          to: 'docs/thinkphp5.1/readme',
           activeBasePath: 'docs',
           label: 'ThinkPHP 5.1 入门开发实战',
           position: 'left',
