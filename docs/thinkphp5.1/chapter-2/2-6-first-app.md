@@ -39,7 +39,7 @@ Hosts 的作用是 将指定域名 转发到特定 IP 上，例如
 ## 安装 ThinkPHP
 
 :::danger 禁止 警告
-禁止将 public/index.php 移动到根目录，这是不安全的，详细内容请参阅本书 [1.5 安全指南](1-5-security-guide)。
+禁止将 public/index.php 移动到根目录，这是不安全的，详细内容请参阅本书 [1.5 安全指南](../chapter-1/1-5-security-guide)。
 :::
 
 1. 打开 资源管理器 ，找到你创建网站的目录，全选并且删除。
