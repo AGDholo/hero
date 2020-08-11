@@ -1,7 +1,7 @@
 ---
 id: 1-4-issues
 title: 问题反馈
-sidebar_label: 1.4 问题反馈
+sidebar_label: 1.3 问题反馈
 date: 2020-08-11 17:31:00
 description: 反馈ThinkPHP 5.1 入门开发实战书籍的问题
 keywords:

@@ -1,7 +1,7 @@
 ---
 id: 1-5-security-guide
 title: 安全指南
-sidebar_label: 1.5 安全指南
+sidebar_label: 1.4 安全指南
 date: 2020-08-11 17:31:00
 description: PHP 程序开发安全指南
 keywords:

@@ -1,7 +1,7 @@
 ---
 id: 1-2-about-author
 title: 关于作者
-sidebar_label: 1.2 关于作者
+sidebar_label: 1.1 关于作者
 date: 2020-08-11 17:26:00
 description: 获得作者的联系方式
 keywords:

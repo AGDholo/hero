@@ -1,7 +1,7 @@
 ---
 id: 1-3-source-code
 title: 本书源码
-sidebar_label: 1.3 本书源码
+sidebar_label: 1.2 本书源码
 date: 2020-08-11 17:29:00
 description: 获取ThinkPHP 5.1 入门开发实战书籍源码和相关协议。
 keywords:

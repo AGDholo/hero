@@ -1,7 +1,7 @@
 ---
 id: 1-6-donate
 title: 捐助作者
-sidebar_label: 1.6 捐助作者
+sidebar_label: 1.5 捐助作者
 date: 2020-08-11 17:34:00
 description: 捐助书籍作者
 keywords:

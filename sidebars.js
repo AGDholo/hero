@@ -133,7 +133,6 @@ module.exports = {
       label: '第一章.基础信息',
       collapsed: false,
       items: [
-        'thinkphp5.1/chapter-1/1-1-introduction',
         'thinkphp5.1/chapter-1/1-2-about-author',
         'thinkphp5.1/chapter-1/1-3-source-code',
         'thinkphp5.1/chapter-1/1-4-issues',

@@ -3,6 +3,14 @@ id: readme
 title: ThinkPHP 5.1 入门开发实战
 sidebar_label: ThinkPHP 5.1 入门开发实战
 date: 2020-08-11 17:26:00
+description: ThinkPHP 5.1 入门开发实战将教你使用现代工具流构建一个类似微博的应用。
+keywords:
+  - thinkphp
+  - 入门
+  - 实战
+  - 初学者
+  - web
+  - 免费书籍
 ---
 
 本书将教你使用现代工具流构建一个类似微博的应用。 
@@ -13,16 +21,16 @@ date: 2020-08-11 17:26:00
 
 ## 浏览须知
 
-这是 ThinkPHP 5.1 入门开发实战 书籍内容  
-我们已经停止在看云上进行同步更新，请前往 https://heroui.net/ 查看最新内容
+这是 ThinkPHP 5.1 入门开发实战的书籍内容。  
+我们已经停止在看云上进行同步更新，请前往 https://heroui.net/ 查看最新内容。
 
 ## 赞助项目
 
-ThinkPHP 5.1 入门开发实战 是一个为了解决大多数新手开发者入门难，编写不规范等问题的入门教程书籍， 本书完全免费，如果你觉得对自己的学习有所帮助，可以考虑 [捐助作者](chapter-1/1-6-donate)
+ThinkPHP 5.1 入门开发实战 是一个为了解决大多数新手开发者入门难，编写不规范等问题的入门教程书籍， 本书完全免费，如果你觉得对自己的学习有所帮助，可以考虑 [捐助作者](chapter-1/1-6-donate)。
 
 ## 社区支持
 
-在 [EpicLearn QQ 群](https://jq.qq.com/?_wv=1027&k=5T19zAw)  进行讨论反馈
+在 [EpicLearn QQ 群](https://jq.qq.com/?_wv=1027&k=5T19zAw)  进行讨论反馈。
 
 ## 贡献
 
