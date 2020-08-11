@@ -81,7 +81,7 @@ function Home() {
                 品牌的颜色也完全可定制。免费供个人和商业使用。
             </Box>
 
-              <Link to="docs/vuetify2/introduction">
+              <Link to="docs/vuetify2-tricks/introduction">
                 <Button
                   variant="contained"
                   color="primary"

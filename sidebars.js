@@ -9,14 +9,14 @@
 
 module.exports = {
   docs: [
-    'vuetify2/introduction',
+    'vuetify2-tricks/introduction',
     {
       type: 'category',
       label: '安装框架  ',
       collapsed: false,
       items: [
-        'vuetify2/install/init',
-        'vuetify2/install/vue-cli-4',
+        'vuetify2-tricks/install/init',
+        'vuetify2-tricks/install/vue-cli-4',
       ],
     },
     {
@@ -24,7 +24,7 @@ module.exports = {
       label: '性能优化',
       collapsed: false,
       items: [
-        'vuetify2/optimizing/icon-cdn',
+        'vuetify2-tricks/optimizing/icon-cdn',
       ],
     },
     {
@@ -32,9 +32,9 @@ module.exports = {
       label: '小技巧',
       collapsed: false,
       items: [
-        'vuetify2/tricks/breakpoint',
-        'vuetify2/tricks/center-content-vertically',
-        'vuetify2/tricks/grid-vertically',
+        'vuetify2-tricks/tricks/breakpoint',
+        'vuetify2-tricks/tricks/center-content-vertically',
+        'vuetify2-tricks/tricks/grid-vertically',
       ],
     },
     {
@@ -47,8 +47,8 @@ module.exports = {
           label: 'SASS 变量',
           collapsed: false,
           items: [
-            'vuetify2/styling/sass/variables',
-            'vuetify2/styling/sass/set-background-color'
+            'vuetify2-tricks/styling/sass/variables',
+            'vuetify2-tricks/styling/sass/set-background-color'
           ]
         },
         {
@@ -56,8 +56,8 @@ module.exports = {
           label: '全局主题',
           collapsed: false,
           items: [
-            'vuetify2/styling/themes/setting',
-            'vuetify2/styling/themes/usage'
+            'vuetify2-tricks/styling/themes/setting',
+            'vuetify2-tricks/styling/themes/usage'
           ]
         },
       ],
@@ -67,7 +67,7 @@ module.exports = {
       label: '开发者',
       collapsed: true,
       items: [
-        'vuetify2/development/local-deployment-documentation',
+        'vuetify2-tricks/development/local-deployment-documentation',
       ],
     },
     {
@@ -75,9 +75,9 @@ module.exports = {
       label: '教程源码',
       collapsed: true,
       items: [
-        'vuetify2/source-code/layout-source-code',
-        'vuetify2/source-code/source-code',
-        'vuetify2/source-code/tricks-sources-code',
+        'vuetify2-tricks/source-code/layout-source-code',
+        'vuetify2-tricks/source-code/source-code',
+        'vuetify2-tricks/source-code/tricks-sources-code',
       ],
     },
     {
@@ -85,9 +85,9 @@ module.exports = {
       label: '开箱即用的主题/模板',
       collapsed: true,
       items: [
-        'vuetify2/themes/agency',
-        'vuetify2/themes/giraffe',
-        'vuetify2/themes/shock',
+        'vuetify2-tricks/themes/agency',
+        'vuetify2-tricks/themes/giraffe',
+        'vuetify2-tricks/themes/shock',
       ],
     },
   ],

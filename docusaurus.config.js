@@ -33,7 +33,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/vuetify2/introduction',
+          to: 'docs/vuetify2-tricks/introduction',
           activeBasePath: 'docs',
           label: 'Vuetify2 技巧',
           position: 'left',
