@@ -8,7 +8,7 @@
  */
 
 module.exports = {
-  vuetify2_tricks: [
+  docs: [
     'vuetify2-tricks/introduction',
     {
       type: 'category',
@@ -92,7 +92,7 @@ module.exports = {
     },
   ],
 
-  development_guide: [
+  docs2: [
     'development-guide/introduction',
     'development-guide/issues',
     'development-guide/donate',
@@ -126,7 +126,7 @@ module.exports = {
     },
   ],
 
-  thinkphp5_1_primer: [
+  docs3: [
     'thinkphp5.1-primer/readme',
     {
       type: 'category',

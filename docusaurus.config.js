@@ -67,7 +67,7 @@ module.exports = {
           items: [
             {
               label: 'Vuetify2 教程',
-              to: 'docs/vuetify2/introduction',
+              to: 'docs/vuetify2-tricks/introduction',
             },
           ],
         },
