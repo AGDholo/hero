@@ -49,7 +49,7 @@ const features = [
 function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col--4', styles.feature)}>
+    <div className={clsx('col col--4', styles.feature)} style={{ textAlign: 'center' }}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
@@ -68,10 +68,10 @@ function Home() {
     <Layout
       title={`免费模板，Vuetify 模板，前端技巧和教程`}
       description="免费模板，Vuetify 模板，前端技巧和教程">
-      <Container>
+      <Container maxWidth="xl">
         <Box my={12}>
           <Grid container spacing={3}>
-            <Grid item xs={12} md={5}>
+            <Grid item xs={12} md={5} style={{ alignSelf: 'center' }}>
               <Box fontSize="h3.fontSize" fontWeight="fontWeightBold">
                 免费获取可商用的 Vuetify 主题，以及前端技巧和教程
             </Box>
@@ -102,25 +102,28 @@ function Home() {
             </Grid>
           </Grid>
         </Box>
+
+        <main>
+          <Box my={12}>
+            {features && features.length > 0 && (
+              <section className={styles.features}>
+                <div>
+                  <div className="row">
+                    {features.map(({ title, imageUrl, description }) => (
+                      <Feature
+                        key={title}
+                        title={title}
+                        imageUrl={imageUrl}
+                        description={description}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </section>
+            )}
+          </Box>
+        </main>
       </Container>
-      <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map(({ title, imageUrl, description }) => (
-                  <Feature
-                    key={title}
-                    title={title}
-                    imageUrl={imageUrl}
-                    description={description}
-                  />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-      </main>
     </Layout>
   );
 }

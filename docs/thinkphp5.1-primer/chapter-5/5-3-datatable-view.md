@@ -22,10 +22,12 @@ keywords:
 
 面板中数据库连接方式：
 
-* Host：127.0.0.1
-* Port：3306
-* database_name：创建的表名
-* database_password：对应表的密码
+名称 | 数据
+------------ | -------------
+Host | 127.0.0.1
+Port | 3306
+database_name | 创建的表名
+database_password | 对应表的密码
 
 ## PHPMyAdmin 的使用
 

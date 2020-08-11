@@ -8,7 +8,7 @@
  */
 
 module.exports = {
-  docs: [
+  vuetify2_tricks: [
     'vuetify2-tricks/introduction',
     {
       type: 'category',
@@ -92,7 +92,7 @@ module.exports = {
     },
   ],
 
-  docs2: [
+  development_guide: [
     'development-guide/introduction',
     'development-guide/issues',
     'development-guide/donate',
@@ -126,7 +126,7 @@ module.exports = {
     },
   ],
 
-  docs3: [
+  thinkphp5_1_primer: [
     'thinkphp5.1-primer/readme',
     {
       type: 'category',
@@ -188,6 +188,19 @@ module.exports = {
         'thinkphp5.1-primer/chapter-5/5-3-datatable-view',
         'thinkphp5.1-primer/chapter-5/5-4-model',
         'thinkphp5.1-primer/chapter-5/5-5-summary',
+      ],
+    },
+    {
+      type: 'category',
+      label: '第六章.用户注册',
+      collapsed: false,
+      items: [
+        'thinkphp5.1-primer/chapter-6/6-1-introduction',
+        'thinkphp5.1-primer/chapter-6/6-2-signin-form',
+        'thinkphp5.1-primer/chapter-6/6-3-data-validation',
+        'thinkphp5.1-primer/chapter-6/6-4-error-text',
+        'thinkphp5.1-primer/chapter-6/6-5-sign-success',
+        'thinkphp5.1-primer/chapter-6/6-6-summary',
       ],
     },
   ],
