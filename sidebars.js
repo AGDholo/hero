@@ -178,5 +178,17 @@ module.exports = {
         'thinkphp5.1/chapter-4/4-7-summary',
       ],
     },
+    {
+      type: 'category',
+      label: '第五章.用户模型',
+      collapsed: false,
+      items: [
+        'thinkphp5.1/chapter-5/5-1-introduction',
+        'thinkphp5.1/chapter-5/5-2-database-migration',
+        'thinkphp5.1/chapter-5/5-3-datatable-view',
+        'thinkphp5.1/chapter-5/5-4-model',
+        'thinkphp5.1/chapter-5/5-5-summary',
+      ],
+    },
   ],
 };
