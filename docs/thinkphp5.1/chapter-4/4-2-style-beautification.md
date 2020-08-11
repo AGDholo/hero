@@ -1,17 +1,38 @@
-# 使用 Blade 模板
+---
+id: 4-2-style-beautification
+title: 使用 Blade 模板来优化代码
+sidebar_label: 4.2 优雅的模板
+date: 2020-08-12 01:14:00
+description: blade 是构建 Laravel 应用所创建的一套模板引擎，众所周知，Laravel 的开发以优雅为名，我们现在将使用 Blade 进行 ThinkPHP 视图页面的优雅开发。
+keywords:
+  - thinkphp
+  - 入门
+  - 实战
+  - 初学者
+  - blade
+  - 模板
+  - php
+  - php模板
+  - 教程
+---
 
-> Blade 是构建 Laravel 应用所创建的一套模板引擎,众所周知,Laravel 的开发以优雅为名, 我们现在将使用 Blade 进行 ThinkPHP 视图页面的优雅开发。
+:::note 提示
+Blade 是构建 Laravel 应用所创建的一套模板引擎，众所周知，Laravel 的开发以优雅为名，我们现在将使用 Blade 进行 ThinkPHP 视图页面的优雅开发。
+:::
 
-你可以在 Laravel 中文文档: https://laravel-china.org/docs/laravel/5.7/blade/  查看详细的语法解释
+你可以在 Laravel 中文文档: https://learnku.com/docs/laravel/7.x/blade/ 查看详细的语法解释。
 
 ## 安装 Blade  
 
-请按下 Ctrl+Shift+` (请确保在网站根目录 thinkphp.test) 并切换到终端 , 并键入命令:
-`composer require luoyy/think-blade`
+请按下 `Ctrl+Shift+`（请确保在网站根目录 thinkphp.test）并切换到终端，并键入命令：
 
-进入 `config/template` , 将 return 里的内容进行替换:
+```shell title="shell"
+composer require luoyy/think-blade
+```
 
-~~~~ config
+将 return 里的内容进行替换：
+
+~~~php title="config/template"
 // 模板引擎类型
 'type' => 'Blade',
 // 视图基础目录(集中式)
@@ -27,22 +48,30 @@
     'prefix' => '',
 ],
 'tpl_replace_string' => [],
-~~~~
+~~~
 
-进入到上一章所编写的视图层目录 `application/welcome/view`,将所有 `.html` 后缀修改为 `.blade.php`
+进入到上一章所编写的视图层目录 `application/welcome/view`，将所有 `.html` 后缀修改为 `.blade.php`。
 
 ## 测试 blade
 
-打开视图层的 `application/welcome/view/index/home.blade.php` 并删除全部内容,键入 {{ time() }}  
-进入 `http://thinkphp.test` 若出现 一长串 时间戳,则表示 Blade 模板安装成功.
+然后删除模板内的全部内容，并键入：
+
+```php title="application/welcome/view/index/home.blade.php"
+{{ time() }}
+```
+
+再次访问 http://thinkphp.test  
+若出现一长串时间戳，则表示 Blade 模板安装成功。
 
 ## 重写视图
 
->请删除所有视图页面的内容
+:::info 提示
+请删除所有视图页面的内容
+:::
 
-在 `/public/static` 下增加 `/css/app.css`, `/js/app.js`, 并更改 `default.blade.php`
+在 `/public/static` 下新建 `/css/app.css`、`/js/app.js`，并更改：
 
-~~~~ blade
+~~~html title="default.blade.php"
 <!DOCTYPE html>
 <html>
 <head>
@@ -99,21 +128,21 @@
   <script src="/static/js/app.js"></script>
 </body>
 </html>
-~~~~
+~~~
 
-看到代码顶部的 `@yield('title')` 指令是用来显示指定部分的内容.  
-同样的,我们在模板继承 `default.blade.php` 之后,只需要使用 `@section('title)` 即可继承并使用.  
-找到视图路径 `view/index`, 将下面的模板文件统一加上代码:
+看到代码顶部的 `@yield('title')`，这个指令是用来显示指定部分的内容。 
+同样的，我们在模板继承 `default.blade.php` 之后，只需要使用 `@section('title)` 即可继承并使用。  
+将下面的模板文件统一加上代码：
 
-~~~~ blade
+~~~html title="view/index"
+<!-- 对应继承路径：_layout/default.blade.php -->
 @extends('_layout.default')
-// 对应继承路径：_layout/default.blade.php
-~~~~
+~~~
 
-`@extends` 指继承整个模板文件,而在 `Blade` 中,我们不再使用 `/` 来分割路径,而是使用 `.`  
-接着,打开 `home.blade.php`, 我们添加一些欢迎界面.  
+`@extends` 指继承整个模板文件，而在 `Blade` 中，我们不再使用 `/` 来分割路径，而是使用 `.`  
+接着，我们添加一些欢迎界面：
 
-~~~~ blade
+~~~html title="home.blade.php"
 @extends('_layout.default')
 @section('title', '主页')
 @section('content')
@@ -123,6 +152,7 @@
     </div>
 </section>
 @stop
-~~~~
+~~~
 
-访问 `http://thinkphp.test`, 一个全新的欢迎页面呈现在眼前.
+访问 http://thinkphp.test  
+一个全新的欢迎页面呈现在眼前。
