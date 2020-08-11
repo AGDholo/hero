@@ -3,14 +3,18 @@ id: center-content-vertically
 title: 垂直居中
 sidebar_label: 垂直居中
 date: 2020-05-20 07:45:00
-meta:
-  - name: description
-    content: 如何使用 vuetify 让内容垂直居中
-  - name: keywords
-    content: vue vuetify vertically center 布局 vuetify垂直居中 vuetify小技巧 初学者 小技巧
+description: 如何使用 vuetify 让内容垂直居中
+keywords:
+  - vue
+  - vuetify
+  - vertically
+  - center 
+  - 初学者
+  - vuetify垂直居中
+  - vuetify小技巧
 ---
 
-在 Vuetify2.0 版本中，布局组件从 _v-layout_ 更新为 _v-row_，但是核心都是基于 _flex_ 或 _grid_ 进行布局，所以我们只需要根据浏览器原生 API 以及官方文档，即可让内容垂直居中。
+在 Vuetify2.0 版本中，布局组件从 `v-layout` 更新为 `v-row`，但是核心都是基于 `flex` 或 `grid` 进行布局，所以我们只需要根据浏览器原生 API 以及官方文档，即可让内容垂直居中。
 
 官方文档导航：
 
@@ -26,7 +30,7 @@ meta:
 
 ## 使用 Grid 垂直居中
 
-```html
+```html title="vue"
 <!-- fill-height 属性，将区块内容设置为 100%，这样才能够让页面可以在垂直方向居中 -->
 <!-- 你也可以将 fill-height 作为 class 使用，以便应用到任何类上面，class="fill-height" -->
 <v-container fill-height>

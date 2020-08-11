@@ -3,11 +3,12 @@ id: init
 title: 开发环境准备
 sidebar_label: 开发环境准备
 date: 2020-05-17 15:38:00
-meta:
-  - name: description
-    content: 准备前端开发环境，安装 nodejs 和配置 npm 镜像
-  - name: keywords
-    content: nodejs npm镜像 开发环境 加速下载
+description: 准备前端开发环境，安装 nodejs 和配置 npm 镜像
+keywords:
+  - nodejs
+  - npm镜像
+  - 开发环境
+  - 加速下载 
 ---
 
 你需要预先安装的软件：
@@ -19,25 +20,58 @@ meta:
 
 安装完成 Node.js 之后，在命令行内键入：
 
-```shell
-$ node -v
+```shell title="shell"
 # 12.16.1 或类似版本号输出
+node -v
 
-$ npm -v
 # 6.13.4 或类似版本号输出
+npm -v
 ```
 
-## 配置 NPM 镜像加速下载
+## 安装 yarn（可选）
 
-由于众所周知的原因，在国内使用 NPM 下载包的时候速度非常缓慢，我们只需要这一行命令即可配置成国内镜像节点来达到加速下载的目的：
+请参考 [yarn 官方文档](https://classic.yarnpkg.com/)
 
-```shell
+## 配置镜像加速下载
+
+由于众所周知的原因，在国内使用 NPM/YARN 下载包的时候速度非常缓慢，我们只需要这一行命令即可配置成国内镜像节点来达到加速下载的目的：
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="npm"
+  values={[
+    { label: 'npm', value: 'npm', },
+    { label: 'yarn', value: 'yarn', },
+  ]
+}>
+<TabItem value="npm">
+
+```shell title="shell"
 # 配置镜像
-$ npm config set registry https://registry.npm.taobao.org
+npm config set registry https://registry.npm.taobao.org
 
 # 查看当前镜像地址
-$ npm config get registry
+npm config get registry
 
 # 取消镜像
-$ npm config delete registry
+npm config delete registry
 ```
+
+</TabItem>
+<TabItem value="yarn">
+
+```shell title="shell"
+# 配置镜像
+yarn config set registry https://registry.npm.taobao.org/
+
+# 查看当前镜像地址
+yarn config get registry
+
+# 取消镜像
+yarn config delete registry
+```
+
+</TabItem>
+</Tabs>

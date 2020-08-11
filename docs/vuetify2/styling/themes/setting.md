@@ -3,14 +3,22 @@ title: 初始化全局主题
 id: setting
 sidebar_label: 初始化
 date: 2020-05-18 07:00:00
-meta:
-  - name: description
-    content: vuetify 小技巧之如何设置 vuetify 主题
-  - name: keywords
-    content: vue vuetify theme 主题 初学者 vuetify主题 vuetify设置主题 vuetify小技巧 小技巧
+description: vuetify 小技巧之如何设置 vuetify 主题
+keywords:
+  - vue
+  - vuetify教程
+  - vue教程
+  - theme 
+  - vuetify怎么用
+  - 主题
+  - 初学者
+  - vuetify主题
+  - vuetify设置主题
+  - vuetify小技巧
+  - 小技巧
 ---
 
-非常简单的，我们只需要在插件初始化的时候注入主题配置就行
+非常简单的，我们只需要在插件初始化的时候注入主题配置就可以了。
 
 官方文档导航：
 
@@ -18,9 +26,7 @@ meta:
 
 ## Vue CLI 项目设置
 
-```js
-# 打开项目文件： src\plugins\vuetify.js
-
+```js title="src\plugins\vuetify.js"
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib';
 

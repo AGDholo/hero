@@ -3,11 +3,18 @@ id: grid-vertically
 title: 栅格垂直排列
 sidebar_label: 栅格垂直排列
 date: 2020-05-21 06:54:00
-meta:
-  - name: description
-    content: vuetify 小技巧之如何使用 vuetify 让栅格垂直排列
-  - name: keywords
-    content: vue vuetify grid 栅格 初学者 vuetify栅格 vuetify垂直 vuetify小技巧 小技巧 vuetify使用栅格
+description: vuetify 小技巧之如何使用 vuetify 让栅格垂直排列
+keywords:
+  - vue
+  - vuetify
+  - grid
+  - 栅格 
+  - 初学者
+  - vuetify栅格
+  - vuetify垂直
+  - vuetify小技巧
+  - 小技巧
+  - vuetify使用栅格
 ---
 
 在官方文档的例子中，栅格是没有垂直排列的例子的，但是利用 Flex，我们就能很轻松的实现这样的布局。
@@ -26,7 +33,7 @@ meta:
 
 ## 使用 Flex 垂直 Grid 排列
 
-```html
+```html title="vue"
 <!-- 只需要添加 class="flex-column" 这个类名即可让布局垂直排列 -->
 <!-- 更多用例请查看 Flex 文档 -->
 <v-row no-gutters class="flex-column">

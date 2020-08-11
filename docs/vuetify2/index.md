@@ -3,11 +3,17 @@ id: introduction
 title: Vuetify 是什么
 sidebar_label: Vuetify 是什么
 date: 2020-05-17 15:01:00
-meta:
-  - name: description
-    content: 介绍 vuetify ，为什么选择 vuetify，vuetify 该怎么用
-  - name: keywords
-    content: vuetify vuetify教程 vue教程 前端教程 vuetify怎么用
+description: 介绍 vuetify ，为什么选择 vuetify，vuetify 该怎么用
+keywords:
+  - vue
+  - vuetify
+  - vuetify教程
+  - vue教程 
+  - 初学者
+  - 前端教程
+  - vuetify怎么用
+  - 免费教程
+  - 新手入门
 ---
 
 [Vuetify](https://vuetifyjs.com) 是一个完全遵循 [Material Design](https://material.io/) 设计的 UI 组件库，构建在 [Vue](https://vuejs.org) 之上。

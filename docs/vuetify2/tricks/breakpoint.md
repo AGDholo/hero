@@ -3,14 +3,19 @@ id: breakpoint
 title: 断点使用
 sidebar_label: 断点使用
 date: 2020-05-18 07:00:00
-meta:
-  - name: description
-    content: vuetify 小技巧之如何使用 vuetify 断点
-  - name: keywords
-    content: vue vuetify breakpoint 断点 初学者 vuetify断点 vuetify小技巧 小技巧 vuetify使用断点
+description: vuetify 小技巧之如何使用 vuetify 断点
+keywords:
+  - vue
+  - vuetify
+  - breakpoint
+  - 断点 
+  - 初学者
+  - vuetify断点
+  - vuetify小技巧
+  - vuetify使用断点
 ---
 
-断点，英文名叫 breakpoint，其作用是检测页面宽度，判断是否在某个宽度之上或者之下
+断点，英文名叫 breakpoint，其作用是检测页面宽度，判断是否在某个宽度之上或者之下。
 
 官方文档导航：
 
@@ -18,9 +23,9 @@ meta:
 
 ## 简单使用
 
-将下面代码嵌入到你的页面中，然后拖动窗口大小即可看到内容变化
+将下面代码嵌入到你的页面中，然后拖动窗口大小即可看到内容变化：
 
-```html
+```html title="vue"
 <!-- 简单使用 -->
 <div>
   <!-- 判断当前宽度为 xs -->
@@ -62,7 +67,7 @@ meta:
 
 案例：在导航栏中，存在多个按钮组件，但是在手机端的宽度下，这些按钮并不会自动消失，则会导致页面看起来不正常。
 
-```html
+```html title="vue"
 <!-- 响应式布局中应用 -->
 <div>
   <v-app-bar>

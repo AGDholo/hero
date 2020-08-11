@@ -3,11 +3,18 @@ title: 文档离线部署
 sidebar_label: 文档离线部署
 id: local-deployment-documentation
 date: 2020-05-23 09:08:00
-meta:
-  - name: description
-    content: 如何让 vuetify 官方文档离线部署
-  - name: keywords
-    content: vue vuetify docs vuetify文档 离线部署 部署 文档部署
+description: 如何离线部署 vuetify 官方文档
+keywords:
+  - vue
+  - vuetify教程
+  - vue教程
+  - docs 
+  - vuetify怎么用
+  - vuetify文档
+  - 初学者
+  - 离线部署
+  - 部署
+  - 文档部署
 ---
 
 非常简单的，我们只需要拉取最新源码，然后键入几个命令即可部署。
@@ -18,21 +25,25 @@ meta:
 
 ## 拉取源码
 
-```shell
-$ git clone https://github.com/vuetifyjs/vuetify.git
+```shell title="shell"
+git clone https://github.com/vuetifyjs/vuetify.git
 ```
 
 ## 构建文档
 
-```shell
+:::info 须知
+Vuetify 使用 yarn 管理包程序，所以你首先需要安装 yarn。
+:::
+
+```shell title="shell"
 # 进入目录
-$ cd vuetify
+cd vuetify
 
 # 安装依赖
-$ yarn
+yarn
 
 # 打包项目
-$ yarn build
+yarn build
 ```
 
 ## 运行项目
