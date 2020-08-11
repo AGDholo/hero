@@ -3,7 +3,7 @@ id: 2-6-first-app
 title: 创建第一个应用
 sidebar_label: 2.6 第一个应用
 date: 2020-08-11 19:07:00
-description: 创建你的一个 thinkphp5.1 应用程序。
+description: 创建你的一个 thinkphp5.1-primer 应用程序。
 keywords:
   - thinkphp
   - 入门
