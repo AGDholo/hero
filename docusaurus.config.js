@@ -17,6 +17,9 @@ module.exports = {
   organizationName: 'HeroUI', // Usually your GitHub org/user name.
   projectName: 'HeroUI', // Usually your repo name.
   themeConfig: {
+    prism: {
+      additionalLanguages: ['php', 'powershell', 'nginx'],
+    },
     googleAnalytics: {
       trackingID: 'UA-166899095-1',
       // Optional fields.
@@ -33,6 +36,12 @@ module.exports = {
           to: 'docs/vuetify2/introduction',
           activeBasePath: 'docs',
           label: 'Vuetify2 教程',
+          position: 'left',
+        },
+        {
+          to: 'docs/thinkphp5.1/chapter-1/1-1-introduction',
+          activeBasePath: 'docs',
+          label: 'ThinkPHP 5.1 入门开发实战',
           position: 'left',
         },
         {

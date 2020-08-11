@@ -20,7 +20,7 @@ Visual Studio Code（简称VS Code）是一个由微软开发的，同时支持W
 ### 方式二：GUI
 
 1. 进入 VSCode 官网：https://code.visualstudio.com/
-2. 点击首页绿色大按钮 `Download for Windows` 
+2. 点击首页绿色大按钮 `Download for Windows` <br />
 ![e6gKVP.png](https://s2.ax1x.com/2019/08/04/e6gKVP.png)
 3. 跳转之后等待几秒，软件将会自动下载，如果并未开始下载，请点击 `direct download link.` 
 [![e62Bwt.png](https://s2.ax1x.com/2019/08/04/e62Bwt.png)](https://imgchr.com/i/e62Bwt)

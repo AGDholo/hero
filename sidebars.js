@@ -125,4 +125,59 @@ module.exports = {
       ],
     },
   ],
+
+  docs3: [
+    'thinkphp5.1/readme',
+    {
+      type: 'category',
+      label: '第一章.基础信息',
+      collapsed: false,
+      items: [
+        'thinkphp5.1/chapter-1/1-1-introduction',
+        'thinkphp5.1/chapter-1/1-2-about-author',
+        'thinkphp5.1/chapter-1/1-3-source-code',
+        'thinkphp5.1/chapter-1/1-4-issues',
+        'thinkphp5.1/chapter-1/1-5-security-guide',
+        'thinkphp5.1/chapter-1/1-6-donate',
+      ],
+    },
+    {
+      type: 'category',
+      label: '第二章.开发环境布置',
+      collapsed: false,
+      items: [
+        'thinkphp5.1/chapter-2/2-1-ide',
+        'thinkphp5.1/chapter-2/2-2-command-line-tool',
+        'thinkphp5.1/chapter-2/2-3-development-guide',
+        'thinkphp5.1/chapter-2/2-4-browser',
+        'thinkphp5.1/chapter-2/2-5-git-flow',
+        'thinkphp5.1/chapter-2/2-6-first-app',
+      ],
+    },
+    {
+      type: 'category',
+      label: '第三章.构建页面',
+      collapsed: false,
+      items: [
+        'thinkphp5.1/chapter-3/3-1-introduction',
+        'thinkphp5.1/chapter-3/3-2-static-page',
+        'thinkphp5.1/chapter-3/3-3-think-command',
+        'thinkphp5.1/chapter-3/3-4-summary',
+      ],
+    },
+    {
+      type: 'category',
+      label: '第四章.优化页面',
+      collapsed: false,
+      items: [
+        'thinkphp5.1/chapter-4/4-1-introduction',
+        'thinkphp5.1/chapter-4/4-2-style-beautification',
+        'thinkphp5.1/chapter-4/4-3-partial-view',
+        'thinkphp5.1/chapter-4/4-4-route-path',
+        'thinkphp5.1/chapter-4/4-5-user-signin',
+        'thinkphp5.1/chapter-4/4-6-layout-view',
+        'thinkphp5.1/chapter-4/4-7-summary',
+      ],
+    },
+  ],
 };
