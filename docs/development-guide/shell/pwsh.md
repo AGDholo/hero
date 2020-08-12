@@ -33,7 +33,7 @@ import TabItem from '@theme/TabItem';
 <TabItem value="shell">
 
 :::info 前置条件
-请先阅读 [Chocolatey](chocolatey)
+请先阅读 [Chocolatey](../base-software/chocolatey)
 :::
 
 键入命令：
