@@ -231,5 +231,17 @@ module.exports = {
         'thinkphp5.1-primer/chapter-8/8-9-summary',
       ],
     },
+    {
+      type: 'category',
+      label: '第九章.微博CRUD',
+      collapsed: false,
+      items: [
+        'thinkphp5.1-primer/chapter-9/9-1-introduction',
+        'thinkphp5.1-primer/chapter-9/9-2-weibo-model',
+        'thinkphp5.1-primer/chapter-9/9-3-show-weibo',
+        'thinkphp5.1-primer/chapter-9/9-4-create-weibo',
+        'thinkphp5.1-primer/chapter-9/9-5-weibo-list',
+      ],
+    },
   ],
 };
