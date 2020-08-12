@@ -8,7 +8,7 @@
  */
 
 module.exports = {
-  docs: [
+  'vuetify2-tricks': [
     'vuetify2-tricks/introduction',
     {
       type: 'category',
@@ -92,7 +92,7 @@ module.exports = {
     },
   ],
 
-  docs2: [
+  'development-guide': [
     'development-guide/introduction',
     'development-guide/issues',
     'development-guide/donate',
@@ -126,7 +126,7 @@ module.exports = {
     },
   ],
 
-  docs3: [
+  'thinkphp5.1-primer': [
     'thinkphp5.1-primer/readme',
     {
       type: 'category',
@@ -213,6 +213,22 @@ module.exports = {
         'thinkphp5.1-primer/chapter-7/7-3-user-signin',
         'thinkphp5.1-primer/chapter-7/7-4-user-signout',
         'thinkphp5.1-primer/chapter-7/7-5-summary',
+      ],
+    },
+    {
+      type: 'category',
+      label: '第八章.用户CRUD',
+      collapsed: false,
+      items: [
+        'thinkphp5.1-primer/chapter-8/8-1-introduction',
+        'thinkphp5.1-primer/chapter-8/8-2-refactor-code',
+        'thinkphp5.1-primer/chapter-8/8-3-update-user',
+        'thinkphp5.1-primer/chapter-8/8-4-permission-system',
+        'thinkphp5.1-primer/chapter-8/8-5-show-users',
+        'thinkphp5.1-primer/chapter-8/8-6-delete-user',
+        'thinkphp5.1-primer/chapter-8/8-7-guest-mode',
+        'thinkphp5.1-primer/chapter-8/8-8-beautify-pages',
+        'thinkphp5.1-primer/chapter-8/8-9-summary',
       ],
     },
   ],
