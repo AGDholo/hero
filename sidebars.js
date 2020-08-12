@@ -203,5 +203,17 @@ module.exports = {
         'thinkphp5.1-primer/chapter-6/6-6-summary',
       ],
     },
+    {
+      type: 'category',
+      label: '第七章.会话管理',
+      collapsed: false,
+      items: [
+        'thinkphp5.1-primer/chapter-7/7-1-introduction',
+        'thinkphp5.1-primer/chapter-7/7-2-session',
+        'thinkphp5.1-primer/chapter-7/7-3-user-signin',
+        'thinkphp5.1-primer/chapter-7/7-4-user-signout',
+        'thinkphp5.1-primer/chapter-7/7-5-summary',
+      ],
+    },
   ],
 };
