@@ -41,6 +41,7 @@ import TabItem from '@theme/TabItem';
 
 <Tabs
   defaultValue="npm"
+  groupId="operating-systems"
   values={[
     { label: 'npm', value: 'npm', },
     { label: 'yarn', value: 'yarn', },
