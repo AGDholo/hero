@@ -50,6 +50,20 @@ module.exports = {
           label: '开发环境搭建指南',
           position: 'left',
         },
+        {
+          label: 'Laravel Primer 初学者书籍',
+          items: [
+            {
+              to: 'docs/lp01-laravel-primer/readme',
+              activeBasePath: 'docs',
+              label: 'LP01 Laravel 前后端分离入门（编写中）',
+            },
+            {
+              activeBasePath: 'docs',
+              label: 'LP02 Laravel 前后端分离进阶（准备中）',
+            },
+          ],
+        },
         //{to: 'blog', label: 'Blog', position: 'left'},
         // Please keep GitHub link to the right for consistency.
         {

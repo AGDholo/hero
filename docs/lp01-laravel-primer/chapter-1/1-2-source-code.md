@@ -1,11 +1,13 @@
 ---
-id: 1-3-source-code
+id: 1-2-source-code
 title: 本书源码
 sidebar_label: 1.2 本书源码
-date: 2020-08-11 17:29:00
-description: 获取ThinkPHP 5.1 入门开发实战书籍源码和相关协议。
+date: 2020-08-13 15:35:00
+description: 获取Laravel 前后端分离入门书籍源码和相关协议。
 keywords:
-  - thinkphp
+  - laravel
+  - laravel-primer
+  - primer
   - 入门
   - 实战
   - 初学者
@@ -14,7 +16,6 @@ keywords:
 ---
 
 * 书籍源码: https://github.com/AGDholo/hero 
-* 作品源码（正在迁移）: https://github.com/EpicLearn/ThinkPHP5.1-Web-Actual-combat-code
 
 ## 授权协议
 
@@ -22,7 +23,7 @@ keywords:
 
 ~~~txt
 本书后端源码基于 MIT 协议发布  
-Copyright 2019 AGD
+Copyright 2020 AGD
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

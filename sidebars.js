@@ -244,4 +244,19 @@ module.exports = {
       ],
     },
   ],
+
+  'lp01-laravel-primer': [
+    'lp01-laravel-primer/readme',
+    {
+      type: 'category',
+      label: '第一章.基础信息',
+      collapsed: false,
+      items: [
+        'lp01-laravel-primer/chapter-1/1-1-about-author',
+        'lp01-laravel-primer/chapter-1/1-2-source-code',
+        'lp01-laravel-primer/chapter-1/1-3-issues',
+        'lp01-laravel-primer/chapter-1/1-4-donate',
+      ],
+    },
+  ],
 };
