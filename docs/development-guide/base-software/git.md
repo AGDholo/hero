@@ -17,7 +17,7 @@ Git 是一个分布式版本控制软件，最初由林纳斯·托瓦兹创作�
 Git 最初的开发动力来自于 BitKeeper 和 Monoton。Git 最初只是作为一个可以被其他前端（比如 Cogito 或 Stgit）包装的后端而开发的，但后来 Git 内核已经成熟到可以独立地用作版本控制。很多著名的软件都使用 Git 进行版本控制，其中包括 Linux 内核、X. Org 服务器和 OLPC 内核等项目的开发流程。
 :::
 
-## 安装（Windows）
+## 安装
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

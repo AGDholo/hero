@@ -103,6 +103,7 @@ module.exports = {
       items: [
         'development-guide/base-software/chocolatey',
         'development-guide/base-software/vscode',
+        'development-guide/base-software/postman',
         'development-guide/base-software/git',
       ],
     },
@@ -256,6 +257,17 @@ module.exports = {
         'lp01-laravel-primer/chapter-1/1-2-source-code',
         'lp01-laravel-primer/chapter-1/1-3-issues',
         'lp01-laravel-primer/chapter-1/1-4-donate',
+      ],
+    },
+    {
+      type: 'category',
+      label: '第二章.舞台布置',
+      collapsed: false,
+      items: [
+        'lp01-laravel-primer/chapter-2/2-1-development-guide',
+        'lp01-laravel-primer/chapter-2/2-2-product-decomposition',
+        'lp01-laravel-primer/chapter-2/2-3-create-backend-application',
+        'lp01-laravel-primer/chapter-2/2-4-create-frontend-application',
       ],
     },
   ],

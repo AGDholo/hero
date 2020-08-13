@@ -30,7 +30,7 @@ npm -v
 
 ## 安装 yarn（可选）
 
-请参考 [yarn 官方文档](https://classic.yarnpkg.com/)
+请参考 [yarn 官方文档](https://classic.yarnpkg.com/zh-Hans/docs/install)
 
 ## 配置镜像加速下载
 

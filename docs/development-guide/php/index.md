@@ -63,12 +63,12 @@ choco install composer
 安装完成之后，关闭当前所有命令行并运行 `PowerShell` 并键入命令出现如下类似内容则表示安装成功  
 
 ~~~powershell title="PowerShell"
-> php -v
+php -v
 PHP 7.3.7 (cli) (built: Jul  2 2019 13:41:47) ( NTS MSVC15 (Visual C++ 2017) x64 )
 Copyright (c) 1997-2018 The PHP Group
 Zend Engine v3.3.7, Copyright (c) 1998-2018 Zend Technologies
 
-> composer -V
+composer -V
 Composer version 1.9.0 2019-08-02 20:55:32
 ~~~
 

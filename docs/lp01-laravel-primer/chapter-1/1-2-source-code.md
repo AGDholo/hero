@@ -16,6 +16,7 @@ keywords:
 ---
 
 * 书籍源码: https://github.com/AGDholo/hero 
+* 项目源码（后端）：https://github.com/AGDholo/lp01-laravel-primer-backend
 
 ## 授权协议
 
