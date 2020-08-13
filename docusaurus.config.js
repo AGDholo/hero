@@ -18,7 +18,7 @@ module.exports = {
   projectName: 'HeroUI', // Usually your repo name.
   themeConfig: {
     prism: {
-      additionalLanguages: ['php', 'powershell', 'nginx'],
+      additionalLanguages: ['php', 'powershell', 'nginx', 'ini'],
     },
     googleAnalytics: {
       trackingID: 'UA-166899095-1',

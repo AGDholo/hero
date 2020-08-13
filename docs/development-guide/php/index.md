@@ -77,3 +77,87 @@ Composer version 1.9.0 2019-08-02 20:55:32
 ~~~powershell title="PowerShell"
 composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 ~~~
+
+## 开启扩展
+
+打开 PHP 的安装目录，  
+其中 Chocolatey 的默认安装目录是位于 `C:\tools\php74`。  
+用 VSCode 打开 `php.ini` 文件，并搜索字段 `Dynamic Extensions`。
+
+:::info 开启扩展的方法
+很简单，我们只需要将扩展名前面的分号去掉即可，如下高亮所示。
+:::
+
+```ini title="php.ini" {31}
+;;;;;;;;;;;;;;;;;;;;;;
+; Dynamic Extensions ;
+;;;;;;;;;;;;;;;;;;;;;;
+
+; If you wish to have an extension loaded automatically, use the following
+; syntax:
+;
+;   extension=modulename
+;
+; For example:
+;
+;   extension=mysqli
+;
+; When the extension library to load is not located in the default extension
+; directory, You may specify an absolute path to the library file:
+;
+;   extension=/path/to/extension/mysqli.so
+;
+; Note : The syntax used in previous PHP versions ('extension=<ext>.so' and
+; 'extension='php_<ext>.dll') is supported for legacy reasons and may be
+; deprecated in a future PHP major version. So, when it is possible, please
+; move to the new ('extension=<ext>) syntax.
+;
+; Notes for Windows environments :
+;
+; - Many DLL files are located in the extensions/ (PHP 4) or ext/ (PHP 5+)
+;   extension folders as well as the separate PECL DLL download (PHP 5+).
+;   Be sure to appropriately set the extension_dir directive.
+;
+;extension=bz2
+extension=curl
+;extension=ffi
+;extension=ftp
+;extension=fileinfo
+;extension=gd2
+;extension=gettext
+;extension=gmp
+;extension=intl
+;extension=imap
+;extension=ldap
+;extension=mbstring
+;extension=exif      ; Must be after mbstring as it depends on it
+;extension=mysqli
+;extension=oci8_12c  ; Use with Oracle Database 12c Instant Client
+;extension=odbc
+;extension=openssl
+;extension=pdo_firebird
+;extension=pdo_mysql
+;extension=pdo_oci
+;extension=pdo_odbc
+;extension=pdo_pgsql
+;extension=pdo_sqlite
+;extension=pgsql
+;extension=shmop
+
+; The MIBS data available in the PHP distribution must be installed.
+; See http://www.php.net/manual/en/snmp.installation.php
+;extension=snmp
+
+;extension=soap
+;extension=sockets
+;extension=sodium
+;extension=sqlite3
+;extension=tidy
+;extension=xmlrpc
+;extension=xsl
+
+;;;;;;;;;;;;;;;;;;;
+; Module Settings ;
+;;;;;;;;;;;;;;;;;;;
+```
+
