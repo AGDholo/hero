@@ -25,6 +25,11 @@ module.exports = {
       // Optional fields.
       anonymizeIP: true, // Should IPs be anonymized?
     },
+    algolia: {
+      apiKey: 'e5b607cd5573aa988709ba1c80231dfb',
+      indexName: 'heroui',
+      searchParameters: {}, // Optional (if provided by Algolia)
+    },
     navbar: {
       title: 'HeroUI',
       logo: {
