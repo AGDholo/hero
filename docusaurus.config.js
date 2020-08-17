@@ -69,7 +69,7 @@ module.exports = {
             },
           ],
         },
-        //{to: 'blog', label: 'Blog', position: 'left'},
+        // {to: 'blog', label: 'Blog', position: 'left'},
         // Please keep GitHub link to the right for consistency.
         {
           href: 'https://github.com/AGDholo/hero',
@@ -109,11 +109,6 @@ module.exports = {
           ],
         },
       ],
-      logo: {
-        alt: 'HeroUI Logo',
-        src: 'https://wx1.sbimg.cn/2020/08/10/oenDj.png',
-        href: 'https://heroui.net',
-      },
       // Please do not remove the credits, help to publicize Docusaurus :)
       copyright: `Copyright © ${new Date().getFullYear()} HeroUI, Inc. Built with Docusaurus.`,
     },

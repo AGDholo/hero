@@ -10,7 +10,7 @@
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "ci": "yarn lint && yarn prettier:diff",
-    "lint": "eslint --cache \"**/*.js\" && stylelint \"**/*.css\"",
+    "lint": "eslint --fix --cache \"**/*.js\" && stylelint \"**/*.css\"  --fix",
     "prettier": "prettier --config .prettierrc --write \"**/*.{js,md}\"",
     "prettier:diff": "prettier --config .prettierrc --list-different \"**/*.{js,md}\""
   },
@@ -35,7 +35,8 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
     "prettier": "^2.0.2",
-    "stylelint": "^13.2.1"
+    "stylelint": "^13.2.1",
+    "stylelint-copyright": "^2.0.0-alpha.44"
   },
   "browserslist": {
     "production": [
