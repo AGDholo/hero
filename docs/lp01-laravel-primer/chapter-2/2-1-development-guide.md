@@ -17,16 +17,18 @@ keywords:
 
 ## 必备软件
 
-* [Git](/docs/development-guide/base-software/git)
-* [VSCode](/docs/development-guide/base-software/vscode)
-* [Postman](/docs/development-guide/base-software/postman)
-* [PowerShell Core](/docs/development-guide/shell/pwsh)
+- [Git](/docs/development-guide/base-software/git)
+- [VSCode](/docs/development-guide/base-software/vscode)
+- [Postman](/docs/development-guide/base-software/postman)
+- [PowerShell Core](/docs/development-guide/shell/pwsh)
 
 ## 后端程序
 
 :::info 前置条件
-* 开启 pdo_sqlite 扩展 
-* 选用 Laravel 7.x 版本
+
+- 开启 pdo_sqlite 扩展
+- 选用 Laravel 7.x 版本 
+
 :::
 
 阅读 [开发环境搭建指南（Laravel）](/docs/development-guide/php/laravel)

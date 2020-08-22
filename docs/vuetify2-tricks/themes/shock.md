@@ -8,7 +8,7 @@ keywords:
   - vue
   - vuetify模板
   - vue模板
-  - 模板 
+  - 模板
   - 免费模板
   - 免费下载
   - vuetify主题

@@ -17,13 +17,14 @@ keywords:
 ---
 
 :::note 提示
-在 VSCode 中，你可以使用 Ctrl+Shift+` 组合键在当前目录下快速打开终端。
+
+在 VSCode 中，你可以使用 Ctrl+Shift+` 组合键在当前目录下快速打开终端。 
+
 :::
 
 ## 配置数据库
 
-为了简便起见，我们使用 SQLite 来作为本系列的数据库。
-那么我们需要在 Laravel 的配置文件中指定数据库驱动与地址：
+为了简便起见，我们使用 SQLite 来作为本系列的数据库。那么我们需要在 Laravel 的配置文件中指定数据库驱动与地址：
 
 ```env title="env" {3-8}
 LOG_CHANNEL=stack

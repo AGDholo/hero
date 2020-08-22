@@ -11,27 +11,24 @@ keywords:
   - 安装
 ---
 
-:::note 简介
-PHP（全称：PHP：Hypertext Preprocessor，即“PHP：超文本预处理器”）是一种开源的通用计算机脚本语言，尤其适用于网络开发并可嵌入HTML中使用。PHP的语法借鉴吸收C语言、Java和Perl等流行计算机语言的特点，易于一般程序员学习。PHP的主要目标是允许网络开发人员快速编写动态页面，但PHP也被用于其他很多领域。
+:::note 简介 
+
+PHP（全称：PHP：Hypertext Preprocessor，即“PHP：超文本预处理器”）是一种开源的通用计算机脚本语言，尤其适用于网络开发并可嵌入 HTML 中使用。PHP 的语法借鉴吸收 C 语言、Java 和 Perl 等流行计算机语言的特点，易于一般程序员学习。PHP 的主要目标是允许网络开发人员快速编写动态页面，但 PHP 也被用于其他很多领域。 
+
 :::
 
 ## 安装
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-<Tabs
-  defaultValue="shell"
-  groupId="dg-install-stystem"
-  values={[
-    { label: '命令行安装', value: 'shell', },
-    { label: '图形安装', value: 'GUI', },
-  ]
-}>
+<Tabs defaultValue="shell" groupId="dg-install-stystem" values={[ { label: '命令行安装', value: 'shell', }, { label: '图形安装', value: 'GUI', }, ] }>
+
 <TabItem value="shell">
 
 :::info 前置条件
-请先阅读 [Chocolatey](../base-software/chocolatey)
+
+请先阅读 [Chocolatey](../base-software/chocolatey) 
+
 :::
 
 ```powershell title="PowerShell"
@@ -40,15 +37,15 @@ choco install php
 
 如果你使用的是 apache（阿帕奇），请安装线程安全版
 
-~~~powershell title="PowerShell"
+```powershell title="PowerShell"
 choco install php --package-parameters='"/ThreadSafe "'
-~~~
+```
 
 #### 安装包管理器
 
-~~~powershell title="PowerShell"
+```powershell title="PowerShell"
 choco install composer
-~~~
+```
 
 </TabItem>
 <TabItem value="GUI">
@@ -60,9 +57,9 @@ choco install composer
 
 ## 运行
 
-安装完成之后，关闭当前所有命令行并运行 `PowerShell` 并键入命令出现如下类似内容则表示安装成功  
+安装完成之后，关闭当前所有命令行并运行 `PowerShell` 并键入命令出现如下类似内容则表示安装成功
 
-~~~powershell title="PowerShell"
+```powershell title="PowerShell"
 php -v
 PHP 7.3.7 (cli) (built: Jul  2 2019 13:41:47) ( NTS MSVC15 (Visual C++ 2017) x64 )
 Copyright (c) 1997-2018 The PHP Group
@@ -70,13 +67,13 @@ Zend Engine v3.3.7, Copyright (c) 1998-2018 Zend Technologies
 
 composer -V
 Composer version 1.9.0 2019-08-02 20:55:32
-~~~
+```
 
 ## 配置 Composer 镜像（中国大陆地区）
 
-~~~powershell title="PowerShell"
+```powershell title="PowerShell"
 composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
-~~~
+```
 
 ## 开启扩展
 
@@ -85,7 +82,9 @@ composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 用 VSCode 打开 `php.ini` 文件，并搜索字段 `Dynamic Extensions`。
 
 :::info 开启扩展的方法
-很简单，我们只需要将扩展名前面的分号去掉即可，如下高亮所示。
+
+很简单，我们只需要将扩展名前面的分号去掉即可，如下高亮所示。 
+
 :::
 
 ```ini title="php.ini" {31}
@@ -160,4 +159,3 @@ extension=curl
 ; Module Settings ;
 ;;;;;;;;;;;;;;;;;;;
 ```
-

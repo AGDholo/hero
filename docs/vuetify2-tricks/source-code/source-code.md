@@ -8,7 +8,7 @@ keywords:
   - vue
   - vuetify教程
   - vue教程
-  - vuetify源码 
+  - vuetify源码
   - 布局
   - 源码
 ---

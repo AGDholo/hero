@@ -23,7 +23,7 @@ keywords:
 
 要获取整个微博的内容，非常简单的，我们只需要读取微博表并倒序即可：
 
-~~~php title="application\welcome\controller\Index.php"
+```php title="application\welcome\controller\Index.php"
 <?php
 
 namespace app\welcome\controller;
@@ -42,11 +42,11 @@ class Index extends Controller
   }
   ...
 }
-~~~
+```
 
 编辑前端页面：
 
-~~~html title="resources\views\welcome\index\home.blade.php"
+```html title="resources\views\welcome\index\home.blade.php"
 ...
 <div>
   <div class="list-group list-group-flush">
@@ -64,8 +64,7 @@ class Index extends Controller
 
   {!! $posts !!}
 </div>
-@stop
-...
-~~~
+@stop ...
+```
 
 再次访问首页，即可看到所有微博已经呈现出来。

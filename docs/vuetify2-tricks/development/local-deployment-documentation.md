@@ -8,7 +8,7 @@ keywords:
   - vue
   - vuetify教程
   - vue教程
-  - docs 
+  - docs
   - vuetify怎么用
   - vuetify文档
   - 初学者
@@ -31,8 +31,10 @@ git clone https://github.com/vuetifyjs/vuetify.git
 
 ## 构建文档
 
-:::info 须知
-Vuetify 使用 yarn 管理包程序，所以你首先需要安装 yarn。
+:::info 须知 
+
+Vuetify 使用 yarn 管理包程序，所以你首先需要安装 yarn。 
+
 :::
 
 ```shell title="shell"

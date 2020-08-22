@@ -8,7 +8,7 @@ keywords:
   - vue
   - vuetify教程
   - vue教程
-  - vuetify源码 
+  - vuetify源码
   - vuetify怎么用
   - vuetify主题
   - 主题
@@ -27,12 +27,12 @@ keywords:
 ```scss title="src\scss\variables.scss"
 /* 设置亮色主题全局背景色 */
 $material-light: (
-  "background": #e0e0e0
+  'background': #e0e0e0,
 );
 
 /* 设置暗色主题全局背景色 */
 $material-dark: (
-  "background": #263238
+  'background': #263238,
 );
 ```
 

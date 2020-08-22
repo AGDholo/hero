@@ -8,7 +8,7 @@ keywords:
   - vue
   - vuetify教程
   - vue教程
-  - sass变量 
+  - sass变量
   - vuetify怎么用
   - vuetify变量
   - vuetify设置sass变量
@@ -37,17 +37,10 @@ $font-size-root: 30px;
 
 启动项目：
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-<Tabs
-  defaultValue="npm"
-  groupId="operating-systems"
-  values={[
-    { label: 'npm', value: 'npm', },
-    { label: 'yarn', value: 'yarn', },
-  ]
-}>
+<Tabs defaultValue="npm" groupId="operating-systems" values={[ { label: 'npm', value: 'npm', }, { label: 'yarn', value: 'yarn', }, ] }>
+
 <TabItem value="npm">
 
 ```shell title="shell"

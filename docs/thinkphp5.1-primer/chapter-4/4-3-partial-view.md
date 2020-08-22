@@ -24,12 +24,12 @@ keywords:
 并将 `default.blade.php` 文件中 `<header> </header>` `<footer> </footer>` 的内容全部剪切到 `header.blade.php` `footer.blade.php`  
 将 `default.blade.php` 中 `<div class="container"> </div>` 替换为：
 
-~~~html title="default.blade.php"
+```html title="default.blade.php"
 @include('_layout.header')
 <div class="container">
-@yield('content')
+  @yield('content')
 </div>
 @include('_layout.footer')
-~~~
+```
 
 `@include` 是 `Blade` 模板引擎中视图引用方法。

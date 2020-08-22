@@ -18,19 +18,21 @@ keywords:
 ---
 
 :::note 提示
+
 在 4.5 小节中我们复制了一遍 `layout` 文件夹，这样做对开发其实是百害无一利的，我们现在设置模板配置文件让视图单独的保存起来。
+
 :::
 
 ## 修改配置
 
 进入 `/app/config/template.php` 修改代码
 
-~~~php title="/app/config/template.php"
+```php title="/app/config/template.php"
 // 视图基础目录(集中式)
 'view_base' => Env::get('ROOT_PATH') . 'resources' . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR,
 // 模板起始路径
 'view_path' => Env::get('ROOT_PATH') . 'resources' . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR
-~~~
+```
 
 ## 增加目录
 

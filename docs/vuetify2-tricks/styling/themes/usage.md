@@ -8,7 +8,7 @@ keywords:
   - vue
   - vuetify教程
   - vue教程
-  - theme 
+  - theme
   - vuetify怎么用
   - 主题
   - 初学者

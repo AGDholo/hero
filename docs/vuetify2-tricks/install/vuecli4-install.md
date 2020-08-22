@@ -8,7 +8,7 @@ keywords:
   - vue
   - vue-cli
   - vuetify
-  - 安装 
+  - 安装
   - 初学者
 ---
 
@@ -16,17 +16,10 @@ keywords:
 
 ## 安装 Vue CLI 4
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-<Tabs
-  groupId="operating-systems"
-  defaultValue="npm"
-  values={[
-    { label: 'npm', value: 'npm', },
-    { label: 'yarn', value: 'yarn', },
-  ]
-}>
+<Tabs groupId="operating-systems" defaultValue="npm" values={[ { label: 'npm', value: 'npm', }, { label: 'yarn', value: 'yarn', }, ] }>
+
 <TabItem value="npm">
 
 ```shell title="shell"
@@ -68,14 +61,8 @@ vue add vuetify
 
 ## 启动项目
 
-<Tabs
-  defaultValue="npm"
-  groupId="operating-systems"
-  values={[
-    { label: 'npm', value: 'npm', },
-    { label: 'yarn', value: 'yarn', },
-  ]
-}>
+<Tabs defaultValue="npm" groupId="operating-systems" values={[ { label: 'npm', value: 'npm', }, { label: 'yarn', value: 'yarn', }, ] }>
+
 <TabItem value="npm">
 
 ```shell title="shell"

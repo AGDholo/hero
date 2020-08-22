@@ -8,7 +8,7 @@ keywords:
   - vue
   - vuetify
   - grid
-  - 栅格 
+  - 栅格
   - 初学者
   - vuetify栅格
   - vuetify垂直

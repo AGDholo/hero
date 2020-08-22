@@ -8,7 +8,7 @@ keywords:
   - vue
   - vuetify
   - breakpoint
-  - 断点 
+  - 断点
   - 初学者
   - vuetify断点
   - vuetify小技巧

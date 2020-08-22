@@ -19,7 +19,7 @@ keywords:
 
 ## 创建表单
 
-在前面的章节中，我们已经为用户创建了一个 `resource` 路由。  
+在前面的章节中，我们已经为用户创建了一个 `resource` 路由。
 
 ```php title="route/route.php"
 // route.php
@@ -30,7 +30,7 @@ Route::resource('auth', 'user/auth');
 
 打开 `application\user\controller\Auth.php`：
 
-~~~php title="application\user\controller\Auth.php"
+```php title="application\user\controller\Auth.php"
 /**
  * 显示编辑资源表单页.
  *
@@ -49,71 +49,72 @@ public function edit($id)
     ]);
     return $this->fetch();
 }
-~~~
+```
 
-可以看到 `edit` 方法代码前三行中先检验了 id 是否是当然登入用户的 id，如果不是，就跳转到当然登入用户的编辑页面。  
+可以看到 `edit` 方法代码前三行中先检验了 id 是否是当然登入用户的 id，如果不是，就跳转到当然登入用户的编辑页面。
 
-需要注意的是，即使这样进行了跳转，也不是安全的。 
-  
+需要注意的是，即使这样进行了跳转，也不是安全的。
+
 然后进入 blade `resources\views\user\auth\read.blade.php`：
 
-~~~html title="resources\views\user\auth\read.blade.php"
+```html title="resources\views\user\auth\read.blade.php"
 <div class="panel-heading mb-3">
-    <h4>欢迎您 {{ $user->name }}</h4>
-    ++++
-    <a class="btn btn-primary" href="{{ url('user/auth/edit', ['id' => session('user.id')]) }}">编辑资料</a>
-    ++++
+  <h4>欢迎您 {{ $user->name }}</h4>
+  ++++
+  <a
+    class="btn btn-primary"
+    href="{{ url('user/auth/edit', ['id' => session('user.id')]) }}"
+    >编辑资料</a
+  >
+  ++++
 </div>
-~~~
+```
 
-这时候在用户个人资料页面就会出现 `编辑资料` 的按钮了，不过此时点击进去，会抛出模板文件不存在的错误，所以现在来创建模板。  
+这时候在用户个人资料页面就会出现 `编辑资料` 的按钮了，不过此时点击进去，会抛出模板文件不存在的错误，所以现在来创建模板。
 
 新建 blade `resources\views\user\auth\edit.blade.php`：
 
-~~~html title="resources\views\user\auth\edit.blade.php"
-@extends('_layout.default')
-@section('title', $user->name)
-@section('content')
+```html title="resources\views\user\auth\edit.blade.php"
+@extends('_layout.default') @section('title', $user->name) @section('content')
 <div class="col-md-offset-2 col-md-8">
-    <div class="panel panel-default mt-5">
-        <div class="panel-heading mb-3">
-            <h4>编辑 {{ $user->name }} 的个人资料</h4>
-        </div>
-        @if(session('validate'))
-            <div class="alert alert-warning" role="alert">
-                {{ session('validate') }}
-            </div>
-        @endif
-        <div class="panel-body">
-            <form method="POST"
-                  action="{{ url('update', ['id' => $user->id]) }}">
-
-                @php echo token() @endphp
-
-                <input type="hidden" name="_method" value="PUT" >
-
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">用户名</span>
-                    </div>
-                    <input type="text"
-                           class="form-control"
-                           placeholder="{{ $user->name }}"
-                           name="name">
-                </div>
-
-                <button type="submit"
-                        class="btn btn-primary btn-block">更新</button>
-            </form>
-        </div>
+  <div class="panel panel-default mt-5">
+    <div class="panel-heading mb-3">
+      <h4>编辑 {{ $user->name }} 的个人资料</h4>
     </div>
+    @if(session('validate'))
+    <div class="alert alert-warning" role="alert">
+      {{ session('validate') }}
+    </div>
+    @endif
+    <div class="panel-body">
+      <form method="POST" action="{{ url('update', ['id' => $user->id]) }}">
+        @php echo token() @endphp
+
+        <input type="hidden" name="_method" value="PUT" />
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">用户名</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="{{ $user->name }}"
+            name="name"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">更新</button>
+      </form>
+    </div>
+  </div>
 </div>
 @stop
-~~~
+```
 
-在上面这段代码中，我们添加了一行 `<input type="hidden" name="_method" value="PUT" >`，其中，`value="PUT"` 表示伪装请求类型。  
+在上面这段代码中，我们添加了一行 `<input type="hidden" name="_method" value="PUT" >`，其中，`value="PUT"` 表示伪装请求类型。
 
-因为我们是要更新用户资料，所以对应控制器的 `update` 方法，可是在 HTML 标准里，FORM 只有 POST GET 两种方法，所以采用 INPUT 里进行类型伪装的方式，让控制器识别出是更新的操作。  
+因为我们是要更新用户资料，所以对应控制器的 `update` 方法，可是在 HTML 标准里，FORM 只有 POST GET 两种方法，所以采用 INPUT 里进行类型伪装的方式，让控制器识别出是更新的操作。
 
 创建模板完成之后，刷新页面，即可看见刚刚添加好的表单。
 
@@ -121,7 +122,7 @@ public function edit($id)
 
 打开控制器 `application\user\controller\Auth.php`：
 
-~~~php title="application\user\controller\Auth.php"
+```php title="application\user\controller\Auth.php"
 /**
  * 保存更新的资源
  *
@@ -140,12 +141,12 @@ public function update(Request $request, $id)
     Session::set('user.name', $name);
     return redirect('user/auth/edit', ['id' => $user_id])->with('validate', '修改成功');
 }
-~~~
+```
 
 这段代码中，我们首先将 id 与登入用户的 id 进行对比，以防止模拟表单请求来修改其他用户。  
-其次，在数据库更新账户名之后，使用 `session set` 重新设置用户名，保证前端数据的一致性。  
+其次，在数据库更新账户名之后，使用 `session set` 重新设置用户名，保证前端数据的一致性。
 
-这时候，刷新页面，在输入框中随意填写一些字符，再点击更新按钮，页面上就已经修改成功了。  
+这时候，刷新页面，在输入框中随意填写一些字符，再点击更新按钮，页面上就已经修改成功了。
 
 ## 验证数据
 
@@ -156,20 +157,20 @@ public function update(Request $request, $id)
 php think make:validate app\user\validate\UpdateUser
 ```
 
-~~~php title="php"
+```php title="php"
 protected $rule = [
     '__token__' => 'token',
     'name|名字' => 'require|max:50',
 ];
-~~~
+```
 
 接着返回控制器 `application\user\controller\Auth.php`：
 
-~~~php title="application\user\controller\Auth.php"
+```php title="application\user\controller\Auth.php"
 public function update(Request $request, $id)
 {
     $user_id = Session::get('user.id');
-    
+
     if ($user_id !== $id) {
         return redirect('user/auth/edit', ['id' => $user_id])->with('validate', '非法操作');
     }
@@ -185,8 +186,8 @@ public function update(Request $request, $id)
         return redirect('user/auth/edit', ['id' => $user_id])->with('validate', '修改成功');
     }
 }
-~~~
+```
 
-可以看到这段代码增加了验证数据的步骤，验证唯一 id -> 验证提交数据，最后再进行数据库更新，这样才能提高后端的安全可靠性。  
+可以看到这段代码增加了验证数据的步骤，验证唯一 id -> 验证提交数据，最后再进行数据库更新，这样才能提高后端的安全可靠性。
 
 返回前端页面，尝试不填写任何数据就直接提交，就会看到名字不能为空的警告了，届时，整个更新流程已经书写完毕。

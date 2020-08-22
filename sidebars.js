@@ -23,9 +23,7 @@ module.exports = {
       type: 'category',
       label: '性能优化',
       collapsed: false,
-      items: [
-        'vuetify2-tricks/optimizing/icon-cdn',
-      ],
+      items: ['vuetify2-tricks/optimizing/icon-cdn'],
     },
     {
       type: 'category',
@@ -48,8 +46,8 @@ module.exports = {
           collapsed: false,
           items: [
             'vuetify2-tricks/styling/sass/variables',
-            'vuetify2-tricks/styling/sass/set-background-color'
-          ]
+            'vuetify2-tricks/styling/sass/set-background-color',
+          ],
         },
         {
           type: 'category',
@@ -57,8 +55,8 @@ module.exports = {
           collapsed: false,
           items: [
             'vuetify2-tricks/styling/themes/setting',
-            'vuetify2-tricks/styling/themes/usage'
-          ]
+            'vuetify2-tricks/styling/themes/usage',
+          ],
         },
       ],
     },
@@ -66,9 +64,7 @@ module.exports = {
       type: 'category',
       label: '开发者',
       collapsed: true,
-      items: [
-        'vuetify2-tricks/development/local-deployment-documentation',
-      ],
+      items: ['vuetify2-tricks/development/local-deployment-documentation'],
     },
     {
       type: 'category',
@@ -111,9 +107,7 @@ module.exports = {
       type: 'category',
       label: 'Shell',
       collapsed: false,
-      items: [
-        'development-guide/shell/pwsh',
-      ],
+      items: ['development-guide/shell/pwsh'],
     },
     {
       type: 'category',

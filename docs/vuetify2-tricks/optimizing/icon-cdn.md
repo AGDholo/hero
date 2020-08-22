@@ -7,11 +7,11 @@ description: vuetify 性能优化之如何使用 cdn 加载图标
 keywords:
   - vue
   - vuetify
-  - 性能优化 
+  - 性能优化
   - 优化
-  - vuetify图标 
-  - cdn 
-  - vuetify设置cdn 
+  - vuetify图标
+  - cdn
+  - vuetify设置cdn
   - vuetify性能优化
   - 初学者
 ---
@@ -26,7 +26,7 @@ Vuetify 默认使用 [@mdi](https://materialdesignicons.com/) 图标库，该库
 
 ```js title="src/plugins/vuetify.js"
 // 确保没有这一行，如果有，请删除
-import '@mdi/font/css/materialdesignicons.css'
+import '@mdi/font/css/materialdesignicons.css';
 ```
 
 然后找到项目主入口静态文件：
@@ -43,17 +43,10 @@ import '@mdi/font/css/materialdesignicons.css'
 
 检查 `package.json` 如果有 `@mdi/font` 这个库，键入以下命令移除：
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-<Tabs
-  defaultValue="npm"
-  groupId="operating-systems"
-  values={[
-    { label: 'npm', value: 'npm', },
-    { label: 'yarn', value: 'yarn', },
-  ]
-}>
+<Tabs defaultValue="npm" groupId="operating-systems" values={[ { label: 'npm', value: 'npm', }, { label: 'yarn', value: 'yarn', }, ] }>
+
 <TabItem value="npm">
 
 ```shell title="shell"

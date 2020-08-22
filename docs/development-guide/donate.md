@@ -8,11 +8,8 @@ keywords:
   - 捐助
 ---
 
-:::note 介绍
-本书为免费书籍, 如果你觉得对你的工作学习有帮助, 可以请我喝杯咖啡。
-:::
+:::note 介绍本书为免费书籍, 如果你觉得对你的工作学习有帮助, 可以请我喝杯咖啡。 :::
 
 ## 支付宝二维码
 
 [![e6BMpn.md.jpg](https://box.kancloud.cn/d2f71a0b21cfbef00484bab14fe0afab_990x1502.jpg)](https://box.kancloud.cn/d2f71a0b21cfbef00484bab14fe0afab_990x1502.jpg)
-

@@ -8,7 +8,7 @@ keywords:
   - nodejs
   - npm镜像
   - 开发环境
-  - 加速下载 
+  - 加速下载
 ---
 
 你需要预先安装的软件：
@@ -36,17 +36,10 @@ npm -v
 
 由于众所周知的原因，在国内使用 NPM/YARN 下载包的时候速度非常缓慢，我们只需要这一行命令即可配置成国内镜像节点来达到加速下载的目的：
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-<Tabs
-  defaultValue="npm"
-  groupId="operating-systems"
-  values={[
-    { label: 'npm', value: 'npm', },
-    { label: 'yarn', value: 'yarn', },
-  ]
-}>
+<Tabs defaultValue="npm" groupId="operating-systems" values={[ { label: 'npm', value: 'npm', }, { label: 'yarn', value: 'yarn', }, ] }>
+
 <TabItem value="npm">
 
 ```shell title="shell"

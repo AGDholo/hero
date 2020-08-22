@@ -22,12 +22,12 @@ keywords:
 
 面板中数据库连接方式：
 
-名称 | 数据
------------- | -------------
-Host | 127.0.0.1
-Port | 3306
-database_name | 创建的表名
-database_password | 对应表的密码
+| 名称              | 数据         |
+| ----------------- | ------------ |
+| Host              | 127.0.0.1    |
+| Port              | 3306         |
+| database_name     | 创建的表名   |
+| database_password | 对应表的密码 |
 
 ## PHPMyAdmin 的使用
 
@@ -35,10 +35,10 @@ database_password | 对应表的密码
 然后，我们再选择对应的数据表，即可看到上一节迁移的结构。  
 如果你运行命令再刷新表，此时结构就已经回滚。
 
-~~~~ shell
+```shell
 /* 回滚 */
 php think migrate:rollback
 
 /* 迁移 */
 php think migrate:run
-~~~~
+```

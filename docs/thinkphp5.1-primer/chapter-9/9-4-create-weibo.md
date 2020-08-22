@@ -18,7 +18,9 @@ keywords:
 ---
 
 :::note 提示
-微博的创建与删除原理和用户的相关操作是一样的，只不过把对象换成了微博而已。
+
+微博的创建与删除原理和用户的相关操作是一样的，只不过把对象换成了微博而已。 
+
 :::
 
 ## 微博控制器
@@ -31,7 +33,7 @@ keywords:
 php think make:controller user/Post --plain
 ```
 
-~~~php title="application\user\controller\Post.php"
+```php title="application\user\controller\Post.php"
 <?php
 
 namespace app\user\controller;
@@ -59,14 +61,12 @@ class Post extends Controller
 		return redirect('/');
 	}
 }
-~~~
+```
 
-虽然我们还未创建前端页面，但是能够从基本的发布流程中来编写后端逻辑，现在来编辑页面。  
+虽然我们还未创建前端页面，但是能够从基本的发布流程中来编写后端逻辑，现在来编辑页面。
 
-~~~html title="resources\views\welcome\index\home.blade.php"
-@extends('_layout.default')
-@section('title', '主页')
-@section('content')
+```html title="resources\views\welcome\index\home.blade.php"
+@extends('_layout.default') @section('title', '主页') @section('content')
 <div>
   <form action="{{ url('user/post/save') }}" method="POST">
     @php echo token() @endphp
@@ -81,15 +81,15 @@ class Post extends Controller
   </form>
 </div>
 @stop
-~~~
+```
 
 现在访问主页：http://thinkphp.test ，即可看到输入框，可是现在路由还未绑定，编辑路由：
 
-~~~php title="route\route.php"
+```php title="route\route.php"
 ...
 Route::resource('post', 'user/post')->only(['save']);
 ...
-~~~
+```
 
 需要注意的是，后面的 `->only` 表示只通过控制器的某一个方法。  
 再次访问：http://thinkphp.test 并在输入框内输入一些内容点击发布，正常跳转。  

@@ -10,7 +10,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import { Button, Grid, Box, Container } from '@material-ui/core';
+import {Button, Grid, Box, Container} from '@material-ui/core';
 
 function Home() {
   return (
@@ -20,40 +20,35 @@ function Home() {
       <Container maxWidth="xl">
         <Box my={12}>
           <Grid container spacing={3}>
-            <Grid item xs={12} md={5} style={{ alignSelf: 'center' }}>
+            <Grid item xs={12} md={5} style={{alignSelf: 'center'}}>
               <Box fontSize="h2.fontSize" fontWeight="fontWeightBold">
                 免费获取可商用的 Vuetify 主题，以及前端技巧和教程
-            </Box>
+              </Box>
               <Box fontSize="h6.subtitle1" my={2}>
                 使用 Vuetify 构建的可轻松定制的现代 Vue UI 模板和组件。
                 所有组件都是模块化的，在所有设备和分辨率上都为响应式。
                 品牌的颜色也完全可定制。免费供个人和商业使用。
-            </Box>
+              </Box>
 
               <Link to="docs/vuetify2-tricks/introduction">
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="large"
-                >
+                <Button variant="contained" color="primary" size="large">
                   浏览教程
-            </Button>
+                </Button>
               </Link>
 
               <Link to="docs/vuetify2-tricks/introduction">
-                <Button
-                  color="primary"
-                  size="large"
-                >
+                <Button color="primary" size="large">
                   查看主题
-            </Button>
+                </Button>
               </Link>
-
             </Grid>
 
             <Grid item xs={12} md={1} />
             <Grid item xs={12} md={6}>
-              <img src="https://wx1.sbimg.cn/2020/08/10/oerIR.png" alt="imnages" />
+              <img
+                src="https://wx1.sbimg.cn/2020/08/10/oerIR.png"
+                alt="imnages"
+              />
             </Grid>
           </Grid>
         </Box>

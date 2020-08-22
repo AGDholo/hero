@@ -20,11 +20,9 @@ keywords:
 我们找到 `a` 标签中的 `href=""`, `href=""` 中的地址就是用户点击后跳转的地址.  
 现在给对应的 主页、帮助、关于添上相应的链接:
 
-~~~html title="view/_layout/header.blade.php"
-href="/"
-href="/help"
-href="/about"
-~~~
+```html title="view/_layout/header.blade.php"
+href="/" href="/help" href="/about"
+```
 
 现在我们访问 http://thinkphp.test  
 点击顶部栏的文字就可以访问到对应的地址了。  
@@ -34,8 +32,7 @@ href="/about"
 
 找到上面修改的链接，分别更改为：
 
-~~~html title="view/_layout/header.blade.php"
-{{ url('welcome/index/home') }}
-{{ url('welcome/index/help') }}
-{{ url('welcome/index/about') }}
-~~~
+```html title="view/_layout/header.blade.php"
+{{ url('welcome/index/home') }} {{ url('welcome/index/help') }} {{
+url('welcome/index/about') }}
+```

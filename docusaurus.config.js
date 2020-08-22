@@ -9,7 +9,8 @@
 
 module.exports = {
   title: 'HeroUI',
-  tagline: 'HeroUI 提供免费下载的开源前端主题、模板和框架使用小技巧，指南和教程，帮助您学习更多关于前端、Vuetify 的设计和开发。',
+  tagline:
+    'HeroUI 提供免费下载的开源前端主题、模板和框架使用小技巧，指南和教程，帮助您学习更多关于前端、Vuetify 的设计和开发。',
   url: 'https://heroui.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -122,14 +123,12 @@ module.exports = {
           homePageId: 'index',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/AGDholo/hero/tree/master',
+          editUrl: 'https://github.com/AGDholo/hero/tree/master',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/AGDholo/hero/tree/master/',
+          editUrl: 'https://github.com/AGDholo/hero/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

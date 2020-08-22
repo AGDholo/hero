@@ -8,7 +8,7 @@ keywords:
   - vue
   - vuetify
   - vertically
-  - center 
+  - center
   - 初学者
   - vuetify垂直居中
   - vuetify小技巧
