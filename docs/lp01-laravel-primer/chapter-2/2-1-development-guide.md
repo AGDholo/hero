@@ -27,7 +27,7 @@ keywords:
 :::info 前置条件
 
 - 开启 pdo_sqlite 扩展
-- 选用 Laravel 7.x 版本 
+- 选用 Laravel 7.x 版本
 
 :::
 

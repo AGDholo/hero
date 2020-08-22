@@ -11,7 +11,7 @@ keywords:
   - 安装
 ---
 
-:::note 介绍 
+:::note 介绍
 
 Visual Studio Code（简称 VS Code）是一个由微软开发的，同时支持 Windows、Linux、和 macOS 系统且开放源代码的代码编辑器，它支持测试，并内置了 Git 版本控制功能，同时也具有开发环境功能，例如代码补全（类似于 IntelliSense）、代码片段、和代码重构等，该编辑器支持用户个性化配置，例如改变主题颜色、键盘快捷方式等各种属性和参数，还在编辑器中内置了扩展程序管理的功能。
 
@@ -27,7 +27,7 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 :::info 前置条件
 
-请先阅读 [Chocolatey](chocolatey) 
+请先阅读 [Chocolatey](chocolatey)
 
 :::
 

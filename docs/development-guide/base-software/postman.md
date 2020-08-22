@@ -12,9 +12,9 @@ keywords:
   - 安装
 ---
 
-:::note 介绍 
+:::note 介绍
 
-Postman 是一个 API 开发协作平台。它简化了协作构建 API 的步骤，从而可以更快更好地创建 API。 
+Postman 是一个 API 开发协作平台。它简化了协作构建 API 的步骤，从而可以更快更好地创建 API。
 
 :::
 
@@ -28,7 +28,7 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 :::info 前置条件
 
-请先阅读 [Chocolatey](chocolatey) 
+请先阅读 [Chocolatey](chocolatey)
 
 :::
 

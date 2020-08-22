@@ -11,10 +11,10 @@ keywords:
   - 安装
 ---
 
-:::note 介绍 
+:::note 介绍
 
 PowerShell Core 是跨平台的 PowerShell 是构建于 . NET 上基于任务的命令行 shell 和脚本语言。 PowerShell 可帮助系统管理员和高级用户快速自动执行用于管理操作系统（Linux、macOS 和 Windows）和流程的任务。  
-使用 PowerShell 命令可以从命令行管理计算机。 PowerShell 提供程序可让你访问数据存储（如注册表和证书存储），与你访问文件系统一样方便。 PowerShell 具有丰富的表达式分析器和完全开发的脚本语言。 
+使用 PowerShell 命令可以从命令行管理计算机。 PowerShell 提供程序可让你访问数据存储（如注册表和证书存储），与你访问文件系统一样方便。 PowerShell 具有丰富的表达式分析器和完全开发的脚本语言。
 
 :::
 
@@ -28,7 +28,7 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 :::info 前置条件
 
-请先阅读 [Chocolatey](../base-software/chocolatey) 
+请先阅读 [Chocolatey](../base-software/chocolatey)
 
 :::
 

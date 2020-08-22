@@ -36,9 +36,9 @@ Hosts 的作用是 将指定域名 转发到特定 IP 上，例如 `thinkphp.tes
 
 ## 安装 ThinkPHP
 
-:::danger 禁止 
+:::danger 禁止
 
-禁止将 public/index.php 移动到根目录，这是不安全的，详细内容请参阅本书 [1.5 安全指南](../chapter-1/1-5-security-guide)。 
+禁止将 public/index.php 移动到根目录，这是不安全的，详细内容请参阅本书 [1.5 安全指南](../chapter-1/1-5-security-guide)。
 
 :::
 

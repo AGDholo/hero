@@ -29,7 +29,7 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 :::info 前置条件
 
-请先阅读 [Chocolatey](chocolatey) 
+请先阅读 [Chocolatey](chocolatey)
 
 :::
 

@@ -16,9 +16,9 @@ keywords:
   - 教程
 ---
 
-:::note 提示 
+:::note 提示
 
-Blade 是构建 Laravel 应用所创建的一套模板引擎，众所周知，Laravel 的开发以优雅为名，我们现在将使用 Blade 进行 ThinkPHP 视图页面的优雅开发。 
+Blade 是构建 Laravel 应用所创建的一套模板引擎，众所周知，Laravel 的开发以优雅为名，我们现在将使用 Blade 进行 ThinkPHP 视图页面的优雅开发。
 
 :::
 
@@ -69,7 +69,7 @@ composer require luoyy/think-blade
 
 :::info 提示
 
-请删除所有视图页面的内容 
+请删除所有视图页面的内容
 
 :::
 

@@ -11,9 +11,9 @@ keywords:
   - 安装
 ---
 
-:::note 简介 
+:::note 简介
 
-PHP（全称：PHP：Hypertext Preprocessor，即“PHP：超文本预处理器”）是一种开源的通用计算机脚本语言，尤其适用于网络开发并可嵌入 HTML 中使用。PHP 的语法借鉴吸收 C 语言、Java 和 Perl 等流行计算机语言的特点，易于一般程序员学习。PHP 的主要目标是允许网络开发人员快速编写动态页面，但 PHP 也被用于其他很多领域。 
+PHP（全称：PHP：Hypertext Preprocessor，即“PHP：超文本预处理器”）是一种开源的通用计算机脚本语言，尤其适用于网络开发并可嵌入 HTML 中使用。PHP 的语法借鉴吸收 C 语言、Java 和 Perl 等流行计算机语言的特点，易于一般程序员学习。PHP 的主要目标是允许网络开发人员快速编写动态页面，但 PHP 也被用于其他很多领域。
 
 :::
 
@@ -27,7 +27,7 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 :::info 前置条件
 
-请先阅读 [Chocolatey](../base-software/chocolatey) 
+请先阅读 [Chocolatey](../base-software/chocolatey)
 
 :::
 
@@ -83,7 +83,7 @@ composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 
 :::info 开启扩展的方法
 
-很简单，我们只需要将扩展名前面的分号去掉即可，如下高亮所示。 
+很简单，我们只需要将扩展名前面的分号去掉即可，如下高亮所示。
 
 :::
 

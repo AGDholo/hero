@@ -18,7 +18,7 @@ keywords:
 
 :::note 提示
 
-在 VSCode 中，你可以使用 Ctrl+Shift+` 组合键在当前目录下快速打开终端。 
+在 VSCode 中，你可以使用 Ctrl+Shift+` 组合键在当前目录下快速打开终端。
 
 :::
 
