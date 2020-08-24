@@ -119,6 +119,23 @@ module.exports = {
         'development-guide/php/thinkphp',
       ],
     },
+    {
+      type: 'category',
+      label: 'JS',
+      collapsed: false,
+      items: [
+        'development-guide/js/nodejs',
+        {
+          type: 'category',
+          label: 'Vue',
+          collapsed: false,
+          items: [
+            'development-guide/js/vue/vuecli4',
+            'development-guide/js/vue/vuetify',
+          ],
+        },
+      ],
+    },
   ],
 
   'thinkphp5.1-primer': [
