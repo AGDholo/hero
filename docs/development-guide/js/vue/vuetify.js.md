@@ -71,7 +71,7 @@ vue create my-app
 cd my-app
 
 # 添加 vuetify 插件，vuetify 插件会自动帮你配置你所有需要的一切，所以直接添加即可
-vue add vuetify@2.0.7
+vue add vuetify@2
 
 # Choose a preset:
 # 选择 Configure (advanced)
