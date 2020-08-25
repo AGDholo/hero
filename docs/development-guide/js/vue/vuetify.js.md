@@ -21,6 +21,12 @@ Vuetify 是一个 Vue UI 库，包含手工制作的精美材料组件。不需�
 
 ## 安装
 
+:::info 前置条件
+
+请先阅读 [Vue CLI 4](vuecli4)
+
+:::
+
 ```powershell title="PowerShell"
 # 在命令行下，cd 的作用就是将当前作用域移动到对应的目录
 cd 你自己想要创建的项目位置
