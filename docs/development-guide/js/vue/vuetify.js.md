@@ -1,7 +1,7 @@
 ---
 id: vuetify
 title: Vuetify.js
-sidebar_label: Vuetify.js
+sidebar_label: Vuetify2
 date: 2020-08-24 16:38:00
 description: Vuetify 是一个 Vue UI 库，包含手工制作的精美材料组件。不需要设计技能 - 创建令人惊叹的应用程序所需的一切都触手可及。
 keywords:
@@ -71,7 +71,7 @@ vue create my-app
 cd my-app
 
 # 添加 vuetify 插件，vuetify 插件会自动帮你配置你所有需要的一切，所以直接添加即可
-vue add vuetify
+vue add vuetify@2.0.7
 
 # Choose a preset:
 # 选择 Configure (advanced)
