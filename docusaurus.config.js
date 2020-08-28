@@ -45,10 +45,19 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'docs/thinkphp5.1-primer/readme',
-          activeBasePath: 'docs',
-          label: 'ThinkPHP 5.1 入门开发实战',
-          position: 'left',
+          label: 'ThinkPHP Primer 实战系列书籍',
+          items: [
+            {
+              to: 'docs/thinkphp5.1-primer/readme',
+              activeBasePath: 'docs',
+              label: 'ThinkPHP 5.1 入门开发实战',
+            },
+            {
+              href: 'https://www.kancloud.cn/agdholo/tp6-p01',
+              activeBasePath: 'docs',
+              label: 'ThinkPHP 6 Primer 前后端分离实战入门 [01]',
+            },
+          ],
         },
         {
           to: 'docs/development-guide/introduction',

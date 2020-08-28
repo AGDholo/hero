@@ -10,7 +10,8 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import {Button, Grid, Box, Container} from '@material-ui/core';
+import { Button, Grid, Box, Container } from '@material-ui/core';
+import Alert from '@material-ui/lab/Alert';
 
 function Home() {
   return (
@@ -20,8 +21,13 @@ function Home() {
       <Container maxWidth="xl">
         <Box my={12}>
           <Grid container spacing={3}>
-            <Grid item xs={12} md={5} style={{alignSelf: 'center'}}>
+            <Grid item xs={12} md={5} style={{ alignSelf: 'center' }}>
               <Box fontSize="h2.fontSize" fontWeight="fontWeightBold">
+                <Alert severity="info">
+                  全新的 ThinkPHP6 前后端分离实战书籍正在预览中，
+                  <Link href="https://www.kancloud.cn/agdholo/tp6-p01">立即查看</Link>。
+                  </Alert>
+
                 免费获取可商用的 Vuetify 主题，以及前端技巧和教程
               </Box>
               <Box fontSize="h6.subtitle1" my={2}>
@@ -36,7 +42,7 @@ function Home() {
                 </Button>
               </Link>
 
-              <Link to="docs/vuetify2-tricks/introduction">
+              <Link to="docs/vuetify2-tricks/themes/giraffe">
                 <Button color="primary" size="large">
                   查看主题
                 </Button>
