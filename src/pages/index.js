@@ -24,7 +24,7 @@ function Home() {
             <Grid item xs={12} md={5} style={{ alignSelf: 'center' }}>
               <Box fontSize="h2.fontSize" fontWeight="fontWeightBold">
                 <Alert severity="info">
-                  全新的 ThinkPHP6 前后端分离实战书籍正在预览中，
+                  全新的 ThinkPHP6 前后端分离实战书籍已经发售，
                   <Link href="https://www.kancloud.cn/agdholo/tp6-p01">立即查看</Link>。
                   </Alert>
 
