@@ -27,8 +27,39 @@ Laravel 是一个由 Taylor Otwell 所建立，免费的开源 PHP Web 框架，
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-<Tabs defaultValue="7-x" groupId="dg-install-laravel" values={[ { label: '7.x', value: '7-x', }, { label: '6.x', value: '6-x', }, ] }>
+<Tabs defaultValue="8-x" groupId="dg-install-laravel" values={[ { label: '8.x', value: '8-x', }, { label: '7.x', value: '7-x', }, { label: '6.x', value: '6-x', }, ] }>
 
+<TabItem value="8-x">
+
+```powershell title="PowerShell"
+# 你可以进入到任何你想进入的目录，只需要将 cd 后面的 desktop 换成其他路径即可。
+cd desktop
+
+# 在当前路径下创建一个 laravel 目录并自动安装 Laravel 框架
+composer create-project --prefer-dist laravel/laravel laravel "8.*"
+```
+
+## 开启扩展
+
+:::info 提示
+
+Laravel 需要开启以下 PHP 扩展，我们推荐阅读 [PHP 搭建指南](introduction) 来学习如何开启扩展。  
+PDO PHP 扩展是泛指一类数据库链接扩展，例如 pdo_sqlite、pdo_pgsql、pdo_mysql
+
+:::
+
+- PHP >= 7.3
+- BCMath PHP 拓展
+- Ctype PHP 拓展
+- Fileinfo PHP 拓展
+- JSON PHP 拓展
+- Mbstring PHP 拓展
+- OpenSSL PHP 拓展
+- PDO PHP 拓展
+- Tokenizer PHP 拓展
+- XML PHP 拓展
+
+</TabItem>
 <TabItem value="7-x">
 
 ```powershell title="PowerShell"
