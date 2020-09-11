@@ -19,7 +19,11 @@ Vuetify 是一个 Vue UI 库，包含手工制作的精美材料组件。不需�
 
 :::
 
-## 安装
+## 安装（预置模板）
+
+我们提供了一个开箱即用的模板来简化安装过程，直接下载 [vuetify-starter](https://github.com/AGDholo/vuetify-starter) 并安装包即可。
+
+## 安装（手动）
 
 :::info 前置条件
 
