@@ -18,6 +18,7 @@ module.exports = {
   organizationName: 'HeroUI', // Usually your GitHub org/user name.
   projectName: 'HeroUI', // Usually your repo name.
   themeConfig: {
+    plugins: ['@docusaurus/plugin-debug'],
     prism: {
       additionalLanguages: ['php', 'powershell', 'nginx', 'ini'],
     },

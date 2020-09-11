@@ -1,7 +1,7 @@
 ---
 id: vuetify
-title: Vuetify2
-sidebar_label: Vuetify2
+title: Vuetify 2
+sidebar_label: Vuetify 2
 date: 2020-08-24 16:38:00
 description: Vuetify 是一个 Vue UI 库，包含手工制作的精美材料组件。不需要设计技能 - 创建令人惊叹的应用程序所需的一切都触手可及。
 keywords:
