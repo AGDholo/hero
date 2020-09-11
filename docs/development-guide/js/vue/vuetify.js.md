@@ -1,6 +1,6 @@
 ---
 id: vuetify
-title: Vuetify.js
+title: Vuetify2
 sidebar_label: Vuetify2
 date: 2020-08-24 16:38:00
 description: Vuetify 是一个 Vue UI 库，包含手工制作的精美材料组件。不需要设计技能 - 创建令人惊叹的应用程序所需的一切都触手可及。
@@ -49,52 +49,52 @@ vue create my-app
  ( ) Unit Testing
  ( ) E2E Testing                                                                                                                        
 
-# Use history mode for router? (Requires proper server setup for index fallback in production) (Y/n) 
+Use history mode for router? (Requires proper server setup for index fallback in production) (Y/n) 
 # 键入 Y 并回车
 
-# Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default): (Use arrow keys)
+Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default): (Use arrow keys)
 # 选择第一个 Sass/SCSS (with dart-sass) 并回车
 
-# Pick a linter / formatter config:
+Pick a linter / formatter config:
 # 选择 ESLint + Prettier 并回车
 
-# Pick additional lint features: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+Pick additional lint features: (Press <space> to select, <a> to toggle all, <i> to invert selection)
 # 按下 A 键全选并回车
 
-# Where do you prefer placing config for Babel, ESLint, etc.? (Use arrow keys)
+Where do you prefer placing config for Babel, ESLint, etc.? (Use arrow keys)
 # 选择第一个 In dedicated config files 并回车
 
-# Save this as a preset for future projects? (y/N)
+Save this as a preset for future projects? (y/N)
 # 键入 N 并回车
 
 # 进入到 my-app 目录
 cd my-app
 
-# 添加 vuetify 插件，vuetify 插件会自动帮你配置你所有需要的一切，所以直接添加即可
+# 添加 vuetify2 插件，vuetify2 插件会自动帮你配置你所有需要的一切，所以直接添加即可
 vue add vuetify@2
 
-# Choose a preset:
+Choose a preset:
 # 选择 Configure (advanced)
 
-# Use a pre-made template? (will replace App.vue and HelloWorld.vue) (Y/n)
+Use a pre-made template? (will replace App.vue and HelloWorld.vue) (Y/n)
 # 键入 Y 并回车
 
-# Use custom theme? (y/N)
+Use custom theme? (y/N)
 # 键入 Y 并回车
 
-# Use custom properties (CSS variables)? (y/N)
+Use custom properties (CSS variables)? (y/N)
 # 键入 Y 并回车
 
-# Select icon font (Use arrow keys)
+Select icon font (Use arrow keys)
 # 选择第一个 Material Design Icons 并回车
 
-# Use fonts as a dependency (for Electron or offline)? (y/N) 
+Use fonts as a dependency (for Electron or offline)? (y/N) 
 # 键入 N 并回车
 
-# Use a-la-carte components? (Y/n)
+Use a-la-carte components? (Y/n)
 # 键入 Y 并回车
 
-# Select locale (Use arrow keys)
+Select locale (Use arrow keys)
 # 方向键选择 Chinese (simplified) 并回车
 ```
 
