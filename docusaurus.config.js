@@ -40,23 +40,17 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/vuetify2-tricks/introduction',
-          activeBasePath: 'docs',
-          label: 'Vuetify2 技巧',
-          position: 'left',
-        },
-        {
           label: 'ThinkPHP Primer 实战系列书籍',
           items: [
+            {
+              href: 'https://www.kancloud.cn/agdholo/tp6-p01',
+              activeBasePath: 'docs',
+              label: '全新！ThinkPHP 6 Primer 前后端分离实战入门 [01]',
+            },
             {
               to: 'docs/thinkphp5.1-primer/readme',
               activeBasePath: 'docs',
               label: 'ThinkPHP 5.1 入门开发实战',
-            },
-            {
-              href: 'https://www.kancloud.cn/agdholo/tp6-p01',
-              activeBasePath: 'docs',
-              label: 'ThinkPHP 6 Primer 前后端分离实战入门 [01]',
             },
           ],
         },
@@ -67,18 +61,16 @@ module.exports = {
           position: 'left',
         },
         {
-          label: 'Laravel Primer 初学者书籍',
-          items: [
-            {
-              to: 'docs/lp01-laravel-primer/readme',
-              activeBasePath: 'docs',
-              label: 'LP01 Laravel 前后端分离入门（编写中）',
-            },
-            {
-              activeBasePath: 'docs',
-              label: 'LP02 Laravel 前后端分离进阶（准备中）',
-            },
-          ],
+          to: 'docs/vuetify2-tricks/introduction',
+          activeBasePath: 'docs',
+          label: 'Vuetify2 技巧',
+          position: 'left',
+        },
+        {
+          to: 'docs/design-resources/readme',
+          activeBasePath: 'docs',
+          label: '设计资源',
+          position: 'left',
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         // Please keep GitHub link to the right for consistency.
