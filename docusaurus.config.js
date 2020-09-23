@@ -36,7 +36,7 @@ module.exports = {
       title: 'HeroUI',
       logo: {
         alt: 'HeroUI',
-        src: 'https://wx1.sbimg.cn/2020/08/10/oenDj.png',
+        src: 'https://wx2.sbimg.cn/2020/08/10/oenDj.png',
       },
       items: [
         {
