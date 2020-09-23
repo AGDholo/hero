@@ -10,6 +10,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import { Button, Grid, Box, Container } from '@material-ui/core';
 import Alert from '@material-ui/lab/Alert';
 
@@ -52,7 +53,7 @@ function Home() {
             <Grid item xs={12} md={1} />
             <Grid item xs={12} md={6}>
               <img
-                src="https://wx1.sbimg.cn/2020/08/10/oerIR.png"
+                src={useBaseUrl('img/undraw_Camera_re_cnp4.svg')}
                 alt="imnages"
               />
             </Grid>
