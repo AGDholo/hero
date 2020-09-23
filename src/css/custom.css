@@ -25,6 +25,12 @@
   --ifm-code-font-size: 95%;
 
   --ifm-container-width: 1280px;
+
+  
+}
+
+.navbar {
+  border-bottom: 1px solid  gray;
 }
 
 .docusaurus-highlight-code-line {
@@ -32,4 +38,15 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #0e182a;
+  --ifm-navbar-background-color: #0e182a;
+}
+
+
+.footer--dark {
+  border-top: 1px solid  gray;
+  --ifm-footer-background-color: #0e182a;
 }
