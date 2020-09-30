@@ -40,6 +40,12 @@ module.exports = {
       },
       items: [
         {
+          href: 'https://theme.heroui.net',
+          activeBasePath: 'docs',
+          label: '全新！Vue 主题模板',
+          position: 'left',
+        },
+        {
           label: 'ThinkPHP Primer 实战系列书籍',
           items: [
             {

@@ -76,16 +76,6 @@ module.exports = {
         'vuetify2-tricks/source-code/tricks-sources-code',
       ],
     },
-    {
-      type: 'category',
-      label: '开箱即用的主题/模板',
-      collapsed: true,
-      items: [
-        'vuetify2-tricks/themes/agency',
-        'vuetify2-tricks/themes/giraffe',
-        'vuetify2-tricks/themes/shock',
-      ],
-    },
   ],
 
   'development-guide': [
