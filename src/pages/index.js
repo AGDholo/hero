@@ -43,7 +43,7 @@ function Home() {
                 </Button>
               </Link>
 
-              <Link to="docs/vuetify2-tricks/themes/giraffe">
+              <Link href="https://theme.heroui.net/">
                 <Button color="primary" size="large">
                   查看主题
                 </Button>
