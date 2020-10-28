@@ -63,13 +63,13 @@ module.exports = {
     {
       type: 'category',
       label: '开发者',
-      collapsed: true,
+      collapsed: false,
       items: ['vuetify2-tricks/development/local-deployment-documentation'],
     },
     {
       type: 'category',
       label: '教程源码',
-      collapsed: true,
+      collapsed: false,
       items: [
         'vuetify2-tricks/source-code/layout-source-code',
         'vuetify2-tricks/source-code/source-code',
@@ -81,7 +81,6 @@ module.exports = {
   'development-guide': [
     'development-guide/introduction',
     'development-guide/issues',
-    'development-guide/donate',
     {
       type: 'category',
       label: '必备软件',
@@ -139,7 +138,6 @@ module.exports = {
         'thinkphp5.1-primer/chapter-1/1-3-source-code',
         'thinkphp5.1-primer/chapter-1/1-4-issues',
         'thinkphp5.1-primer/chapter-1/1-5-security-guide',
-        'thinkphp5.1-primer/chapter-1/1-6-donate',
       ],
     },
     {
@@ -257,7 +255,6 @@ module.exports = {
         'lp01-laravel-primer/chapter-1/1-1-about-author',
         'lp01-laravel-primer/chapter-1/1-2-source-code',
         'lp01-laravel-primer/chapter-1/1-3-issues',
-        'lp01-laravel-primer/chapter-1/1-4-donate',
       ],
     },
     {

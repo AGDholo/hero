@@ -50,3 +50,7 @@ html[data-theme='dark'] {
   border-top: 1px solid  gray;
   --ifm-footer-background-color: #0e182a;
 }
+
+.navbar__link:hover, .navbar__link--active {
+  color: inherit;
+}
