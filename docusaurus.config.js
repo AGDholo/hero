@@ -14,7 +14,7 @@ module.exports = {
   url: 'https://heroui.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  favicon: 'https://wx2.sbimg.cn/2020/08/10/oexuk.png',
+  favicon: '/feather.svg',
   organizationName: 'HeroUI', // Usually your GitHub org/user name.
   projectName: 'HeroUI', // Usually your repo name.
   themeConfig: {
@@ -36,7 +36,7 @@ module.exports = {
       title: 'HeroUI',
       logo: {
         alt: 'HeroUI',
-        src: 'https://wx2.sbimg.cn/2020/08/10/oenDj.png',
+        src: '/feather.svg',
       },
       items: [
         {
