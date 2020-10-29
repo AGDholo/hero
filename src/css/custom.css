@@ -1,14 +1,14 @@
 
 
 html[data-theme='dark'] {
-  --ifm-background-color: #0e182a;
-  --ifm-navbar-background-color: #0e182a;
+  --ifm-background-color:  rgba(25,33,46, 1);
+  --ifm-navbar-background-color:  rgba(25,33,46, 1);
 }
 
 
 .footer--dark {
   border-top: 1px solid  gray;
-  --ifm-footer-background-color: #0e182a;
+  --ifm-footer-background-color: rgba(25,33,46, 1);
 }
 
 :root {
@@ -22,6 +22,12 @@ html[data-theme='dark'] {
 
   --ifm-color-secondary: #bfc7d5;
   --ifm-footer-link-hover-color: #fff;
+  --ifm-container-width: 100vw;
+
+  --ifm-code-font-size: 15px;
+  --ifm-pre-line-height: 1.5;
+
+  --ifm-navbar-padding-vertical: 0
 }
 
 a {
@@ -467,4 +473,54 @@ pre .btnIcon:hover {
 
 .tabs + div {
   padding: 1rem;
+}
+
+.main-wrapper img {
+  margin-top: 1rem !important;
+}
+
+.menu {
+  min-width: 300px;
+}
+
+.sidebar_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar- {
+  overflow-x: hidden;
+}
+
+.menu__link {
+  line-height: 25px;
+}
+
+.main-wrapper {
+  padding: 40px 0 0 !important;
+}
+
+.padding-vert--lg {
+  padding-top: 0 !important;
+}
+
+.navbar {
+  z-index: 10;
+  max-width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 8px #f0f1f2;
+}
+
+.navbar__link {
+  min-width: 40px;
+  border-top: 2px solid transparent;
+  text-align: center;
+}
+
+.container {
+  min-height: 500px;
+  padding-left: 64px !important;
+}
+
+.margin-vert--md .mdxCodeBlock_node_modules-\@docusaurus-theme-classic-lib-theme-MDXComponents- {
+  margin: 0 !important;
+}
+
+.navbar__link:hover, .navbar__link--active {
+  border-bottom: 2px solid #4b5ff7;
 }

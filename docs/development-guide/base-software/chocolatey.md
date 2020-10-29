@@ -35,7 +35,9 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 2. 键入命令
 
 ```powershell title="PowerShell"
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; 
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; 
+iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
 3. 输入 `choco -v` 出现类似 `0.10.15` 内容表示安装成功
@@ -66,7 +68,9 @@ Chocolatey 仅支持命令行安装
 2. 键入命令
 
 ```powershell title="PowerShell"
-choco install powershell-core --install-arguments='"ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 REGISTER_MANIFEST=1 ENABLE_PSREMOTING=1"'
+choco install powershell-core 
+--install-arguments='"ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 
+REGISTER_MANIFEST=1 ENABLE_PSREMOTING=1"'
 ```
 
 3. 控制台会出现如下内容，请键入 A 并回车

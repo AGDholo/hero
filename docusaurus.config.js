@@ -31,13 +31,26 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://theme.heroui.net',
-          activeBasePath: 'docs',
-          label: 'Vue 主题模板',
-          position: 'left',
+          to: 'docs/development-guide/introduction',
+          activeBasePath: 'docs/development-guide',
+          label: '开发环境搭建指南',
+          position: 'right',
+        },
+        {
+          to: 'docs/vuetify2-tricks/introduction',
+          activeBasePath: 'docs/vuetify2-tricks',
+          label: 'Vuetify2 技巧',
+          position: 'right',
+        },
+        {
+          to: 'docs/design-resources/readme',
+          activeBasePath: 'docs/design-resources',
+          label: '设计资源',
+          position: 'right',
         },
         {
           label: 'ThinkPHP Primer 实战系列书籍',
+          position: 'right',
           items: [
             {
               to: 'https://www.kancloud.cn/agdholo/tp6-p01',
@@ -52,25 +65,11 @@ module.exports = {
           ],
         },
         {
-          to: 'docs/development-guide/introduction',
-          activeBasePath: 'docs/development-guide',
-          label: '开发环境搭建指南',
-          position: 'left',
+          href: 'https://theme.heroui.net',
+          activeBasePath: 'docs',
+          label: 'Vue 主题模板',
+          position: 'right',
         },
-        {
-          to: 'docs/vuetify2-tricks/introduction',
-          activeBasePath: 'docs/vuetify2-tricks',
-          label: 'Vuetify2 技巧',
-          position: 'left',
-        },
-        {
-          to: 'docs/design-resources/readme',
-          activeBasePath: 'docs/design-resources',
-          label: '设计资源',
-          position: 'left',
-        },
-        // {to: 'blog', label: 'Blog', position: 'left'},
-        // Please keep GitHub link to the right for consistency.
         {
           href: 'https://github.com/AGDholo/hero',
           label: 'GitHub',

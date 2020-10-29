@@ -52,11 +52,11 @@ choco install powershell-core --install-arguments='"ADD_EXPLORER_CONTEXT_MENU_OP
 
 ### 运行
 
-- 在开始菜单中找到 PowerShell  
+1. 在开始菜单中找到 PowerShell  
   ![eczXUx.png](https://s2.ax1x.com/2019/08/05/eczXUx.png)
-- 搜索框中搜索 PowerShell  
+2. 搜索框中搜索 PowerShell  
   ![eczj56.png](https://s2.ax1x.com/2019/08/05/eczj56.png)
-- 任意位置鼠标右键  
+3. 任意位置鼠标右键  
   ![eczxPK.png](https://s2.ax1x.com/2019/08/05/eczxPK.png)
 
 ## 基本命令
