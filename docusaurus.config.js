@@ -1,12 +1,3 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @format
- */
-
 module.exports = {
   title: 'HeroUI',
   tagline:
@@ -42,39 +33,39 @@ module.exports = {
         {
           href: 'https://theme.heroui.net',
           activeBasePath: 'docs',
-          label: '全新！Vue 主题模板',
+          label: 'Vue 主题模板',
           position: 'left',
         },
         {
           label: 'ThinkPHP Primer 实战系列书籍',
           items: [
             {
-              href: 'https://www.kancloud.cn/agdholo/tp6-p01',
+              to: 'https://www.kancloud.cn/agdholo/tp6-p01',
               activeBasePath: 'docs',
               label: '全新！ThinkPHP 6 Primer 前后端分离实战入门 [01]',
             },
             {
               to: 'docs/thinkphp5.1-primer/readme',
-              activeBasePath: 'docs',
+              activeBasePath: 'docs/thinkphp5.1-primer',
               label: 'ThinkPHP 5.1 入门开发实战',
             },
           ],
         },
         {
           to: 'docs/development-guide/introduction',
-          activeBasePath: 'docs',
+          activeBasePath: 'docs/development-guide',
           label: '开发环境搭建指南',
           position: 'left',
         },
         {
           to: 'docs/vuetify2-tricks/introduction',
-          activeBasePath: 'docs',
+          activeBasePath: 'docs/vuetify2-tricks',
           label: 'Vuetify2 技巧',
           position: 'left',
         },
         {
           to: 'docs/design-resources/readme',
-          activeBasePath: 'docs',
+          activeBasePath: 'docs/design-resources',
           label: '设计资源',
           position: 'left',
         },
@@ -127,16 +118,10 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'index',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/AGDholo/hero/tree/master',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: 'https://github.com/AGDholo/hero/tree/master/',
+          editUrl:
+            'https://github.com/AGDholo/hero/tree/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
