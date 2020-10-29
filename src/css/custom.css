@@ -11,10 +11,6 @@ html[data-theme='dark'] {
   --ifm-footer-background-color: #0e182a;
 }
 
-.navbar__link:hover, .navbar__link--active {
-  color: inherit;
-}
-
 :root {
   --ifm-color-primary: #4b5ff7;
   --ifm-color-primary-dark: #2c44f6;
@@ -462,4 +458,13 @@ pre .btnIcon:hover {
 
 .btnClipboard {
   right: 10px;
+}
+
+.tabs + div, .tabs {
+  border: #000 1px solid;
+  margin-top: 0 !important;
+}
+
+.tabs + div {
+  padding: 1rem;
 }
