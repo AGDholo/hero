@@ -92,6 +92,7 @@ const tutor = [
     desc:
       'Vuetify 是一个完全遵循 Material Design 设计的 UI 组件库，构建在 Vue 之上。本教程深入浅出的讲诉了大量 Vuetify 技巧以及离线部署等开发者相关的内容。',
     to: '/docs/vuetify2-tricks/introduction',
+    date: '03/05/2020',
   },
   {
     logo: '/img/开发环境搭建指南.png',
@@ -99,6 +100,7 @@ const tutor = [
     desc:
       '本书为搭建不同的开发环境提供指导，让你在编程的前奏中不乱手脚。除了传统方式之外，作者更强调使用类似于 Chocolatey 现代管理工具进行环境搭建。',
     to: 'docs/development-guide/introduction',
+    date: '03/05/2020',
   },
   {
     logo: 'https://cover.kancloud.cn/agdholo/tp6-p01',
@@ -106,6 +108,7 @@ const tutor = [
     desc:
       '本系列书籍将教你如何使用 ThinkPHP6 和 Vue 一步一步构建一个类似 Twitter 的前后端分离应用，让你从实际开发中体会到 ThinkPHP6 API 开发的敏捷、愉悦与轻松。',
     to: 'https://www.kancloud.cn/agdholo/tp6-p01',
+    date: '28/08/2020',
   },
   {
     logo: 'https://cover.kancloud.cn/agdholo/thinkphp',
@@ -113,6 +116,7 @@ const tutor = [
     desc:
       '本书将教你使用现代工具流构建一个类似微博的应用。 通过本书，你将会学到如 HTML、CSS、JavaScript、PHP、Thinkphp 等 Web 开发的相关基础知识。',
     to: '/docs/thinkphp5.1-primer/readme',
+    date: '09/10/2018',
   },
 ];
 
@@ -131,7 +135,7 @@ function CCard(props) {
       <CardContent>
         <TextInfoContent
           classes={contentStyles}
-          overline={'28 MAR 2019'}
+          overline={props.date}
           heading={props.title}
           body={props.desc}
         />
