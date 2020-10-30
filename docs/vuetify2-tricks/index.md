@@ -16,11 +16,9 @@ keywords:
   - 新手入门
 ---
 
-:::danger 限时抢购
+import {AD} from '@site/src/pages/components/ad';
 
-[【腾讯云】11.11 云上盛惠，云产品限时抢购，1 核 2G 云服务器首年 <strong>88</strong> 元](https://curl.qcloud.com/DMXuZLih)
-
-:::
+<AD />
 
 [Vuetify](https://vuetifyjs.com) 是一个完全遵循 [Material Design](https://material.io/) 设计的 UI 组件库，构建在 [Vue](https://vuejs.org) 之上。
 

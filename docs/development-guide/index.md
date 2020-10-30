@@ -10,15 +10,13 @@ keywords:
   - 开发环境
 ---
 
-:::danger 限时抢购
+import {AD} from '@site/src/pages/components/ad';
 
-[【腾讯云】11.11 云上盛惠，云产品限时抢购，1 核 2G 云服务器首年 <strong>88</strong> 元](https://curl.qcloud.com/DMXuZLih)
-
-:::
+<AD />
 
 :::note 介绍
 
-本书为搭建不同系统下不同环境的搭建提供指导，让你在编程的前奏中不乱手脚。  
+本书为搭建不同系统下不同环境的搭建提供指导，让你在编程的前奏中不乱手脚。
 
 :::
 

@@ -17,11 +17,9 @@ keywords:
   - 文档部署
 ---
 
-:::danger 限时抢购
+import {AD} from '@site/src/pages/components/ad';
 
-[【腾讯云】11.11 云上盛惠，云产品限时抢购，1 核 2G 云服务器首年 <strong>88</strong> 元](https://curl.qcloud.com/DMXuZLih)
-
-:::
+<AD />
 
 非常简单的，我们只需要拉取最新源码，然后键入几个命令即可部署。
 

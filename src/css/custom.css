@@ -518,11 +518,6 @@ pre .btnIcon:hover {
   padding-left: 64px !important;
 }
 
-.margin-vert--md
-  .mdxCodeBlock_node_modules-\@docusaurus-theme-classic-lib-theme-MDXComponents- {
-  margin: 0 !important;
-}
-
 .navbar__link:hover,
 .navbar__link--active {
   border-bottom: 2px solid #4b5ff7;

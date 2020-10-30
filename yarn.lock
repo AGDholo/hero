@@ -9845,6 +9845,13 @@ react-fast-compare@^3.1.1:
   resolved "https://registry.npm.taobao.org/react-fast-compare/download/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
   integrity sha1-ZBqdqBtqYyDycOiXJPtFoLOeQ7s=
 
+react-google-font-loader@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npm.taobao.org/react-google-font-loader/download/react-google-font-loader-1.1.0.tgz#9c9ae97aae3d2177e922c9bf4ab6312b903abc79"
+  integrity sha1-nJrpeq49IXfpIsm/SrYxK5A6vHk=
+  dependencies:
+    prop-types "^15.6.2"
+
 react-helmet@^6.0.0-beta:
   version "6.1.0"
   resolved "https://registry.npm.taobao.org/react-helmet/download/react-helmet-6.1.0.tgz#a750d5165cb13cf213e44747502652e794468726"

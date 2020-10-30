@@ -29,7 +29,8 @@
     "@mui-treasury/utils": "^0.4.1",
     "clsx": "^1.1.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-google-font-loader": "^1.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
