@@ -493,8 +493,9 @@ pre .btnIcon:hover {
   line-height: 25px;
 }
 
-.docPage_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage- {
-  margin: 40px 0 0 !important;
+main,
+.menu {
+  margin: 20px 0 0 !important;
 }
 
 .padding-vert--lg {
