@@ -25,10 +25,10 @@ import {ShowcaseCard} from '@site/src/pages/components/showcase';
 
 import Grid from '@material-ui/core/Grid'; import Data from './data';
 
-<Grid container spacing={4}>
+<Grid container spacing={4} alignItems="stretch">
   {[...Data].map((item, i) => {
     return (
-      <Grid item xs={12} md={6} key={i}>
+      <Grid item xs={12} md={6} lg={4} key={i}>
         <ShowcaseCard {...item} type="作者" />
       </Grid>
     );

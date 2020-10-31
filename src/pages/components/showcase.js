@@ -110,7 +110,10 @@ export const ShowcaseCard = React.memo(function ShowcaseCard(props) {
         <CardHeader {...props} />
         <Item>
           <Box minHeight={200} bgcolor={'#F4F7FA'} borderRadius={8}>
-            <img src={props.img}></img>
+            <img
+              src={props.img}
+              height="200px"
+              style={{display: 'block', margin: '0 auto'}}></img>
           </Box>
         </Item>
         <BasicProfile {...props} />
