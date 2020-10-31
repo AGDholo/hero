@@ -41,14 +41,14 @@ const useBasicProfileStyles = makeStyles(({palette}) => ({
 const BasicProfile = (props) => {
   const styles = useBasicProfileStyles();
   return (
-    <Row {...props}>
+    <Row>
       <Item>
         <Avatar className={styles.avatar}>
-          <img src="feather.svg"></img>
+          <img src="/feather.svg"></img>
         </Avatar>
       </Item>
       <Item position={'middle'} pl={{sm: 0.5, lg: 0.5}}>
-        <Typography className={styles.overline}>开发者</Typography>
+        <Typography className={styles.overline}>{props.type}</Typography>
         <Typography className={styles.name}>HeroUI</Typography>
       </Item>
     </Row>
@@ -71,7 +71,7 @@ const CardHeader = (props) => {
   const styles = useCardHeaderStyles();
   const iconBtnStyles = useSizedIconButtonStyles({padding: 8, childSize: 20});
   return (
-    <Row {...props}>
+    <Row>
       <Item position={'middle'}>
         <Typography className={styles.title}>
           <b>{props.text}</b>
@@ -113,7 +113,7 @@ export const ShowcaseCard = React.memo(function ShowcaseCard(props) {
             <img src={props.img}></img>
           </Box>
         </Item>
-        <BasicProfile />
+        <BasicProfile {...props} />
       </Column>
     </Link>
   );

@@ -117,7 +117,7 @@ function themes() {
                 {[...theme].map((item) => {
                   return (
                     <Grid item xs={12} md={6}>
-                      <ShowcaseCard {...item} />
+                      <ShowcaseCard {...item} type="开发者" />
                     </Grid>
                   );
                 })}

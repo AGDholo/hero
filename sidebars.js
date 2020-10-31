@@ -269,4 +269,11 @@ module.exports = {
       ],
     },
   ],
+
+  'design-resources': [
+    'design-resources/readme',
+    'design-resources/icons',
+    'design-resources/patterns',
+    'design-resources/images',
+  ],
 };
