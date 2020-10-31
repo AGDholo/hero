@@ -16,8 +16,16 @@ keywords:
   - 背景
 ---
 
-## Hero Patterns
+import {ShowcaseCard} from '@site/src/pages/components/showcase';
 
-[Hero Patterns](http://www.heropatterns.com/) 是由 Steve Schoger 创建的一组可复用且可自定义的 SVG 背景图案。它们非常适合在平淡无奇的背板中增添一些色彩。
+import Grid from '@material-ui/core/Grid'; import Patterns from './patterns';
 
-![Hero Patterns](https://tailwindcss.com/_next/static/media/hero-patterns.ab8a1b95480c2acefb197a9a9db36ef2.png)
+<Grid container spacing={4} alignItems="stretch">
+  {[...Patterns].map((item, i) => {
+    return (
+      <Grid item xs={12} md={6} xl={4} key={i}>
+        <ShowcaseCard {...item} type="作者" />
+      </Grid>
+    );
+  })}
+</Grid>

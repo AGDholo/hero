@@ -14,20 +14,16 @@ keywords:
   - 图标库
 ---
 
-## Heroicons
+import {ShowcaseCard} from '@site/src/pages/components/showcase';
 
-[Heroicons](https://github.com/tailwindlabs/heroicons) 是由 Steve Schoger 创建的免费 SVG 图标集。它们经过了预优化，易于直接在 HTML 中使用。
+import Grid from '@material-ui/core/Grid'; import Icons from './icons';
 
-![Heroicons](https://tailwindcss.com/_next/static/media/heroicons-ui.63f96eab03b5edf1f8bb0987d02f5b0c.png)
-
-## Zondicons
-
-[Zondicons](http://www.zondicons.com/) 是另一个由 Steve Schoger 创建的不同风格的免费 SVG 图标集。
-
-![Zondicons](https://tailwindcss.com/_next/static/media/zondicons.c5c604f8a69ee1d93c11f561d22fabaf.png)
-
-## Entypo
-
-[Entypo](http://www.entypo.com/) 是由 Daniel Bruce 创建的一款免费 SVG 图标集。
-
-![Entypo](https://tailwindcss.com/_next/static/media/entypo.22d7e4414587a7e17b7af9d3e573a986.png)
+<Grid container spacing={4} alignItems="stretch">
+  {[...Icons].map((item, i) => {
+    return (
+      <Grid item xs={12} md={6} xl={4} key={i}>
+        <ShowcaseCard {...item} type="作者" />
+      </Grid>
+    );
+  })}
+</Grid>
