@@ -183,7 +183,7 @@ function Home() {
                   </Button>
                 </Link>
 
-                <Link href="https://theme.heroui.net/">
+                <Link to="/themes">
                   <Button color="primary" size="large">
                     查看主题
                   </Button>
