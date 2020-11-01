@@ -16,7 +16,7 @@ keywords:
 
 import {ShowcaseCard} from '@site/src/pages/components/showcase';
 
-import Grid from '@material-ui/core/Grid'; import Icons from './icons';
+import Grid from '@material-ui/core/Grid'; import {Icons} from './data';
 
 <Grid container spacing={4} alignItems="stretch">
   {[...Icons].map((item, i) => {

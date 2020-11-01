@@ -23,7 +23,7 @@ import {AD} from '@site/src/pages/components/ad';
 
 import {ShowcaseCard} from '@site/src/pages/components/showcase';
 
-import Grid from '@material-ui/core/Grid'; import Data from './data';
+import Grid from '@material-ui/core/Grid'; import {Data} from './data';
 
 <Grid container spacing={4} alignItems="stretch">
   {[...Data].map((item, i) => {

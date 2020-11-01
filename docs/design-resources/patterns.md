@@ -18,7 +18,7 @@ keywords:
 
 import {ShowcaseCard} from '@site/src/pages/components/showcase';
 
-import Grid from '@material-ui/core/Grid'; import Patterns from './patterns';
+import Grid from '@material-ui/core/Grid'; import {Patterns} from './data';
 
 <Grid container spacing={4} alignItems="stretch">
   {[...Patterns].map((item, i) => {
