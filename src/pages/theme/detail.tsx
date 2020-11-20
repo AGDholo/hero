@@ -1,6 +1,8 @@
 import * as React from 'react';
 import {CommandBar} from 'office-ui-fabric-react/lib';
 import {useLocation, BrowserRouter as Router} from 'react-router-dom';
+import {URLSearchParams} from 'url';
+
 import {
   IButtonProps,
   ICommandBarItemProps,

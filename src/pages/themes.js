@@ -18,17 +18,17 @@ const theme = [
   {
     text: 'Giraffe',
     img: '/img/giraffe.3a90d379.png',
-    href: 'giraffe',
+    href: 'theme/detail?template=giraffe',
   },
   {
     text: 'Agency',
     img: '/img/agency.02b063a6.jpg',
-    href: 'agency',
+    href: 'theme/detail?template=agency',
   },
   {
     text: 'Shock',
     img: '/img/shock.8dd62a99.png',
-    href: 'shock',
+    href: 'theme/detail?template=shock',
   },
 ];
 
