@@ -105,7 +105,7 @@ export const ShowcaseCard = React.memo(function ShowcaseCard(props) {
   const styles = useStyles();
   const gap = {xs: 1, sm: 1.5, lg: 2};
   return (
-    <Link to={props.href}>
+    <Link to={`theme/detail?template=${props.href}`}>
       <Column className={styles.card} p={{xs: 0.5, sm: 0.75, lg: 1}} gap={gap}>
         <CardHeader {...props} />
         <Item>

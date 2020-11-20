@@ -18,17 +18,17 @@ const theme = [
   {
     text: 'Giraffe',
     img: '/img/giraffe.3a90d379.png',
-    href: 'https://giraffe.heroui.net/',
+    href: 'giraffe',
   },
   {
     text: 'Agency',
     img: '/img/agency.02b063a6.jpg',
-    href: 'https://agency.heroui.net/',
+    href: 'agency',
   },
   {
     text: 'Shock',
     img: '/img/shock.8dd62a99.png',
-    href: 'https://shock.heroui.net/',
+    href: 'shock',
   },
 ];
 
