@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {CommandBar} from 'office-ui-fabric-react/lib';
 import {useLocation, BrowserRouter as Router} from 'react-router-dom';
-import {URLSearchParams} from 'url';
+import queryString from 'query-string';
 
 import {
   IButtonProps,
@@ -11,7 +11,7 @@ import {
 initializeIcons();
 
 function useQuery() {
-  return new URLSearchParams(useLocation().search);
+  return queryString.parse(useLocation().search);
 }
 
 const overflowProps: IButtonProps = {ariaLabel: 'More commands'};
@@ -39,14 +39,14 @@ const NavBar = () => {
       key: 'free-download-now',
       text: '免费下载',
       iconProps: {iconName: 'ChevronDownEnd6'},
-      href: `https://github.com/AGDholo/${query.get('template')}`,
+      href: `https://github.com/AGDholo/${query.template}`,
       target: '_black',
     },
     {
       key: 'remove-bar',
       text: '移除顶栏',
       iconProps: {iconName: 'BlockedSite'},
-      href: `https://${query.get('template')}.heroui.net`,
+      href: `https://${query.template}.heroui.net`,
       target: '_black',
     },
   ];
@@ -82,7 +82,7 @@ export const ButtonDefaultExample: React.FunctionComponent<IButtonExampleProps> 
           width: '100vw',
         }}>
         <iframe
-          src={`https://${query.get('template')}.heroui.net`}
+          src={`https://${query.template}.heroui.net`}
           width="100%"
           height="100%"
           frameBorder="0"

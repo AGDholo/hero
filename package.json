@@ -30,6 +30,7 @@
     "@mui-treasury/styling": "^0.2.8",
     "@mui-treasury/utils": "^0.4.1",
     "clsx": "^1.1.1",
+    "query-string": "^6.13.7",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-google-font-loader": "^1.1.0"
