@@ -106,6 +106,7 @@ module.exports = {
         'development-guide/php/introduction',
         'development-guide/php/laravel',
         'development-guide/php/thinkphp',
+        'development-guide/php/prettier',
       ],
     },
     {
