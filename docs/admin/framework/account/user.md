@@ -69,7 +69,7 @@ public function logout($value): int
 
 ### 返回值
 
-类型：int
+类型：int  
 示例：
 * 0：登出失败
 * 1：登出成功

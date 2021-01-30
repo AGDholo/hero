@@ -81,7 +81,7 @@ module.exports = {
                         {
                             to: '/admin',
                             activeBasePath: 'admin',
-                            label: '介绍',
+                            label: '介绍 Hero Admin',
                         },
                         {
                             to: 'docs/admin/framework/readme',
