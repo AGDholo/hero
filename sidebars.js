@@ -277,4 +277,24 @@ module.exports = {
     'design-resources/patterns',
     'design-resources/images',
   ],
+
+  'admin/framework': [
+    'admin/framework/readme',
+    {
+      type: 'category',
+      label: '内部组件',
+      collapsed: false,
+      items: [
+        {
+          type: 'category',
+          label: '账号服务',
+          collapsed: false,
+          items: [
+            'admin/framework/account/verification',
+            'admin/framework/account/user',
+          ],
+        },
+      ],
+    },
+  ],
 };
