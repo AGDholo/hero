@@ -5,12 +5,10 @@ import {
     Button, Card, CardContent,
     Container,
     createMuiTheme,
-    Grid,
+    Grid, Hidden,
     MuiThemeProvider,
     responsiveFontSizes,
     Typography,
-    useMediaQuery,
-    useTheme
 } from "@material-ui/core";
 import {DashboardOutlined, FolderOpenOutlined} from "@material-ui/icons";
 import Link from "@docusaurus/core/lib/client/exports/Link";
@@ -115,8 +113,6 @@ function Footer() {
 }
 
 function Admin() {
-    const queryTheme = useTheme()
-    const matches = useMediaQuery(queryTheme.breakpoints.up('md'))
     return (
         <Layout title="Hero Admin 下一代业务开发框架">
             <MuiThemeProvider theme={theme}>
@@ -161,13 +157,14 @@ function Admin() {
                                 </Box>
                             </Grid>
 
-                            {matches &&
-                            <Grid item xs={12} md={5}>
-                                <img
-                                    src={useBaseUrl('img/maintenance.svg')}
-                                    alt="introduction hero admin"
-                                />
-                            </Grid>}
+                            <Hidden mdDown>
+                                <Grid item xs={12} md={5}>
+                                    <img
+                                        src={useBaseUrl('img/maintenance.svg')}
+                                        alt="introduction hero admin"
+                                    />
+                                </Grid>
+                            </Hidden>
 
                         </Grid>
                     </Container>

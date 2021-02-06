@@ -1455,68 +1455,6 @@
     url "^0.11.0"
     webpack-sources "^1.4.3"
 
-"@fluentui/date-time-utilities@^7.9.0":
-  version "7.9.0"
-  resolved "https://registry.npm.taobao.org/@fluentui/date-time-utilities/download/@fluentui/date-time-utilities-7.9.0.tgz#4c8570b3af8bc654963ecb034d0fd100010e7d6d"
-  integrity sha1-TIVws6+LxlSWPssDTQ/RAAEOfW0=
-  dependencies:
-    "@uifabric/set-version" "^7.0.23"
-    tslib "^1.10.0"
-
-"@fluentui/dom-utilities@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npm.taobao.org/@fluentui/dom-utilities/download/@fluentui/dom-utilities-1.1.1.tgz#b0bbab665fe726f245800bb9e7883b1ceb54248b"
-  integrity sha1-sLurZl/nJvJFgAu554g7HOtUJIs=
-  dependencies:
-    "@uifabric/set-version" "^7.0.23"
-    tslib "^1.10.0"
-
-"@fluentui/keyboard-key@^0.2.12":
-  version "0.2.13"
-  resolved "https://registry.npm.taobao.org/@fluentui/keyboard-key/download/@fluentui/keyboard-key-0.2.13.tgz#e980b0192f6493a23a3534ff08e2b2db6c560611"
-  integrity sha1-6YCwGS9kk6I6NTT/COKy22xWBhE=
-  dependencies:
-    tslib "^1.10.0"
-
-"@fluentui/react-focus@^7.17.1":
-  version "7.17.1"
-  resolved "https://registry.npm.taobao.org/@fluentui/react-focus/download/@fluentui/react-focus-7.17.1.tgz#e1f136bfb0fce6e07fe4f6595a3f6270f110b126"
-  integrity sha1-4fE2v7D85uB/5PZZWj9icPEQsSY=
-  dependencies:
-    "@fluentui/keyboard-key" "^0.2.12"
-    "@uifabric/merge-styles" "^7.19.1"
-    "@uifabric/set-version" "^7.0.23"
-    "@uifabric/styling" "^7.16.19"
-    "@uifabric/utilities" "^7.33.2"
-    tslib "^1.10.0"
-
-"@fluentui/react-window-provider@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.npm.taobao.org/@fluentui/react-window-provider/download/@fluentui/react-window-provider-1.0.1.tgz#8ec71db8cfd57e11f00ed42c5c1377ef4dfe5f6b"
-  integrity sha1-jscduM/VfhHwDtQsXBN3703+X2s=
-  dependencies:
-    "@uifabric/set-version" "^7.0.23"
-    tslib "^1.10.0"
-
-"@fluentui/react@^7.152.1":
-  version "7.158.0"
-  resolved "https://registry.npm.taobao.org/@fluentui/react/download/@fluentui/react-7.158.0.tgz#674fccac086789ef11ddf44b09d4c946cedc5bc7"
-  integrity sha1-Z0/MrAhnie8R3fRLCdTJRs7cW8c=
-  dependencies:
-    "@uifabric/set-version" "^7.0.23"
-    office-ui-fabric-react "^7.158.0"
-    tslib "^1.10.0"
-
-"@fluentui/theme@^1.7.1":
-  version "1.7.1"
-  resolved "https://registry.npm.taobao.org/@fluentui/theme/download/@fluentui/theme-1.7.1.tgz#24ee99d756ea71c722d3027388dbbe0df3fc8105"
-  integrity sha1-JO6Z11bqccci0wJziNu+DfP8gQU=
-  dependencies:
-    "@uifabric/merge-styles" "^7.19.1"
-    "@uifabric/set-version" "^7.0.23"
-    "@uifabric/utilities" "^7.33.2"
-    tslib "^1.10.0"
-
 "@hapi/hoek@^9.0.0":
   version "9.1.1"
   resolved "https://registry.npm.taobao.org/@hapi/hoek/download/@hapi/hoek-9.1.1.tgz?cache=0&sync_timestamp=1609086954944&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40hapi%2Fhoek%2Fdownload%2F%40hapi%2Fhoek-9.1.1.tgz#9daf5745156fd84b8e9889a2dc721f0c58e894aa"
@@ -1650,11 +1588,6 @@
   version "1.6.22"
   resolved "https://registry.npm.taobao.org/@mdx-js/util/download/@mdx-js/util-1.6.22.tgz#219dfd89ae5b97a8801f015323ffa4b62f45718b"
   integrity sha1-IZ39ia5bl6iAHwFTI/+kti9FcYs=
-
-"@microsoft/load-themed-styles@^1.10.26":
-  version "1.10.146"
-  resolved "https://registry.npm.taobao.org/@microsoft/load-themed-styles/download/@microsoft/load-themed-styles-1.10.146.tgz#dd039865dfb21157a4b22c486e78da8957dee05d"
-  integrity sha1-3QOYZd+yEVeksixIbnjaiVfe4F0=
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -2113,74 +2046,6 @@
     "@types/uglify-js" "*"
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
-
-"@uifabric/foundation@^7.9.21":
-  version "7.9.21"
-  resolved "https://registry.npm.taobao.org/@uifabric/foundation/download/@uifabric/foundation-7.9.21.tgz?cache=0&sync_timestamp=1611926856491&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40uifabric%2Ffoundation%2Fdownload%2F%40uifabric%2Ffoundation-7.9.21.tgz#7583f81cb70ee819422997e9f518ea0a5c43402c"
-  integrity sha1-dYP4HLcO6BlCKZfp9RjqClxDQCw=
-  dependencies:
-    "@uifabric/merge-styles" "^7.19.1"
-    "@uifabric/set-version" "^7.0.23"
-    "@uifabric/styling" "^7.16.19"
-    "@uifabric/utilities" "^7.33.2"
-    tslib "^1.10.0"
-
-"@uifabric/icons@^7.5.18":
-  version "7.5.18"
-  resolved "https://registry.npm.taobao.org/@uifabric/icons/download/@uifabric/icons-7.5.18.tgz?cache=0&sync_timestamp=1611926856963&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40uifabric%2Ficons%2Fdownload%2F%40uifabric%2Ficons-7.5.18.tgz#f50c1ce876c35ee8feab08dbaee77c4064c837cd"
-  integrity sha1-9Qwc6HbDXuj+qwjbrud8QGTIN80=
-  dependencies:
-    "@uifabric/set-version" "^7.0.23"
-    "@uifabric/styling" "^7.16.19"
-    tslib "^1.10.0"
-
-"@uifabric/merge-styles@^7.19.1":
-  version "7.19.1"
-  resolved "https://registry.npm.taobao.org/@uifabric/merge-styles/download/@uifabric/merge-styles-7.19.1.tgz#446b3da48ce9925d1649edd0fc232221974b00c9"
-  integrity sha1-RGs9pIzpkl0WSe3Q/CMiIZdLAMk=
-  dependencies:
-    "@uifabric/set-version" "^7.0.23"
-    tslib "^1.10.0"
-
-"@uifabric/react-hooks@^7.13.9":
-  version "7.13.9"
-  resolved "https://registry.npm.taobao.org/@uifabric/react-hooks/download/@uifabric/react-hooks-7.13.9.tgz#82373cdfbccc81b6fa00586dd8994bb47c97e99b"
-  integrity sha1-gjc837zMgbb6AFht2JlLtHyX6Zs=
-  dependencies:
-    "@fluentui/react-window-provider" "^1.0.1"
-    "@uifabric/set-version" "^7.0.23"
-    "@uifabric/utilities" "^7.33.2"
-    tslib "^1.10.0"
-
-"@uifabric/set-version@^7.0.23":
-  version "7.0.23"
-  resolved "https://registry.npm.taobao.org/@uifabric/set-version/download/@uifabric/set-version-7.0.23.tgz#bfe10b6ba17a2518704cca856bdba8adbc11ffb0"
-  integrity sha1-v+ELa6F6JRhwTMqFa9uorbwR/7A=
-  dependencies:
-    tslib "^1.10.0"
-
-"@uifabric/styling@^7.16.19":
-  version "7.16.19"
-  resolved "https://registry.npm.taobao.org/@uifabric/styling/download/@uifabric/styling-7.16.19.tgz#5ee38e1c13cc2c6d0d006f275d40b4669f97cb09"
-  integrity sha1-XuOOHBPMLG0NAG8nXUC0Zp+Xywk=
-  dependencies:
-    "@fluentui/theme" "^1.7.1"
-    "@microsoft/load-themed-styles" "^1.10.26"
-    "@uifabric/merge-styles" "^7.19.1"
-    "@uifabric/set-version" "^7.0.23"
-    "@uifabric/utilities" "^7.33.2"
-    tslib "^1.10.0"
-
-"@uifabric/utilities@^7.33.2":
-  version "7.33.2"
-  resolved "https://registry.npm.taobao.org/@uifabric/utilities/download/@uifabric/utilities-7.33.2.tgz#426f9a8d1f9f7738e65abe4a9e36b65583476d81"
-  integrity sha1-Qm+ajR+fdzjmWr5Knja2VYNHbYE=
-  dependencies:
-    "@fluentui/dom-utilities" "^1.1.1"
-    "@uifabric/merge-styles" "^7.19.1"
-    "@uifabric/set-version" "^7.0.23"
-    prop-types "^15.7.2"
-    tslib "^1.10.0"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -8067,25 +7932,6 @@ obuf@^1.0.0, obuf@^1.1.2:
   resolved "https://registry.npm.taobao.org/obuf/download/obuf-1.1.2.tgz#09bea3343d41859ebd446292d11c9d4db619084e"
   integrity sha1-Cb6jND1BhZ69RGKS0RydTbYZCE4=
 
-office-ui-fabric-react@^7.158.0:
-  version "7.158.0"
-  resolved "https://registry.npm.taobao.org/office-ui-fabric-react/download/office-ui-fabric-react-7.158.0.tgz#4e82181b312144ac8db67786839eeffbb7cdf8fc"
-  integrity sha1-ToIYGzEhRKyNtneGg57v+7fN+Pw=
-  dependencies:
-    "@fluentui/date-time-utilities" "^7.9.0"
-    "@fluentui/react-focus" "^7.17.1"
-    "@fluentui/react-window-provider" "^1.0.1"
-    "@microsoft/load-themed-styles" "^1.10.26"
-    "@uifabric/foundation" "^7.9.21"
-    "@uifabric/icons" "^7.5.18"
-    "@uifabric/merge-styles" "^7.19.1"
-    "@uifabric/react-hooks" "^7.13.9"
-    "@uifabric/set-version" "^7.0.23"
-    "@uifabric/styling" "^7.16.19"
-    "@uifabric/utilities" "^7.33.2"
-    prop-types "^15.7.2"
-    tslib "^1.10.0"
-
 on-finished@~2.3.0:
   version "2.3.0"
   resolved "https://registry.npm.taobao.org/on-finished/download/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"
@@ -11343,7 +11189,7 @@ tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@^1.10.0, tslib@^1.9.0:
+tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.14.1.tgz?cache=0&sync_timestamp=1609887446826&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftslib%2Fdownload%2Ftslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
