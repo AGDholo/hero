@@ -19,8 +19,8 @@ import {
   Card,
   CardContent,
   CardMedia,
+    Alert
 } from '@material-ui/core';
-import Alert from '@material-ui/lab/Alert';
 import cx from 'clsx';
 import {makeStyles} from '@material-ui/core/styles';
 import TextInfoContent from '@mui-treasury/components/content/textInfo';
@@ -158,10 +158,10 @@ function Home() {
             <Grid container spacing={3}>
               <Grid item xs={12} md={5} style={{alignSelf: 'center'}}>
                 <Box fontSize="h2.fontSize" fontWeight="fontWeightBold">
-                  <Alert severity="error" variant="filled">
+                  <Alert sx={{backgroundColor: 'black'}}>
                     <Link
-                      href="https://www.kancloud.cn/agdholo/tp6-p01"
-                      style={{color: 'white'}}>
+                        href="https://www.kancloud.cn/agdholo/tp6-p01"
+                        style={{color: 'white'}}>
                       全新的 <strong>ThinkPHP6</strong>{' '}
                       前后端分离实战书籍已经发售，立即查看！
                     </Link>
