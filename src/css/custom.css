@@ -4,8 +4,8 @@ html[data-theme='dark'] {
 }
 
 html[data-theme='light'] {
-  --ifm-background-color: rgba(21, 25, 44);
-  --ifm-navbar-background-color: rgba(21, 25, 44);
+  --ifm-background-color: rgba(25, 33, 46, 1);
+  --ifm-navbar-background-color: rgba(25, 33, 46, 1);
 }
 
 .footer--dark {
