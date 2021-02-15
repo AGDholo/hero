@@ -1,16 +1,16 @@
 html[data-theme='dark'] {
-  --ifm-background-color: rgba(25, 33, 46, 1);
-  --ifm-navbar-background-color: rgba(25, 33, 46, 1);
+  --ifm-background-color: #15192c;
+  --ifm-navbar-background-color: #15192c;
 }
 
 html[data-theme='light'] {
-  --ifm-background-color: rgba(25, 33, 46, 1);
-  --ifm-navbar-background-color: rgba(25, 33, 46, 1);
+  --ifm-background-color: #15192c;
+  --ifm-navbar-background-color: #15192c;
 }
 
 .footer--dark {
   border-top: 1px solid gray;
-  --ifm-footer-background-color: rgba(25, 33, 46, 1);
+  --ifm-footer-background-color: #15192c;
 }
 
 :root {
@@ -34,7 +34,7 @@ html[data-theme='light'] {
   --orange: rgb(255, 45, 32);
   --deep-orange: #d62419;
 
-  --ifm-dropdown-background-color: rgba(25, 33, 46, 1);
+  --ifm-dropdown-background-color: #15192c;
   --ifm-dropdown-link-color: rgba(225, 225, 225, 0.7);
   --ifm-toc-border-color: rgba(255, 255, 255, 0.1);
   --ifm-link-color: rgb(50, 201, 229);
