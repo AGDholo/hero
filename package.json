@@ -34,7 +34,8 @@
     "query-string": "^6.13.7",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-google-font-loader": "^1.1.0"
+    "react-google-font-loader": "^1.1.0",
+    "react-text-transition": "^1.2.1"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.0.0-alpha.51",

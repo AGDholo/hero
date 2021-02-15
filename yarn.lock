@@ -9709,6 +9709,21 @@ react-simple-code-editor@^0.10.0:
   resolved "https://registry.npm.taobao.org/react-simple-code-editor/download/react-simple-code-editor-0.10.0.tgz#73e7ac550a928069715482aeb33ccba36efe2373"
   integrity sha1-c+esVQqSgGlxVIKuszzLo27+I3M=
 
+react-spring@^8.0.27:
+  version "8.0.27"
+  resolved "https://registry.npm.taobao.org/react-spring/download/react-spring-8.0.27.tgz#97d4dee677f41e0b2adcb696f3839680a3aa356a"
+  integrity sha1-l9Te5nf0Hgsq3LaW84OWgKOqNWo=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    prop-types "^15.5.8"
+
+react-text-transition@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.npm.taobao.org/react-text-transition/download/react-text-transition-1.2.1.tgz#c1cb872e22b1dc1f1b3fa0137f32d0f1a26ee298"
+  integrity sha1-wcuHLiKx3B8bP6ATfzLQ8aJu4pg=
+  dependencies:
+    react-spring "^8.0.27"
+
 react-textarea-autosize@^6.1.0:
   version "6.1.0"
   resolved "https://registry.npm.taobao.org/react-textarea-autosize/download/react-textarea-autosize-6.1.0.tgz#df91387f8a8f22020b77e3833c09829d706a09a5"

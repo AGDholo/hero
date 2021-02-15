@@ -10,7 +10,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import {
   Button,
   Grid,
@@ -19,25 +18,23 @@ import {
   Card,
   CardContent,
   CardMedia,
-    Alert
+  Typography,
 } from '@material-ui/core';
 import cx from 'clsx';
 import {makeStyles} from '@material-ui/core/styles';
-import TextInfoContent from '@mui-treasury/components/content/textInfo';
-import {useBlogTextInfoContentStyles} from '@mui-treasury/styles/textInfoContent/blog';
+
 import {useOverShadowStyles} from '@mui-treasury/styles/shadow/over';
+import TextTransition, {presets} from 'react-text-transition';
 
 const useStyles = makeStyles(({breakpoints, spacing}) => ({
   root: {
     margin: 'auto',
     borderRadius: spacing(2), // 16px
-    transition: '0.3s',
-    boxShadow: '0px 14px 80px rgba(34, 35, 58, 0.2)',
     position: 'relative',
     maxWidth: 500,
     marginLeft: 'auto',
     overflow: 'initial',
-    background: '#ffffff',
+    background: 'transparent',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -122,51 +119,64 @@ const tutor = [
 
 function CCard(props) {
   const styles = useStyles();
-  const {
-    button: buttonStyles,
-    ...contentStyles
-  } = useBlogTextInfoContentStyles();
   const shadowStyles = useOverShadowStyles();
   return (
-    <Card
-      className={cx(styles.root, shadowStyles.root)}
-      style={{height: '100%'}}>
-      <CardMedia className={styles.media} image={props.logo} />
-      <CardContent>
-        <TextInfoContent
-          classes={contentStyles}
-          overline={props.date}
-          heading={props.title}
-          body={props.desc}
-        />
-        <Link to={props.to}>
-          <Button className={buttonStyles}>阅读更多</Button>
-        </Link>
-      </CardContent>
-    </Card>
+    <Link to={props.to}>
+      <Card
+        className={cx(styles.root, shadowStyles.root)}
+        style={{height: '100%'}}>
+        <CardMedia className={styles.media} image={props.logo} />
+        <CardContent>
+          <Typography
+            variant={'overline'}
+            sx={{color: 'rgba(255, 255, 255, 0.7)'}}>
+            {props.date}
+          </Typography>
+          <Typography
+            className="text-underline"
+            sx={{color: '#fff'}}
+            variant={'h5'}
+            gutterBottom>
+            {props.title}
+          </Typography>
+          <Typography sx={{color: 'rgba(255, 255, 255, 0.7)'}} variant="body2">
+            {props.desc}
+          </Typography>
+        </CardContent>
+      </Card>
+    </Link>
   );
 }
 
+const TEXTS = ['Vuetify 主题', '编程教程', '设计资源', '实战书籍'];
+
 function Home() {
+  const [index, setIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      3000, // every 3 seconds
+    );
+  }, []);
+
   return (
     <Layout
-      title="免费模板，Vuetify 模板，前端技巧和教程"
-      description="免费获取可商用的 Vuetify 主题，以及前端技巧和教程">
-      <div style={{backgroundColor: '#0c1b39', color: '#fff'}} className="bg">
-        <Container maxWidth="xl">
-          <Box py={24}>
+      title="免费模板，Vuetify 主题模板，前端技巧和教程"
+      description="免费获取可商用的 Vuetify 主题、编程教程、设计资源、实战书籍，以及前端技巧和教程">
+      <div style={{backgroundColor: '#15192c', color: '#fff'}} className="bg">
+        <Container maxWidth="lg">
+          <Box py={16}>
             <Grid container spacing={3}>
-              <Grid item xs={12} md={5} style={{alignSelf: 'center'}}>
+              <Grid item xs={12} md={7} style={{alignSelf: 'center'}}>
                 <Box fontSize="h2.fontSize" fontWeight="fontWeightBold">
-                  <Alert sx={{backgroundColor: 'black'}}>
-                    <Link
-                        href="https://www.kancloud.cn/agdholo/tp6-p01"
-                        style={{color: 'white'}}>
-                      全新的 <strong>ThinkPHP6</strong>{' '}
-                      前后端分离实战书籍已经发售，立即查看！
-                    </Link>
-                  </Alert>
-                  免费获取可商用的 Vuetify 主题，以及前端技巧和教程
+                  免费获取高质量的 <br />
+                  <TextTransition
+                    text={TEXTS[index % TEXTS.length]}
+                    springConfig={presets.slow}
+                    style={{color: '#32c9e5'}}
+                  />
+                  快速入门，简单易懂
                 </Box>
                 <Box
                   fontSize="h6.subtitle1"
@@ -177,37 +187,50 @@ function Home() {
                   品牌的颜色也完全可定制。免费供个人和商业使用。
                 </Box>
 
-                <Link to="docs/vuetify2-tricks/introduction">
-                  <Button variant="contained" color="primary" size="large">
-                    浏览教程
-                  </Button>
-                </Link>
+                <Grid container spacing={2}>
+                  <Grid item xs={6} md={3}>
+                    <Link to="#book">
+                      <Button
+                        variant="contained"
+                        size="large"
+                        className="bg-orange"
+                        sx={{
+                          display: 'block',
+                          width: '100%',
+                        }}>
+                        浏览书籍
+                      </Button>
+                    </Link>
+                  </Grid>
 
-                <Link to="/themes">
-                  <Button color="primary" size="large">
-                    查看主题
-                  </Button>
-                </Link>
-              </Grid>
-
-              <Grid item xs={12} md={1} />
-              <Grid item xs={12} md={6}>
-                <img
-                  src={useBaseUrl('img/undraw_Camera_re_cnp4.svg')}
-                  alt="imnages"
-                />
+                  <Grid item xs={6} md={3}>
+                    <Link to="/themes">
+                      <Button
+                        color="primary"
+                        size="large"
+                        sx={{
+                          display: 'block',
+                          width: '100%',
+                          backgroundColor: '#2c3249',
+                          color: '#fff',
+                        }}>
+                        查看主题
+                      </Button>
+                    </Link>
+                  </Grid>
+                </Grid>
               </Grid>
             </Grid>
           </Box>
         </Container>
       </div>
 
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <main>
-          <Box my={12}>
+          <Box mb={12}>
             <div style={{textAlign: 'center'}}>
-              <Box fontSize="h4.fontSize" fontWeight="fontWeightBold">
-                获取高质量的教程
+              <Box fontSize="h3.fontSize" fontWeight="fontWeightBold" id="book">
+                获取高质量的书籍
               </Box>
             </div>
 
@@ -215,7 +238,7 @@ function Home() {
               <Grid container spacing={6}>
                 {[...tutor].map((item, i) => {
                   return (
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={6}>
                       <CCard {...item} />
                     </Grid>
                   );
