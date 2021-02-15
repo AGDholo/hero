@@ -17,7 +17,6 @@ const useStyles = makeStyles(() => ({
     position: 'relative',
     borderRadius: 16,
     padding: 12,
-    backgroundColor: 'var(--ifm-color-danger)',
     minWidth: 300,
     margin: '20px 0',
   },
@@ -66,7 +65,7 @@ const useStyles = makeStyles(() => ({
 const useOfferInfoStyles = makeStyles(() => {
   return {
     title: {
-      color: '#fff',
+      color: 'black',
       fontFamily: family,
       fontSize: '1.125rem',
       fontWeight: 700,
@@ -92,12 +91,12 @@ export const AD = React.memo(function OfferCard() {
       <Link to="https://curl.qcloud.com/DMXuZLih">
         <Card className={cx(styles.card, shadowStyles.root)}>
           <Column gap={2} mr={2}>
-            <Info position={'middle'} useStyles={useOfferInfoStyles}>
+            <Info position="middle" useStyles={useOfferInfoStyles}>
               <InfoTitle>
-                【腾讯云】11.11 云上盛惠，云产品限时抢购，1 核 2G 云服务器首年
-                88 元
+                【腾讯云】便宜好用的云服务器，1 核 2G 低至 99
+                元/年，个人用户不二之选！
               </InfoTitle>
-              <InfoSubtitle></InfoSubtitle>
+              <InfoSubtitle />
             </Info>
             <Item mt={2}>
               <Button className={styles.learnMore}>立即抢购！</Button>
@@ -105,10 +104,8 @@ export const AD = React.memo(function OfferCard() {
           </Column>
           <img
             className={styles.img}
-            alt={''}
-            src={
-              'https://cdn.pixabay.com/photo/2014/03/25/16/34/hair-ribbon-297431_1280.png'
-            }
+            alt=""
+            src="https://cdn.pixabay.com/photo/2014/03/25/16/34/hair-ribbon-297431_1280.png"
           />
           <div className={styles.shell} />
         </Card>
