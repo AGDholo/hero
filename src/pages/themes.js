@@ -2,8 +2,8 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import {Box, Container, Grid, SvgIcon} from '@material-ui/core';
 
-import {ShowcaseCard} from './components/showcase';
 import {Check} from '@material-ui/icons';
+import {ShowcaseCard} from './components/showcase';
 
 const feature = [
   '3 个完整应用程序模板',
@@ -17,16 +17,19 @@ const feature = [
 const theme = [
   {
     text: 'Giraffe',
+    desc: '新闻、博客或杂志应用程序主题',
     img: '/img/giraffe.3a90d379.png',
     href: 'https://giraffe.heroui.net',
   },
   {
     text: 'Agency',
+    desc: '一个用于快速启动的单页可滚动主题',
     img: '/img/agency.02b063a6.jpg',
     href: 'https://agency.heroui.net',
   },
   {
     text: 'Shock',
+    desc: '企业前后台主题，包含多个前端页面以及后台管理',
     img: '/img/shock.8dd62a99.png',
     href: 'https://shock.heroui.net',
   },
