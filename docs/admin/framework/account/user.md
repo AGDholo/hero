@@ -49,7 +49,7 @@ public function login($value): object
 ### 用例
 
 ```php
-use App\Service\UserService;
+use App\Framework\Modules\Core\Services\UserService;
 use App\Http\Requests\UserRequest;
 
 public function store(UserRequest $request,
@@ -77,7 +77,7 @@ public function logout($value): int
 ### 用例
 
 ```php
-use App\Service\UserService;
+use App\Framework\Modules\Core\Services\UserService;
 use App\Http\Requests\UserRequest;
 
 public function store(UserRequest $request,

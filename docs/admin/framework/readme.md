@@ -27,11 +27,11 @@ keywords:
 - Mysql
 
 在本地安装
-1. 克隆项目到本地：git clone https://github.com/hero-admin/hero-admin-laravel
-2. 切换到开发者分支： git checkout dev
-3. 键入 composer install
+1. 克隆项目到本地：`git clone https://github.com/hero-admin/hero-admin-laravel`
+2. 切换到开发者分支： `git checkout dev`
+3. 键入 `composer install`
    启动项目
-4. 直接运行 php artisan hero:install
-5. 命令行会提示是否要进行迁移等，全部输入 YES
-6. 运行 php artisan serve 即可开始调试
+4. 直接运行 `php artisan hero:install`
+5. 命令行会提示是否要进行迁移等，全部输入 `YES`
+6. 运行 `php artisan serve` 即可开始调试
 

@@ -31,7 +31,7 @@ public function verify(string $email, string|int $password): bool
 
 ```php
 use App\Http\Requests\UserRequest;
-use App\Service\VerificationService;
+use App\Framework\Modules\Core\Services\VerificationService;
 
 public function store(UserRequest $request,
                       VerificationService $verificationService): object
