@@ -282,6 +282,14 @@ module.exports = {
     'admin/framework/readme',
     {
       type: 'category',
+      label: '介绍',
+      collapsed: false,
+      items: [
+        'admin/framework/prologue/releases'
+      ],
+    },
+    {
+      type: 'category',
       label: '内部组件',
       collapsed: false,
       items: [

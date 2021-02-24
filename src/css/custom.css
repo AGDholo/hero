@@ -45,6 +45,10 @@ html[data-theme='light'] {
   color: #fff;
 }
 
+table tr:nth-child(2n) {
+  background-color: var(--ifm-table-background);
+
+}
 .bg-orange {
   background-color: var(--orange) !important;
 }
