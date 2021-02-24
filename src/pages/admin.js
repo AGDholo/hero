@@ -141,7 +141,7 @@ function Admin() {
                 </Typography>
 
                 <Box marginTop={5} display="flex">
-                  <Link to="/docs/admin/framework/readme">
+                  <Link to="/docs/admin/framework/prologue/releases">
                     <Button
                       variant="contained"
                       color="primary"

@@ -290,6 +290,14 @@ module.exports = {
     },
     {
       type: 'category',
+      label: '入门指南',
+      collapsed: false,
+      items: [
+        'admin/framework/getting-started/installation'
+      ],
+    },
+    {
+      type: 'category',
       label: '内部组件',
       collapsed: false,
       items: [

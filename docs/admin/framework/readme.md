@@ -1,37 +1,21 @@
 ---
 id: readme
-title: "安装 Hero Admin Laravel 程序"
-sidebar_label: "安装 Hero Admin Laravel"
+title: "关于 Hero Admin"
+sidebar_label: "关于 Hero Admin"
 date: 2021-01-31 00:14:00
-description: Hero Admin Laravel 程序的安装步骤介绍等。
+description: 介绍 Hero Admin。
 keywords:
 - hero-admin
 - heroadmin
 - framework
 - 开发框架
 - 业务框架
-- 安装
+- 关于
+- 介绍
 ---
 
-:::info 提示
-当前项目处于快速迭代过程中，任何 API 或功能都会发生更改，仅供预览使用。
-:::
+## 建立目的
 
-介绍：该项目底层使用 PHP 和 Laravel 框架构成。
-
-项目地址：https://github.com/hero-admin/hero-admin-laravel
-
-前置条件
-- PHP
-- Composer
-- Mysql
-
-在本地安装
-1. 克隆项目到本地：`git clone https://github.com/hero-admin/hero-admin-laravel`
-2. 切换到开发者分支： `git checkout dev`
-3. 键入 `composer install`
-   启动项目
-4. 直接运行 `php artisan hero:install`
-5. 命令行会提示是否要进行迁移等，全部输入 `YES`
-6. 运行 `php artisan serve` 即可开始调试
-
+在业务开发中有大量的重复功能需要开发者去编写，并且代码质量很难可控。  
+为了解决这些问题，Hero Admin 采用插件式的方法，依赖 Laravel IOC 容器进行自动注入，
+实现完全解耦的业务代码复现。
