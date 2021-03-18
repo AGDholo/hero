@@ -29,7 +29,7 @@ Blade 是构建 Laravel 应用所创建的一套模板引擎，众所周知，La
 请按下 `Ctrl+Shift+`（请确保在网站根目录 thinkphp.test）并切换到终端，并键入命令：
 
 ```shell title="shell"
-composer require luoyy/think-blade
+composer require luoyy/think-blade=3.*
 ```
 
 将 return 里的内容进行替换：
