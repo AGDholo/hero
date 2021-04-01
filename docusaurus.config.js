@@ -18,7 +18,7 @@ module.exports = {
       additionalLanguages: ['php', 'powershell', 'nginx', 'ini'],
     },
     googleAnalytics: {
-      trackingID: 'UA-166899095-1',
+      trackingID: '267580398',
       // Optional fields.
       anonymizeIP: true, // Should IPs be anonymized?
     },
