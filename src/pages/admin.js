@@ -83,7 +83,7 @@ function Stack() {
   const items = [
     {title: 'PHP', subtitle: 'v8.x'},
     {title: 'Laravel', subtitle: 'v8.x'},
-    {title: 'JavaScript', subtitle: 'ECMA2021'},
+    {title: 'TypeScript', subtitle: 'v4.x'},
     {title: 'Vue', subtitle: 'v2.x/v3.x'},
   ];
 
