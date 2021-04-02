@@ -17,7 +17,7 @@ module.exports = {
     prism: {
       additionalLanguages: ['php', 'powershell', 'nginx', 'ini'],
     },
-    googleAnalytics: {
+    gtag: {
       trackingID: 'G-P6SGX29DJK',
       // Optional fields.
       anonymizeIP: true, // Should IPs be anonymized?
