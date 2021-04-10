@@ -1,11 +1,16 @@
 html[data-theme='dark'] {
   --ifm-background-color: #15192c;
   --ifm-navbar-background-color: #15192c;
+
 }
 
 html[data-theme='light'] {
   --ifm-background-color: #15192c;
   --ifm-navbar-background-color: #15192c;
+}
+
+.main-wrapper:not(.admonition) {
+  color: #adbac7 !important;
 }
 
 .footer--dark {
@@ -42,19 +47,80 @@ html[data-theme='light'] {
   --ifm-menu-color-active: #fff;
 
   --ifm-scrollbar-track-background-color: rgba(225, 225, 225, 0.3);
-  color: #fff;
+
+  --ifm-navbar-height: 100px;
+
+  --ifm-code-background: #2d33b;
+  --ifm-code-color: #adbac7;
+}
+
+code {
+  border: 1px solid;
+}
+
+.alert, .alert .admonition-icon svg {
+  color: #000;
+  fill: #000;
+}
+
+.navbar__toggle {
+  background-color: #fff;
+}
+
+.navbar__brand {
+  width: 200px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 40px;
+  margin-left: 20px;
+  transition-duration: 0.3s;
+  font-size: 30px;
+}
+
+.navbar__item {
+  font-size: 16px;
+  letter-spacing: 3px;
+  opacity: 1;
+}
+
+.dropdown__link:hover {
+  color: var(--ifm-link-color);
+}
+
+.menu__link:hover {
+  background-color: unset;
+  color: var(--ifm-link-color);
 }
 
 table tr:nth-child(2n) {
   background-color: var(--ifm-table-background);
 
 }
+
 .bg-orange {
   background-color: var(--orange) !important;
 }
 
 .bg-orange:hover {
   background-color: var(--deep-orange) !important;
+}
+
+.bg {
+  background-color: unset;
+}
+
+.bg::after {
+  background: url('/img/agency.02b063a6.jpg') no-repeat;
+  opacity: 0.05;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .text-underline:hover {

@@ -10,16 +10,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import {
-  Button,
-  Grid,
-  Box,
-  Container,
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-} from '@material-ui/core';
+import {Box, Button, Card, CardContent, CardMedia, Container, Grid, Typography,} from '@material-ui/core';
 import cx from 'clsx';
 import {makeStyles} from '@material-ui/core/styles';
 
@@ -128,15 +119,15 @@ function CCard(props) {
         <CardMedia className={styles.media} image={props.logo} />
         <CardContent>
           <Typography
-            variant={'overline'}
-            sx={{color: 'rgba(255, 255, 255, 0.7)'}}>
+              variant="overline"
+              sx={{color: 'rgba(255, 255, 255, 0.7)'}}>
             {props.date}
           </Typography>
           <Typography
-            className="text-underline"
-            sx={{color: '#fff'}}
-            variant={'h5'}
-            gutterBottom>
+              className="text-underline"
+              sx={{color: '#fff'}}
+              variant="h5"
+              gutterBottom>
             {props.title}
           </Typography>
           <Typography sx={{color: 'rgba(255, 255, 255, 0.7)'}} variant="body2">
@@ -161,31 +152,50 @@ function Home() {
   }, []);
 
   return (
-    <Layout
-      title="免费模板，Vuetify 主题模板，前端技巧和教程"
-      description="免费获取可商用的 Vuetify 主题、编程教程、设计资源、实战书籍，以及前端技巧和教程">
-      <div style={{backgroundColor: '#15192c', color: '#fff'}} className="bg">
-        <Container maxWidth="lg">
-          <Box py={16}>
-            <Grid container spacing={3}>
-              <Grid item xs={12} md={7} style={{alignSelf: 'center'}}>
-                <Box fontSize="h2.fontSize" fontWeight="fontWeightBold">
-                  免费获取高质量的 <br />
-                  <TextTransition
-                    text={TEXTS[index % TEXTS.length]}
-                    springConfig={presets.slow}
-                    style={{color: '#32c9e5'}}
-                  />
-                  快速入门，简单易懂
-                </Box>
-                <Box
-                  fontSize="h6.subtitle1"
-                  my={4}
-                  style={{color: 'rgba(255, 255, 255, 0.7)'}}>
-                  使用 Vuetify 构建的可轻松定制的现代 Vue UI 模板和组件。
-                  所有组件都是模块化的，在所有设备和分辨率上都为响应式。
-                  品牌的颜色也完全可定制。免费供个人和商业使用。
-                </Box>
+      <Layout
+          title="免费模板，Vuetify 主题模板，前端技巧和教程"
+          description="免费获取可商用的 Vuetify 主题、编程教程、设计资源、实战书籍，以及前端技巧和教程">
+        <div style={{color: '#fff'}} className="bg">
+          <Container maxWidth="xl">
+            <Box py={16} sx={{py: '300px'}}>
+              <Grid container spacing={3}>
+                <Grid item xs={12} style={{alignSelf: 'center'}}>
+                  <Box fontSize="h2.fontSize" fontWeight="fontWeightBold">
+                    <Box sx={{
+                      display: "flex", fontSize: '60px', lineHeight: '113%',
+                      fontFamily: '"Reaver", serif',
+                      letterSpacing: '5px',
+                      fontWeight: 600,
+                      color: '#ffffffee',
+                      textTransform: 'uppercase',
+                      textShadow: '0px 0px 20px #000000',
+
+                    }}>
+                      “免费高质量的
+                      <TextTransition
+                          text={TEXTS[index % TEXTS.length]}
+                          springConfig={presets.slow}
+                          style={{color: '#32c9e5'}}
+                      />”
+                    </Box>
+
+
+                    <Box sx={{
+                      display: "flex", fontSize: '20px',
+                      fontFamily: '"Reaver", serif',
+                      letterSpacing: '2px',
+                      fontWeight: 600,
+                      color: '#ffffff90',
+                      textTransform: 'uppercase',
+                      textShadow: '0px 0px 20px #000000',
+                      mt: '5px',
+                      mb: '20px'
+                    }}
+                    >
+
+                      - 《HeroUI Inc.》
+                    </Box>
+                  </Box>
 
                 <Grid container spacing={2}>
                   <Grid item xs={6} md={3}>
