@@ -195,35 +195,38 @@ function Home() {
 
                       - 《HeroUI Inc.》
                     </Box>
+
+                    <Box sx={{
+                      backgroundColor: '#FF6046', width: '80px',
+                      height: '3px',
+                      minHeight: '3px', my: '30px'
+                    }}/>
                   </Box>
 
                 <Grid container spacing={2}>
                   <Grid item xs={6} md={3}>
-                    <Link to="#book">
-                      <Button
-                        variant="contained"
-                        size="large"
-                        className="bg-orange"
-                        sx={{
-                          display: 'block',
-                          width: '100%',
-                        }}>
-                        浏览书籍
-                      </Button>
-                    </Link>
-                  </Grid>
-
-                  <Grid item xs={6} md={3}>
                     <Link to="/themes">
                       <Button
-                        color="primary"
-                        size="large"
-                        sx={{
-                          display: 'block',
-                          width: '100%',
-                          backgroundColor: '#2c3249',
-                          color: '#fff',
-                        }}>
+                          variant="outlined"
+                          size="large"
+                          color="error"
+                          sx={{
+                            borderColor: '#fff',
+                            color: '#fff',
+                            width: '288px',
+                            minWidth: '288px',
+                            height: '78px',
+                            borderRadius: '6px',
+                            border: '3px solid #ffffff90',
+                            boxShadow: '0px 0px 5px black',
+                            display: 'inline-flex',
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            fontSize: '22px',
+                            letterSpacing: '2px',
+                            fontFamily: 'Reaver, serif',
+                            fontWeight: 600,
+                          }}>
                         查看主题
                       </Button>
                     </Link>
