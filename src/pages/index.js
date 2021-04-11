@@ -16,6 +16,7 @@ import {makeStyles} from '@material-ui/core/styles';
 
 import {useOverShadowStyles} from '@mui-treasury/styles/shadow/over';
 import TextTransition, {presets} from 'react-text-transition';
+import {AppsOutlined, ForumOutlined} from "@material-ui/icons";
 
 const useStyles = makeStyles(({breakpoints, spacing}) => ({
   root: {
@@ -92,9 +93,9 @@ const tutor = [
   },
   {
     logo: 'https://cover.kancloud.cn/agdholo/tp6-p01',
-    title: 'ThinkPHP6 Primer 前后端分离实战入门',
+    title: 'ThinkPHP6 Primer 前后端分离实战入门（￥28）',
     desc:
-      '本系列书籍将教你如何使用 ThinkPHP6 和 Vue 一步一步构建一个类似 Twitter 的前后端分离应用，让你从实际开发中体会到 ThinkPHP6 API 开发的敏捷、愉悦与轻松。',
+        '本系列书籍将教你如何使用 ThinkPHP6 和 Vue 一步一步构建一个类似 Twitter 的前后端分离应用，让你从实际开发中体会到 ThinkPHP6 API 开发的敏捷、愉悦与轻松。',
     to: 'https://www.kancloud.cn/agdholo/tp6-p01',
     date: '28/08/2020',
   },
@@ -203,8 +204,7 @@ function Home() {
                     }}/>
                   </Box>
 
-                <Grid container spacing={2}>
-                  <Grid item xs={6} md={3}>
+                  <Box sx={{display: 'flex'}}>
                     <Link to="/themes">
                       <Button
                           variant="outlined"
@@ -227,12 +227,36 @@ function Home() {
                             fontFamily: 'Reaver, serif',
                             fontWeight: 600,
                           }}>
-                        查看主题
+                        <AppsOutlined sx={{mr: 1}}/> 查看主题
                       </Button>
                     </Link>
-                  </Grid>
+
+                    <Link to="https://jq.qq.com/?_wv=1027&k=J9Zf6Qu5" target="_blank">
+                      <Button
+                          variant="outlined"
+                          size="large"
+                          color="error"
+                          sx={{
+                            color: '#fff',
+                            width: '288px',
+                            minWidth: '288px',
+                            height: '78px',
+                            borderRadius: '6px',
+                            boxShadow: '0px 0px 5px black',
+                            display: 'inline-flex',
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            fontSize: '22px',
+                            letterSpacing: '2px',
+                            fontFamily: 'Reaver, serif',
+                            fontWeight: 600,
+                            ml: 2
+                          }}>
+                        <ForumOutlined sx={{mr: 1}}/> 交流群
+                      </Button>
+                    </Link>
+                  </Box>
                 </Grid>
-              </Grid>
             </Grid>
           </Box>
         </Container>
@@ -241,19 +265,19 @@ function Home() {
       <Container maxWidth="lg">
         <main>
           <Box mb={12}>
-            <div style={{textAlign: 'center'}}>
-              <Box fontSize="h3.fontSize" fontWeight="fontWeightBold" id="book">
-                获取高质量的书籍
+            <div>
+              <Box fontSize="h6.fontSize" fontWeight="fontWeightBold" id="book">
+                最新书籍/文档
               </Box>
             </div>
 
             <div style={{marginTop: '30px'}}>
               <Grid container spacing={6}>
-                {[...tutor].map((item, i) => {
+                {[...tutor].map((item) => {
                   return (
-                    <Grid item xs={12} md={6}>
-                      <CCard {...item} />
-                    </Grid>
+                      <Grid item xs={12} md={4}>
+                        <CCard {...item} />
+                      </Grid>
                   );
                 })}
               </Grid>
@@ -261,7 +285,13 @@ function Home() {
           </Box>
         </main>
       </Container>
-    </Layout>
+
+        <div>
+          <Box sx={{textAlign: 'center'}}>
+            @2021 HeroUI
+          </Box>
+        </div>
+      </Layout>
   );
 }
 
