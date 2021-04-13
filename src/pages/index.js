@@ -288,7 +288,10 @@ function Home() {
 
         <div>
           <Box sx={{textAlign: 'center'}}>
-            @2021 HeroUI
+            @2021 HeroUI. Generated with <a href="https://docusaurus.io/" target="_blank"
+                                            rel="noreferrer">docusaurus</a> & <a href="https://material-ui.com/"
+                                                                                 target="_blank"
+                                                                                 rel="noreferrer">Material-UI</a>
           </Box>
         </div>
       </Layout>
