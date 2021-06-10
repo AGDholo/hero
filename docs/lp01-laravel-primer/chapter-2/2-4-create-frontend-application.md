@@ -3,7 +3,7 @@ id: 2-4-create-frontend-application
 title: 创建前端应用
 sidebar_label: 2.4 创建前端应用
 date: 2020-08-13 19:06:00
-description:
+description: 创建前端应用
 keywords:
   - laravel
   - laravel-primer

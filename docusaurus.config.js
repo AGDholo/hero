@@ -10,17 +10,14 @@ module.exports = {
   projectName: 'HeroUI', // Usually your repo name.
   themeConfig: {
     colorMode: {
-      disableSwitch: true,
-      defaultMode: 'dark',
-    },
+      disableSwitch: true,},
     plugins: ['@docusaurus/plugin-debug'],
     prism: {
       additionalLanguages: ['php', 'powershell', 'nginx', 'ini'],
     },
     gtag: {
       trackingID: 'G-P6SGX29DJK',
-      // Optional fields.
-      anonymizeIP: true, // Should IPs be anonymized?
+      anonymizeIP: true,
     },
     algolia: {
       apiKey: 'e5b607cd5573aa988709ba1c80231dfb',
@@ -37,38 +34,26 @@ module.exports = {
         {
           activeBasePath: 'docs/development-guide',
           label: '指南',
-          position: 'right',
           items: [
             {
               to: 'docs/development-guide/introduction',
               activeBasePath: 'docs/development-guide',
               label: '开发环境搭建',
-              position: 'right',
             },
             {
               to: 'docs/vuetify2-tricks/introduction',
               activeBasePath: 'docs/vuetify2-tricks',
               label: 'Vuetify2 技巧',
-              position: 'right',
             },
           ],
-        },
-
-        {
-          to: 'docs/design-resources/readme',
-          activeBasePath: 'docs/design-resources',
-          label: '设计资源',
-          position: 'right',
         },
         {
           to: '/themes',
           activeBasePath: 'themes',
           label: 'Vue 主题模板',
-          position: 'right',
         },
         {
           label: 'ThinkPHP 实战书籍',
-          position: 'right',
           items: [
             {
               to: 'https://www.kancloud.cn/agdholo/tp6-p01',
@@ -82,29 +67,6 @@ module.exports = {
             },
           ],
         },
-
-        {
-          label: '下一代业务框架',
-          position: 'right',
-          to: '/admin',
-          items: [
-            {
-              to: '/admin',
-              activeBasePath: 'admin',
-              label: '介绍 Hero Admin',
-            },
-            {
-              to: 'docs/admin/framework/readme',
-              activeBasePath: 'docs/admin/framework',
-              label: '后端框架文档（PHP）',
-            },
-            {
-              to: 'docs/admin/ui/readme',
-              activeBasePath: 'docs/admin/ui',
-              label: '前端框架文档（Vue）',
-            },
-          ],
-        },
         {
           href: 'https://github.com/AGDholo/hero',
           label: 'GitHub',
@@ -113,36 +75,6 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
-      links: [
-        {
-          title: '教程',
-          items: [
-            {
-              label: 'Vuetify2 教程',
-              to: 'docs/vuetify2-tricks/introduction',
-            },
-          ],
-        },
-        {
-          title: '社区',
-          items: [
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/P1kaP1kaChu_',
-            },
-          ],
-        },
-        {
-          title: '更多',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/AGDholo/hero',
-            },
-          ],
-        },
-      ],
       // Please do not remove the credits, help to publicize Docusaurus :)
       copyright: `Copyright © ${new Date().getFullYear()} HeroUI, Inc. Built with Docusaurus.`,
     },

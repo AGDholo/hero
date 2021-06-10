@@ -1,9 +1,9 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import {Box, Container, Grid, SvgIcon} from '@material-ui/core';
+import {Box, Card, Container, Grid, CardActionArea, CardContent, CardMedia, Typography} from '@material-ui/core';
 
 import {Check} from '@material-ui/icons';
-import {ShowcaseCard} from './components/showcase';
+import Link from '@docusaurus/core/lib/client/exports/Link';
 
 const feature = [
   '3 个完整应用程序模板',
@@ -87,7 +87,25 @@ function themes() {
                 {[...theme].map((item) => {
                   return (
                     <Grid item xs={12} md={6}>
-                      <ShowcaseCard {...item} type="开发者" />
+                      <Link to={item.href}>
+                        <Card >
+                          <CardActionArea>
+                            <CardMedia
+                              sx={{ height: 180 }}
+                              image={item.img}
+                              title="Contemplative Reptile"
+                            />
+                            <CardContent>
+                              <Typography gutterBottom variant="h5" component="div">
+                                {item.text}
+                              </Typography>
+                              <Typography variant="body2" color="text.secondary">
+                                {item.desc}
+                              </Typography>
+                            </CardContent>
+                          </CardActionArea>
+                        </Card>
+                      </Link>
                     </Grid>
                   );
                 })}
