@@ -19,7 +19,7 @@ keywords:
 
 官方文档导航：
 
-- 断点： [https://vuetifyjs.com/customization/breakpoints/](https://vuetifyjs.com/customization/breakpoints/)
+- 断点： [https://vuetifyjs.com/zh-Hans/features/breakpoints/](https://vuetifyjs.com/zh-Hans/features/breakpoints/)
 
 ## 简单使用
 
