@@ -9,6 +9,7 @@ import {
     CardContent,
     CardMedia,
     Grid,
+    Link,
     Typography
 } from "@mui/material";
 import {grey} from "@mui/material/colors";
@@ -504,11 +505,13 @@ const SvgImag = () => {
 const card = [{
     image: 'https://heroui.net/img/giraffe.3a90d379.png',
     content: '新闻、博客或杂志应用程序主题',
-    bgcolor: '#72bfa6'
+    bgcolor: '#72bfa6',
+    link: 'https://giraffe.heroui.net/'
 }, {
     image: 'https://heroui.net/img/shock.8dd62a99.png',
     content: '企业前后台主题，包含多个前端页面及后台管理',
-    bgcolor: '#d4f2ff'
+    bgcolor: '#d4f2ff',
+    link: 'https://shock.heroui.net/'
 }]
 
 const Project = () => {
@@ -523,19 +526,21 @@ const Project = () => {
                 {
                     card.map((item, index) => (
                         <Grid item xs={6}>
-                            <Card variant={"outlined"} sx={{height: '100%'}}>
-                                <Box bgcolor={item.bgcolor}>
-                                    <CardMedia component="img"
-                                               sx={{px: 4, pt: 4}}
-                                               image={item.image}/>
-                                </Box>
+                            <Link href={item.link} target={'_blank'}>
+                                <Card variant={"outlined"} sx={{height: '100%'}}>
+                                    <Box bgcolor={item.bgcolor}>
+                                        <CardMedia component="img"
+                                                   sx={{px: 4, pt: 4}}
+                                                   image={item.image}/>
+                                    </Box>
 
-                                <CardContent>
-                                    <Typography variant={"h5"} fontWeight={'600'}>
-                                        {item.content}
-                                    </Typography>
-                                </CardContent>
-                            </Card>
+                                    <CardContent>
+                                        <Typography variant={"h5"} fontWeight={'600'}>
+                                            {item.content}
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Link>
                         </Grid>
                     ))
                 }
