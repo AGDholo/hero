@@ -286,7 +286,7 @@ const data = [{
     link: '/',
     label: '主页',
 }, {
-    link: '/themes',
+    link: '/',
     label: '指南',
 }]
 
