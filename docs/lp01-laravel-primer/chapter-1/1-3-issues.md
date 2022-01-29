@@ -1,18 +1,20 @@
 ---
-id: 1-3-issues
-title: 问题反馈
-sidebar_label: 1.3 问题反馈
-date: 2020-08-13 15:34:00
+id: 1-3-issues 
+title: 问题反馈 
+sidebar_label: 1.3 问题反馈 
+date: 2020-08-13 15:34:00 
 description: 反馈Laravel 前后端分离入门书籍的问题
 keywords:
-  - laravel
-  - laravel-primer
-  - primer
-  - 入门
-  - 实战
-  - 初学者
-  - 反馈问题
-  - 免费书籍
+
+- laravel
+- laravel-primer
+- primer
+- 入门
+- 实战
+- 初学者
+- 反馈问题
+- 免费书籍
+
 ---
 
 1. 先检查自己的代码是否有语法、逻辑等基本错误。
@@ -27,4 +29,4 @@ keywords:
 ## 建议反馈
 
 加入 QQ 群：685083718  
-发送邮件至 agdholo@gmail.com 反馈
+发送邮件至 agdholo@outlook.com 反馈

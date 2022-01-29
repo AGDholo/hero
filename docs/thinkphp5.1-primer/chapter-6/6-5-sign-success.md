@@ -1,19 +1,21 @@
 ---
-id: 6-5-sign-success
-title: 注册成功
-sidebar_label: 6.4 注册成功
-date: 2020-08-12 03:30:00
+id: 6-5-sign-success 
+title: 注册成功 
+sidebar_label: 6.4 注册成功 
+date: 2020-08-12 03:30:00 
 description: 数据的校验已经完成，现在我们进行数据的存储。
 keywords:
-  - thinkphp
-  - 入门
-  - 实战
-  - 初学者
-  - 表单
-  - 数据存储
-  - 数据库
-  - 用户
-  - 免费书籍
+
+- thinkphp
+- 入门
+- 实战
+- 初学者
+- 表单
+- 数据存储
+- 数据库
+- 用户
+- 免费书籍
+
 ---
 
 ## 存储数据
@@ -51,7 +53,7 @@ class User extends Model
 {
   "__token__": "884e7770f55ac2d29964499b1ffabb0a35e8cf88",
   "name": "1123",
-  "email": "agdholo@gmail.com",
+  "email": "agdholo@outlook.com",
   "password": "protected $table = 'think_user';",
   "password_confirm": "protected $table = 'think_user';",
   "id": "1"
@@ -85,7 +87,8 @@ public function setPasswordAttr($value)
 }
 ```
 
-这段代码使用了 `ThinkPHP Model` 提供的修改器功能，`setPasswordAttr($value)` 可以拆分为 `set|Password|Attr`，中部的 `Password` 就是我们要设置的字段值，同样的，如果我们要设置 `name` 字段就写入 `setnameAttr` 就可以了。
+这段代码使用了 `ThinkPHP Model` 提供的修改器功能，`setPasswordAttr($value)` 可以拆分为 `set|Password|Attr`，中部的 `Password`
+就是我们要设置的字段值，同样的，如果我们要设置 `name` 字段就写入 `setnameAttr` 就可以了。
 
 [password_hash](http://php.net/manual/zh/function.password-hash.php) 是 PHP 语言内置的一个非对称加密算法，此加密算法不可逆向，只能通过验证取得。
 
