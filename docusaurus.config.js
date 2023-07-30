@@ -1,48 +1,164 @@
-module.exports = {
-  title: 'HeroUI',
-  tagline:
-    'HeroUI 提供免费下载的开源前端主题、模板和框架使用小技巧，指南和教程，帮助您学习更多关于前端、Vuetify 的设计和开发。',
-  url: 'https://heroui.net',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  favicon: '/feather.svg',
-  organizationName: 'HeroUI', // Usually your GitHub org/user name.
-  projectName: 'HeroUI', // Usually your repo name.
-  themeConfig: {
-    colorMode: {
-      disableSwitch: true,
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
+
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+    title: 'HeroUI',
+    tagline: 'Dinosaurs are cool',
+    favicon: 'img/favicon.png',
+
+    // Set the production url of your site here
+    url: 'https://heroui.net',
+    // Set the /<baseUrl>/ pathname under which your site is served
+    // For GitHub pages deployment, it is often '/<projectName>/'
+    baseUrl: '/',
+
+    // GitHub pages deployment config.
+    // If you aren't using GitHub pages, you don't need these.
+    organizationName: 'facebook', // Usually your GitHub org/user name.
+    projectName: 'docusaurus', // Usually your repo name.
+
+    onBrokenLinks: 'throw',
+    onBrokenMarkdownLinks: 'warn',
+
+    // Even if you don't use internalization, you can use this field to set useful
+    // metadata like html lang. For example, if your site is Chinese, you may want
+    // to replace "en" with "zh-Hans".
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en'],
     },
-    plugins: ['@docusaurus/plugin-debug'],
-    prism: {
-      additionalLanguages: ['php', 'powershell', 'nginx', 'ini'],
-    },
-    algolia: {
-      apiKey: 'e5b607cd5573aa988709ba1c80231dfb',
-      indexName: 'heroui',
-      searchParameters: {}, // Optional (if provided by Algolia)
-    },
-  },
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        docs: {
-          path: 'docs',
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/AGDholo/hero/tree/master',
-          showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
-          routeBasePath: 'docs',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-        gtag: {
-          trackingID: 'G-P6SGX29DJK',
-          anonymizeIP: true,
-        },
-      },
+
+    presets: [
+        [
+            'classic',
+            /** @type {import('@docusaurus/preset-classic').Options} */
+            ({
+                docs: {
+                    sidebarPath: require.resolve('./sidebars.js'),
+                    // Please change this to your repo.
+                    // Remove this to remove the "edit this page" links.
+                    editUrl:
+                        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+                },
+                blog: {
+                    showReadingTime: true,
+                    // Please change this to your repo.
+                    // Remove this to remove the "edit this page" links.
+                    editUrl:
+                        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+                },
+                theme: {
+                    customCss: require.resolve('./src/css/custom.css'),
+                },
+            }),
+        ],
     ],
-  ],
+
+    plugins: [
+        async function tailwindcssPlugin(context, options) {
+            return {
+                name: "docusaurus-tailwindcss",
+                configurePostCss(postcssOptions) {
+                    // Appends TailwindCSS and AutoPrefixer.
+                    postcssOptions.plugins.push(require("tailwindcss"));
+                    postcssOptions.plugins.push(require("autoprefixer"));
+                    return postcssOptions;
+                },
+            };
+        },
+    ],
+    themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+        ({
+            // Replace with your project's social card
+            image: 'img/docusaurus-social-card.jpg',
+            navbar: {
+                title: 'HeroUI',
+                logo: {
+                    alt: 'HeroUI Logo',
+                    src: 'img/favicon.png',
+                },
+                items: [
+                    {
+                        type: 'docSidebar',
+                        position: 'left',
+                        label: '开发指南',
+                        sidebarId: 'developmentGuideSidebar',
+                    },
+                    {
+                        type: 'docSidebar',
+                        position: 'left',
+                        label: ' ThinkPHP5.1 入门',
+                        sidebarId: 'thinkPhp51PrimerSidebar',
+                    },
+                    {
+                        type: 'docSidebar',
+                        position: 'left',
+                        label: 'Vuetify2 技巧',
+                        sidebarId: 'vuetify2TricksSidebar',
+                    },
+                    {to: '/blog', label: 'Blog', position: 'left'},
+                    {
+                        href: 'https://github.com/facebook/docusaurus',
+                        label: 'GitHub',
+                        position: 'right',
+                    },
+                ],
+            },
+            footer: {
+                style: 'dark',
+                links: [
+                    {
+                        title: 'Docs',
+                        items: [
+                            {
+                                label: 'Tutorial',
+                                to: '/docs/intro',
+                            },
+                        ],
+                    },
+                    {
+                        title: 'Community',
+                        items: [
+                            {
+                                label: 'Stack Overflow',
+                                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                            },
+                            {
+                                label: 'Discord',
+                                href: 'https://discordapp.com/invite/docusaurus',
+                            },
+                            {
+                                label: 'Twitter',
+                                href: 'https://twitter.com/docusaurus',
+                            },
+                        ],
+                    },
+                    {
+                        title: 'More',
+                        items: [
+                            {
+                                label: 'Blog',
+                                to: '/blog',
+                            },
+                            {
+                                label: 'GitHub',
+                                href: 'https://github.com/facebook/docusaurus',
+                            },
+                        ],
+                    },
+                ],
+                copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+            },
+            prism: {
+                theme: lightCodeTheme,
+                darkTheme: darkCodeTheme,
+            },
+        }),
 };
+
+module.exports = config;
