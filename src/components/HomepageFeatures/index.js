@@ -164,7 +164,8 @@ export default function HomepageFeatures() {
                         <p className="font-bold text-gray-500 leading-7  text-lg lg:max-w-lg">
                             我们致力于为用户提供最好的产品和服务，并通过您的反馈和支持来不断改进和提高我们的服务质量。
                         </p>
-                        <a className="btn btn-lg btn-neutral" href="mailto:agdholo@outlook.com">
+                        <a className="btn btn-lg btn-neutral hover:no-underline hover:text-white"
+                           href="mailto:agdholo@outlook.com">
                             快速联系我们
                         </a>
 
