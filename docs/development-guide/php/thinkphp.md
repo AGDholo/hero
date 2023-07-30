@@ -21,13 +21,12 @@ ThinkPHP 是一个免费开源的，快速、简单的面向对象的轻量级 P
 
 :::info 前置条件
 
-请先阅读 [PHP](introduction)
-
 :::
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-<Tabs defaultValue="6-x" groupId="dg-install-thinkphp" values={[ { label: '6.x', value: '6-x', }, { label: '5.1.x', value: '5-1-x', }, ] }>
+<Tabs defaultValue="6-x" groupId="dg-install-thinkphp"
+values={[ { label: '6.x', value: '6-x', }, { label: '5.1.x', value: '5-1-x', }, ] }>
 
 <TabItem value="6-x">
 

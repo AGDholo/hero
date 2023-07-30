@@ -13,7 +13,8 @@ keywords:
 
 :::note 介绍
 
-Laravel 是一个由 Taylor Otwell 所建立，免费的开源 PHP Web 框架，旨在实现的 Web 软件的 MVC 架构，并作为 CodeIgniter 的替代方案。其源代码托管于 GitHub，许可条款为 MIT 许可证。
+Laravel 是一个由 Taylor Otwell 所建立，免费的开源 PHP Web 框架，旨在实现的 Web 软件的 MVC 架构，并作为 CodeIgniter
+的替代方案。其源代码托管于 GitHub，许可条款为 MIT 许可证。
 
 :::
 
@@ -21,13 +22,12 @@ Laravel 是一个由 Taylor Otwell 所建立，免费的开源 PHP Web 框架，
 
 :::info 前置条件
 
-请先阅读 [PHP](introduction)
-
 :::
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-<Tabs defaultValue="8-x" groupId="dg-install-laravel" values={[ { label: '8.x', value: '8-x', }, { label: '7.x', value: '7-x', }, { label: '6.x', value: '6-x', }, ] }>
+<Tabs defaultValue="8-x" groupId="dg-install-laravel"
+values={[ { label: '8.x', value: '8-x', }, { label: '7.x', value: '7-x', }, { label: '6.x', value: '6-x', }, ] }>
 
 <TabItem value="8-x">
 
@@ -43,7 +43,7 @@ composer create-project --prefer-dist laravel/laravel laravel "8.*"
 
 :::info 提示
 
-Laravel 需要开启以下 PHP 扩展，我们推荐阅读 [PHP 搭建指南](introduction) 来学习如何开启扩展。  
+Laravel 需要开启以下 PHP 扩展，我们推荐阅读 [PHP 搭建指南] 来学习如何开启扩展。  
 PDO PHP 扩展是泛指一类数据库链接扩展，例如 pdo_sqlite、pdo_pgsql、pdo_mysql
 
 :::
@@ -74,7 +74,7 @@ composer create-project --prefer-dist laravel/laravel laravel "7.*"
 
 :::info 提示
 
-Laravel 需要开启以下 PHP 扩展，我们推荐阅读 [PHP 搭建指南](introduction) 来学习如何开启扩展。  
+Laravel 需要开启以下 PHP 扩展，我们推荐阅读 [PHP 搭建指南] 来学习如何开启扩展。  
 PDO PHP 扩展是泛指一类数据库链接扩展，例如 pdo_sqlite、pdo_pgsql、pdo_mysql
 
 :::
@@ -105,7 +105,7 @@ composer create-project --prefer-dist laravel/laravel laravel "6.*"
 
 :::info 提示
 
-Laravel 需要开启以下 PHP 扩展，我们推荐阅读 [PHP 搭建指南](introduction) 来学习如何开启扩展。  
+Laravel 需要开启以下 PHP 扩展，我们推荐阅读 [PHP 搭建指南] 来学习如何开启扩展。  
 PDO PHP 扩展是泛指一类数据库链接扩展，例如 pdo_sqlite、pdo_pgsql、pdo_mysql
 
 :::

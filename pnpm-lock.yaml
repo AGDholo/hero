@@ -8,9 +8,15 @@ dependencies:
   '@docusaurus/core':
     specifier: 2.4.1
     version: 2.4.1(@docusaurus/types@2.4.1)(react-dom@17.0.2)(react@17.0.2)(typescript@5.1.6)
+  '@docusaurus/plugin-debug':
+    specifier: ^2.4.1
+    version: 2.4.1(react-dom@17.0.2)(react@17.0.2)(typescript@5.1.6)
   '@docusaurus/preset-classic':
     specifier: 2.4.1
     version: 2.4.1(@algolia/client-search@4.19.1)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.7.0)(typescript@5.1.6)
+  '@docusaurus/theme-search-algolia':
+    specifier: ^2.4.1
+    version: 2.4.1(@algolia/client-search@4.19.1)(@docusaurus/types@2.4.1)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.7.0)(typescript@5.1.6)
   '@mdx-js/react':
     specifier: ^1.6.22
     version: 1.6.22(react@17.0.2)

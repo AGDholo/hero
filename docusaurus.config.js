@@ -27,10 +27,10 @@ const config = {
     // Even if you don't use internalization, you can use this field to set useful
     // metadata like html lang. For example, if your site is Chinese, you may want
     // to replace "en" with "zh-Hans".
-    i18n: {
-        defaultLocale: 'zh-Hans',
-        locales: ['zh-Hans'],
-    },
+    // i18n: {
+    //     defaultLocale: 'zh-Hans',
+    //     // locales: ['en'],
+    // },
 
     presets: [
         [
@@ -73,6 +73,16 @@ const config = {
             colorMode: {
                 defaultMode: 'light',
                 disableSwitch: true,
+            },
+            plugins: ['@docusaurus/plugin-debug'],
+            prism: {
+                additionalLanguages: ['php', 'powershell', 'nginx', 'ini'],
+            },
+            algolia: {
+                apiKey: 'cab7bb211033d3d89a1acff0e5ba85e5',
+                appId: 'LMKQQC5MFP',
+                indexName: 'heroui',
+                searchParameters: {}, // Optional (if provided by Algolia)
             },
             // Replace with your project's social card
             navbar: {

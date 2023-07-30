@@ -24,7 +24,7 @@ Prettier 是一个 JS 包，生态丰富，基于社区的 PHP 插件即可完�
 
 请先阅读：
 
-- [PHP](introduction)
+- [PHP]
 - [Node.js](../js/nodejs)
 
 :::
@@ -43,7 +43,8 @@ Prettier 是一个 JS 包，生态丰富，基于社区的 PHP 插件即可完�
 
 `$ npm init`
 
-一路回车即可，如果你想深入研究 `package.json` 的配置规则的话，请查看：https://docs.npmjs.com/cli/v6/configuring-npm/package-json
+一路回车即可，如果你想深入研究 `package.json`
+的配置规则的话，请查看：https://docs.npmjs.com/cli/v6/configuring-npm/package-json
 
 ### 3. 安装 prettier 插件
 
