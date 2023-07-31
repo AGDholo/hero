@@ -118,12 +118,12 @@ export default function HomepageFeatures() {
             </div>
 
             <div className="bg-neutral-800 py-36 text-white space-y-16">
-                <div className="container lg:max-w-3xl space-y-4">
+                <div className="container space-y-4">
                     <h2 className="text-5xl font-black">
                         我们的生态
                     </h2>
 
-                    <p className="font-bold leading-7 text-lg   w-2/3 lg:pl-16 text-white/70">
+                    <p className="font-bold leading-7 text-lg   w-3/5 text-white/70">
                         我们的生态系统是一个旨在为所有参与者带来更多机会和价值的开放、共享和协作的平台。作为一个开放的平台，我们欢迎各种声音和想法，鼓励各方参与和贡献，共同推动技术和业务发展。
                     </p>
                 </div>
