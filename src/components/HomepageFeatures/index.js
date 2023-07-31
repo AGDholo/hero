@@ -45,7 +45,7 @@ export default function HomepageFeatures() {
                         我们会定期更新各种领域的最新资讯、行业动态和技术趋势，让您随时掌握最新信息。我们的内容涵盖了科技、商业、技术等多个领域，我们的编辑团队会为您筛选和整理最有价值的信息，让您不仅了解潮流、掌握趋势，更能获得启发和灵感。
                     </p>
 
-                    <div className="flex overflow-x-hidden space-x-8 w-full pb-4">
+                    <div className="flex overflow-x-hidden space-x-8 w-full pb-4 py-1">
                         {
                             latestNews.map((item, index) => (
                                 <Link to={item.url}
