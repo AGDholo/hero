@@ -20,11 +20,11 @@ const apps = [
     {
         title: "Fiapp.pro",
         url: "https://fiapp.pro",
-        description: "革命性的交易： 利用专业和高度可用的量化系统，借助人工智能技术，实现杠杆化、自动化和智能化的对冲交易。"
+        description: "专业先进的 AI 大数据分析，任何领域任何数据我们都可以捕获并分析。"
     },
     {
         title: "Singularity Robotics",
-        description: "专注于智能量化机器人的创新公司，提供高效、可靠的量化机器人，帮助客户在金融领域获得更好回报。",
+        description: "专注于智能量化机器人的创新公司，提供高效、可靠的量化机器人，帮助客户在大数据领域获得更好回报。",
     },
     {
         title: "Steamhub",
