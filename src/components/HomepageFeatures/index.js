@@ -25,6 +25,7 @@ const apps = [
     {
         title: "Singularity Robotics",
         description: "专注于智能量化机器人的创新公司，提供高效、可靠的量化机器人，帮助客户在大数据领域获得更好回报。",
+        url: "https://singularity-robotics.com/"
     },
     {
         title: "Steamhub",
@@ -165,7 +166,7 @@ export default function HomepageFeatures() {
                             我们致力于为用户提供最好的产品和服务，并通过您的反馈和支持来不断改进和提高我们的服务质量。
                         </p>
                         <a className="btn btn-lg btn-neutral hover:no-underline hover:text-white"
-                           href="mailto:agdholo@outlook.com">
+                           href="mailto:contact@heroui.net">
                             快速联系我们
                         </a>
 
