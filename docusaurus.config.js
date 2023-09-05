@@ -86,6 +86,7 @@ const config = {
                 apiKey: '4f1ac9cc52c99ff2393414a99ea24a7f',
                 appId: 'LMKQQC5MFP',
                 indexName: 'heroui',
+                contextualSearch: false
             },
             // Replace with your project's social card
             navbar: {
