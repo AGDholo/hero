@@ -78,6 +78,10 @@ const config = {
             prism: {
                 additionalLanguages: ['php', 'powershell', 'nginx', 'ini'],
             },
+            gtag: {
+                trackingID: 'G-PXBNRHB5GW',
+                anonymizeIP: true,
+            },
             algolia: {
                 apiKey: 'cab7bb211033d3d89a1acff0e5ba85e5',
                 appId: 'LMKQQC5MFP',
