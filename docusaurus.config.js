@@ -83,10 +83,9 @@ const config = {
                 additionalLanguages: ['php', 'powershell', 'nginx', 'ini'],
             },
             algolia: {
-                apiKey: 'cab7bb211033d3d89a1acff0e5ba85e5',
+                apiKey: '4f1ac9cc52c99ff2393414a99ea24a7f',
                 appId: 'LMKQQC5MFP',
                 indexName: 'heroui',
-                searchParameters: {}, // Optional (if provided by Algolia)
             },
             // Replace with your project's social card
             navbar: {
