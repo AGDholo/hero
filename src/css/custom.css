@@ -48,3 +48,31 @@
     font-weight: bold;
     font-size: medium;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--ifm-heading-font-weight) !important;
+}
+
+h1 {
+    font-size: var(--ifm-h1-font-size) !important;
+}
+
+h2 {
+    font-size: var(--ifm-h2-font-size) !important;
+}
+
+h3 {
+    font-size: var(--ifm-h3-font-size) !important;
+}
+
+h4 {
+    font-size: var(--ifm-h4-font-size) !important;
+}
+
+h5 {
+    font-size: var(--ifm-h5-font-size) !important;
+}
+
+h6 {
+    font-size: var(--ifm-h6-font-size) !important;
+}
