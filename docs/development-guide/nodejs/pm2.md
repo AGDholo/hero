@@ -53,6 +53,8 @@ pm2 start app.py --interpreter=python3 --name myApp
 当然也可以使用 `pm2 logs [id]`，把 [id] 替换为常驻进程的 id，例如 `pm2 logs 1` 来查看该进程的日志。  
 同时你可以使用 `pm2 restart [id]` 来重启该进程，使用 `pm2 stop [id]` 来停止该进程。
 
+![img.png](img.png)
+
 ## 保存当前的进程信息
 
 当你使用 `pm2 start` 启动了多个常驻进程后，你可以使用 `pm2 save` 来保存当前的进程信息，这样下次重启后，pm2 就会自动恢复这些进程。
